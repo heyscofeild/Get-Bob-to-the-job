@@ -1,0 +1,16 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1752072152
+::res://assets/::1752072060
+::res://assets/charachters/::1752072017
+BoB1.png::CompressedTexture2D/CompressedTexture2D::5581432097768337584::1752071920::1752072010::1::::<><><>0<>0<>b123f72a659bc2ca1d10364731961722<>res://.godot/imported/BoB1.png-9dfa706917c179fff836651372a2db57.ctex::
+BoB2.png::CompressedTexture2D/CompressedTexture2D::1475770299861124882::1752071920::1752072013::1::::<><><>0<>0<>f571902ee3bb38406ed9a578422dbd67<>res://.godot/imported/BoB2.png-77383c62e689f0773a9f3c6f378b8c04.ctex::
+BoB3.png::CompressedTexture2D/CompressedTexture2D::5418401260280934526::1752071920::1752072017::1::::<><><>0<>0<>8ea3b16dc0f10ac83f6c3508e6c42897<>res://.godot/imported/BoB3.png-cfc90034882ca9990533580231d75df4.ctex::
+SCR-20250709-mexp.png::CompressedTexture2D/CompressedTexture2D::5085826887966685431::1752064831::1752064839::1::::<><><>0<>0<>472ea7729d45aa1e1da4fd9817da7e51<>res://.godot/imported/SCR-20250709-mexp.png-f321db638962a7bec05045600bd1edf0.ctex::
+::res://assets/places/::1752072055
+houseasset-Recovered1.png::CompressedTexture2D/CompressedTexture2D::2326331584668409893::1752071920::1752072032::1::::<><><>0<>0<>2eea07b7cf7544d441d818bae88f1ca5<>res://.godot/imported/houseasset-Recovered1.png-5ff8e57981e7470c06d12b5141fced6c.ctex::
+::res://complete scenes/::0
+::res://scenes/::1752072152
+bob.tscn::PackedScene::596411330871534290::1752066563::0::1::::<><><>0<>0<><>::uid://cvsbm7lvjq0am::::res://scripts/character_body_2d.gd<>uid://cepu3cvdgwhud::::res://assets/charachters/SCR-20250709-mexp.png
+Room.tscn::PackedScene::142353046826710210::1752066568::0::1::::<><><>0<>0<><>::
+::res://scripts/::1752066452
+character_body_2d.gd::GDScript/GDScript::6284049728584465248::1752066452::0::1::::<>CharacterBody2D<><>0<>0<><>::

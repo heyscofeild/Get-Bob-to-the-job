@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://ca7sff0lmavi"]
+
+[ext_resource type="PackedScene" uid="uid://bi5cy55l2op5e" path="res://scenes/room_background.tscn" id="1_6pjp6"]
+[ext_resource type="PackedScene" uid="uid://iq52ppkfnxyo" path="res://scenes/bob.tscn" id="2_fabmv"]
+
+[node name="room" type="Node2D"]
+
+[node name="room background" parent="." instance=ExtResource("1_6pjp6")]
+
+[node name="Bob" parent="." instance=ExtResource("2_fabmv")]
+position = Vector2(-24, 4)
+scale = Vector2(2, 2)
+
+[node name="Camera2D" type="Camera2D" parent="Bob"]
+position = Vector2(0, -12.5)
+scale = Vector2(0.5, 0.5)
+zoom = Vector2(3, 3)

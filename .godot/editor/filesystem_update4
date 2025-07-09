@@ -1,0 +1,8 @@
+res://character_body_2d.tscn
+res://scenes/node_2d.tscn
+res://scenes/charachter.tscn
+res://scripts/character_body_2d.gd
+res://scenes/roombackground.tscn
+res://scenes/bob.tscn
+res://scenes/room_background.tscn
+res://complete scenes/Room.tscn

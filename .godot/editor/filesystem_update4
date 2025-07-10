@@ -11,3 +11,7 @@ res://houmtou.tscn
 res://scenes/houmtou_background.tscn
 res://complete scenes/houmtou.tscn
 res://complete scenes/trainstation.tscn
+res://scripts/area_2droom.gd
+res://scripts/area_2d.gd
+res://scripts/area_2dhoumtou_train.gd
+res://scripts/train_to_houmtou.gd

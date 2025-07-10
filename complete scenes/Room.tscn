@@ -1,7 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://ca7sff0lmavi"]
+[gd_scene load_steps=6 format=3 uid="uid://ca7sff0lmavi"]
 
 [ext_resource type="PackedScene" uid="uid://bi5cy55l2op5e" path="res://scenes/room_background.tscn" id="1_6pjp6"]
 [ext_resource type="PackedScene" uid="uid://iq52ppkfnxyo" path="res://scenes/bob.tscn" id="2_fabmv"]
+[ext_resource type="AudioStream" uid="uid://bjm5ehydcokck" path="res://music themes/fr4s - 8bit2.mp3" id="3_fabmv"]
+[ext_resource type="Script" uid="uid://bu0okkgej15b2" path="res://scripts/area_2droom.gd" id="4_panb5"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_60rja"]
+radius = 22.0
 
 [node name="room" type="Node2D"]
 
@@ -14,3 +19,23 @@ scale = Vector2(2, 2)
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(-24, -21)
 zoom = Vector2(3, 3)
+
+[node name="Fr4s-8Bit2" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(2, 1)
+stream = ExtResource("3_fabmv")
+volume_db = -0.069
+autoplay = true
+parameters/looping = true
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("4_panb5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(114, 19)
+shape = SubResource("CircleShape2D_60rja")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_Area2D_body_exited"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_area_2d_body_exited"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://bi5cy55l2op5e"]
+[gd_scene load_steps=15 format=3 uid="uid://bi5cy55l2op5e"]
 
 [ext_resource type="Texture2D" uid="uid://8e5lutf1ycc0" path="res://assets/places/houseasset-Recovered1.png" id="1_1xana"]
 
@@ -36,7 +36,10 @@ size = Vector2(20, 84.5)
 size = Vector2(14.5, 118)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rxrko"]
-size = Vector2(10, 47)
+size = Vector2(14.5, 61)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aoj0s"]
+size = Vector2(20, 8)
 
 [node name="room background" type="Sprite2D"]
 scale = Vector2(2, 2)
@@ -49,7 +52,7 @@ position = Vector2(53, 43.5)
 shape = SubResource("RectangleShape2D_n37m6")
 
 [node name="CollisionShape2D11" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(-33.5, -58.5)
+position = Vector2(-34, -55.5)
 shape = SubResource("RectangleShape2D_udtd3")
 
 [node name="CollisionShape2D10" type="CollisionShape2D" parent="StaticBody2D"]
@@ -89,5 +92,9 @@ position = Vector2(70.5, -70)
 shape = SubResource("RectangleShape2D_ml6nr")
 
 [node name="CollisionShape2D12" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(-13.5, 61.5)
+position = Vector2(-14.25, 54.5)
 shape = SubResource("RectangleShape2D_rxrko")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-35, -9.5)
+shape = SubResource("RectangleShape2D_aoj0s")

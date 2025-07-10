@@ -8,7 +8,7 @@
 [node name="room background" parent="." instance=ExtResource("1_6pjp6")]
 
 [node name="Bob" parent="." instance=ExtResource("2_fabmv")]
-position = Vector2(-24, 4)
+position = Vector2(-18, -36)
 scale = Vector2(2, 2)
 
 [node name="Camera2D" type="Camera2D" parent="."]

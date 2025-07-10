@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cv5dgpep60qdv" path="res://assets/places/layer_1_ground.png" id="1_duwll"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_c5qfa"]
-distance = -88.0
+distance = -90.48
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_pqfmm"]
 normal = Vector2(0, 1)

@@ -5,7 +5,7 @@
 [ext_resource type="AudioStream" uid="uid://buc3r1coc8fsy" path="res://music themes/wind1.wav" id="4_gfhfj"]
 [ext_resource type="AudioStream" uid="uid://bjm5ehydcokck" path="res://music themes/fr4s - 8bit2.mp3" id="4_pr481"]
 [ext_resource type="Script" uid="uid://vkuxl6ettpx7" path="res://scripts/train_to_houmtou.gd" id="5_gfhfj"]
-[ext_resource type="Script" uid="uid://bi334gt2wh7yy" path="res://scripts/train_firscity.gd" id="6_pr481"]
+[ext_resource type="Script" path="res://scripts/train_firscity.gd" id="6_pr481"]
 [ext_resource type="PackedScene" uid="uid://bncd2bedymv5j" path="res://scenes/npc_one.tscn" id="7_06c70"]
 [ext_resource type="PackedScene" uid="uid://77vsoa1ruwcy" path="res://scenes/npc_two.tscn" id="8_rke2w"]
 

@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://c6vtfijc8ffpi" path="res://assets/places/firstcity.png" id="1_7ogqr"]
 [ext_resource type="PackedScene" uid="uid://iq52ppkfnxyo" path="res://scenes/bob.tscn" id="2_pp68f"]
-[ext_resource type="Script" uid="uid://cgmrlt7g21yuc" path="res://scripts/firstcity.gd" id="3_pp68f"]
+[ext_resource type="Script" path="res://scripts/firstcity.gd" id="3_pp68f"]
 [ext_resource type="PackedScene" uid="uid://bncd2bedymv5j" path="res://scenes/npc_one.tscn" id="4_ci7jk"]
 [ext_resource type="AudioStream" uid="uid://bjm5ehydcokck" path="res://music themes/fr4s - 8bit2.mp3" id="5_hmwrk"]
 

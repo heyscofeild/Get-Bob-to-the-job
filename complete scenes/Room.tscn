@@ -2,11 +2,12 @@
 
 [ext_resource type="PackedScene" uid="uid://bi5cy55l2op5e" path="res://scenes/room_background.tscn" id="1_6pjp6"]
 [ext_resource type="PackedScene" uid="uid://iq52ppkfnxyo" path="res://scenes/bob.tscn" id="2_fabmv"]
-[ext_resource type="AudioStream" uid="uid://bjm5ehydcokck" path="res://music themes/fr4s - 8bit2.mp3" id="3_fabmv"]
+[ext_resource type="AudioStream" uid="uid://g51xpbybuy3l" path="res://music themes/We are safe.wav" id="4_60rja"]
 [ext_resource type="Script" uid="uid://bu0okkgej15b2" path="res://scripts/area_2droom.gd" id="4_panb5"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_60rja"]
-radius = 22.0
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_panb5"]
+radius = 13.0
+height = 44.0
 
 [node name="room" type="Node2D"]
 
@@ -17,22 +18,21 @@ position = Vector2(-18, -36)
 scale = Vector2(2, 2)
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(-24, -21)
-zoom = Vector2(3, 3)
-
-[node name="Fr4s-8Bit2" type="AudioStreamPlayer2D" parent="."]
-position = Vector2(2, 1)
-stream = ExtResource("3_fabmv")
-volume_db = -0.069
-autoplay = true
-parameters/looping = true
+position = Vector2(27, -37)
+zoom = Vector2(2.99, 2.99)
 
 [node name="Area2D" type="Area2D" parent="."]
 script = ExtResource("4_panb5")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(114, 19)
-shape = SubResource("CircleShape2D_60rja")
+position = Vector2(111, 19)
+shape = SubResource("CapsuleShape2D_panb5")
+
+[node name="WeAreSafe" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(0, 4)
+stream = ExtResource("4_60rja")
+volume_db = -16.497
+autoplay = true
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

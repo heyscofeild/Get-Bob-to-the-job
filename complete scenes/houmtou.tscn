@@ -6,8 +6,8 @@
 [ext_resource type="AudioStream" uid="uid://buc3r1coc8fsy" path="res://music themes/wind1.wav" id="4_hkmew"]
 [ext_resource type="Script" uid="uid://bc480iirk3wsx" path="res://scripts/area_2dhoumtou_train.gd" id="5_2fg06"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_a8gq6"]
-size = Vector2(36, 40)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2fg06"]
+size = Vector2(25, 20)
 
 [node name="houmtou" type="Node2D"]
 
@@ -15,11 +15,14 @@ size = Vector2(36, 40)
 position = Vector2(30, -86)
 
 [node name="Bob" parent="." instance=ExtResource("2_t3pf8")]
-position = Vector2(158, -3)
+position = Vector2(134, -0.02)
+scale = Vector2(0.91, 0.91)
 
 [node name="Camera_houmtou" type="Camera2D" parent="Bob"]
-position = Vector2(1, -79)
-zoom = Vector2(6, 6)
+position = Vector2(1.0989, -87.8901)
+zoom = Vector2(5, 5)
+limit_left = -326
+limit_right = 390
 limit_smoothed = true
 
 [node name="NextToYou" type="AudioStreamPlayer2D" parent="."]
@@ -36,8 +39,8 @@ autoplay = true
 script = ExtResource("5_2fg06")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(-323, -21)
-shape = SubResource("RectangleShape2D_a8gq6")
+position = Vector2(-316.5, -13)
+shape = SubResource("RectangleShape2D_2fg06")
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
 [connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]

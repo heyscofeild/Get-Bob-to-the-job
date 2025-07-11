@@ -14,11 +14,19 @@ config/name="GetBobToTheJob"
 run/main_scene="uid://ca7sff0lmavi"
 config/features=PackedStringArray("4.4", "Forward Plus")
 
+[autoload]
+
+DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
+
 [display]
 
-window/size/viewport_width=1400
-window/size/viewport_height=1400
+window/size/viewport_width=1800
+window/size/viewport_height=1200
 window/size/initial_position=Vector2i(20, 20)
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
 
 [input]
 

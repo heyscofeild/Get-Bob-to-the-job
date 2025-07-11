@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqc851jrcmox6"]
+
+[ext_resource type="Texture2D" uid="uid://123wm0qoks1q" path="res://assets/charachters/NPClilgirl.png" id="1_0b2s6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ojuym"]
+size = Vector2(148, 232)
+
+[node name="lilgirl" type="StaticBody2D"]
+
+[node name="NpClilgirl" type="Sprite2D" parent="."]
+position = Vector2(1, -107)
+texture = ExtResource("1_0b2s6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3, -110)
+shape = SubResource("RectangleShape2D_ojuym")

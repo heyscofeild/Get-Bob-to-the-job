@@ -2,6 +2,8 @@ extends CharacterBody2D
 
 const SPEED = 9000.0
 @onready var anim_sprite = $AnimatedSprite2D
+@onready var footsteps_sound: AudioStreamPlayer2D = $footsteps_sound
+@onready var timer: Timer = $Timer
 
 func _physics_process(delta: float) -> void:
 	# Direction input
@@ -12,7 +14,12 @@ func _physics_process(delta: float) -> void:
 	# Movement logic
 	if direction != Vector2.ZERO:
 		direction = direction.normalized()
-		velocity = direction * SPEED * delta 
+		velocity = direction * SPEED * delta
+		if timer.is_stopped():
+			footsteps_sound.play()
+			timer.start()
+		# Play footstep sound with delay
+		
 
 		# Animation logic
 		if abs(direction.x) > abs(direction.y):
@@ -27,13 +34,14 @@ func _physics_process(delta: float) -> void:
 				anim_sprite.play("walking backward")
 	else:
 		velocity = Vector2.ZERO
+		timer.stop()
 		anim_sprite.stop()
-		
+
 	move_and_slide()
-# Interaction key
+
+	# Interaction key
 	if Input.is_action_just_pressed("interact"):
 		interact_with_object()
-
 
 func interact_with_object(): 
 	print("Interacted!")

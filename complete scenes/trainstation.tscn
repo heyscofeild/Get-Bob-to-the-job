@@ -1,20 +1,23 @@
-[gd_scene load_steps=9 format=3 uid="uid://c3hfagrcngxrc"]
+[gd_scene load_steps=12 format=3 uid="uid://c3hfagrcngxrc"]
 
 [ext_resource type="Texture2D" uid="uid://bhyyj4dwgra6" path="res://assets/places/train_station.png" id="1_1ysrl"]
 [ext_resource type="PackedScene" uid="uid://iq52ppkfnxyo" path="res://scenes/bob.tscn" id="2_u1xp2"]
-[ext_resource type="AudioStream" uid="uid://deqwu8cek0sa5" path="res://music themes/void_5.mp3" id="3_ho27t"]
 [ext_resource type="AudioStream" uid="uid://buc3r1coc8fsy" path="res://music themes/wind1.wav" id="4_gfhfj"]
+[ext_resource type="AudioStream" uid="uid://bjm5ehydcokck" path="res://music themes/fr4s - 8bit2.mp3" id="4_pr481"]
 [ext_resource type="Script" uid="uid://vkuxl6ettpx7" path="res://scripts/train_to_houmtou.gd" id="5_gfhfj"]
+[ext_resource type="Script" uid="uid://bi334gt2wh7yy" path="res://scripts/train_firscity.gd" id="6_pr481"]
+[ext_resource type="PackedScene" uid="uid://bncd2bedymv5j" path="res://scenes/npc_one.tscn" id="7_06c70"]
+[ext_resource type="PackedScene" uid="uid://77vsoa1ruwcy" path="res://scenes/npc_two.tscn" id="8_rke2w"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1ysrl"]
 radius = 5.37675
 height = 18.9736
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ho27t"]
-size = Vector2(46, 65.75)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pr481"]
+height = 110.036
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_gfhfj"]
-size = Vector2(135, 40)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sd5nm"]
+height = 58.0
 
 [node name="trainstation" type="Node2D"]
 
@@ -49,7 +52,7 @@ position = Vector2(1, 0)
 polygon = PackedVector2Array(-193, -177, -209, -177, -208, 71, -195, 71)
 
 [node name="CollisionPolygon2D7" type="CollisionPolygon2D" parent="Sprite2D/StaticBody2D"]
-position = Vector2(-35.9062, -5.05511)
+position = Vector2(-34, -5)
 scale = Vector2(1.1875, 1.05871)
 polygon = PackedVector2Array(201.184, 131.344, 200.342, 93.5619, 236.553, 93.5619)
 
@@ -83,35 +86,54 @@ shape = SubResource("CapsuleShape2D_1ysrl")
 polygon = PackedVector2Array(-180, -4, -180, 4, -167, 8, -6, 10, -6, -2)
 
 [node name="Bob" parent="." instance=ExtResource("2_u1xp2")]
-position = Vector2(214, 65)
+position = Vector2(128, 48)
+up_direction = Vector2(1, 0)
 
-[node name="Camera2D" type="Camera2D" parent="Bob"]
-position = Vector2(1, -9)
-zoom = Vector2(7, 7)
-
-[node name="Void5" type="AudioStreamPlayer2D" parent="."]
-position = Vector2(0, 2)
-stream = ExtResource("3_ho27t")
-autoplay = true
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(21, -48)
+zoom = Vector2(3.53, 3.53)
 
 [node name="Wind1" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(-1, 1)
 stream = ExtResource("4_gfhfj")
 autoplay = true
 
+[node name="Fr4s-8Bit2" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(-3, 3)
+stream = ExtResource("4_pr481")
+autoplay = true
+
 [node name="Area2D" type="Area2D" parent="."]
 script = ExtResource("5_gfhfj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(227, 47)
-shape = SubResource("RectangleShape2D_ho27t")
+position = Vector2(140, 101)
+rotation = -1.58127
+shape = SubResource("CapsuleShape2D_pr481")
 
 [node name="Area2D2" type="Area2D" parent="."]
+script = ExtResource("6_pr481")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
-position = Vector2(139.5, 110)
-shape = SubResource("RectangleShape2D_gfhfj")
+position = Vector2(215, 46)
+shape = SubResource("CapsuleShape2D_sd5nm")
+
+[node name="npc_one" parent="." instance=ExtResource("7_06c70")]
+position = Vector2(201, -10)
+scale = Vector2(0.13, 0.13)
+skew = 0.141372
+
+[node name="npc_two" parent="." instance=ExtResource("8_rke2w")]
+position = Vector2(173, -9)
+scale = Vector2(0.13, 0.13)
+skew = -0.139626
+
+[node name="npc_one2" parent="." instance=ExtResource("7_06c70")]
+position = Vector2(-95, 23)
+scale = Vector2(0.12, 0.12)
 
 [connection signal="body_entered" from="Area2D" to="Bob" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
 [connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]
+[connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D2" to="Area2D2" method="_on_body_exited"]

@@ -1,9 +1,21 @@
+<<<<<<< HEAD
+VBoxContainer
+Control
+Button
+Label
+Panel
 CollisionShape2D
 Area2D
 CollisionPolygon2D
+=======
+Timer
+>>>>>>> b0ddb98a91fa8502408617d9593b2bf905bf3a56
 AudioStreamPlayer2D
-Camera2D
+CollisionShape2D
 StaticBody2D
 Sprite2D
+Area2D
+CollisionPolygon2D
+Camera2D
 AnimatedSprite2D
 CharacterBody2D

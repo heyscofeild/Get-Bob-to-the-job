@@ -5,8 +5,9 @@
 [ext_resource type="AudioStream" uid="uid://bjm5ehydcokck" path="res://music themes/fr4s - 8bit2.mp3" id="3_fabmv"]
 [ext_resource type="Script" uid="uid://bu0okkgej15b2" path="res://scripts/area_2droom.gd" id="4_panb5"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_60rja"]
-radius = 22.0
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_panb5"]
+radius = 13.0
+height = 44.0
 
 [node name="room" type="Node2D"]
 
@@ -31,8 +32,8 @@ parameters/looping = true
 script = ExtResource("4_panb5")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(114, 19)
-shape = SubResource("CircleShape2D_60rja")
+position = Vector2(111, 19)
+shape = SubResource("CapsuleShape2D_panb5")
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

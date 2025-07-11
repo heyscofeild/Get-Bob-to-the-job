@@ -1,0 +1,111 @@
+[gd_scene load_steps=11 format=3 uid="uid://cva1ntmha50fe"]
+
+[ext_resource type="Texture2D" uid="uid://c6vtfijc8ffpi" path="res://assets/places/firstcity.png" id="1_7ogqr"]
+[ext_resource type="PackedScene" uid="uid://iq52ppkfnxyo" path="res://scenes/bob.tscn" id="2_pp68f"]
+[ext_resource type="Script" uid="uid://cgmrlt7g21yuc" path="res://scripts/firstcity.gd" id="3_pp68f"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ci7jk"]
+radius = 20.025
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hmwrk"]
+size = Vector2(180, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_isgot"]
+size = Vector2(16, 17)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1ej18"]
+size = Vector2(76, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pp68f"]
+size = Vector2(26, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ci7jk"]
+size = Vector2(49, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mtkil"]
+size = Vector2(20, 64.5)
+
+[node name="first_city" type="Node2D"]
+
+[node name="Firstcity" type="Sprite2D" parent="."]
+position = Vector2(8, 6)
+texture = ExtResource("1_7ogqr")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Firstcity"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Firstcity/StaticBody2D"]
+position = Vector2(-2, -3)
+build_mode = 1
+polygon = PackedVector2Array(-181, -133, 151, -133, 151, -25, 185, -24, 184, 41, 151, 41, 152, 104, -181, 102)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Firstcity/StaticBody2D"]
+position = Vector2(-134, -94)
+shape = SubResource("CircleShape2D_ci7jk")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Firstcity/StaticBody2D"]
+position = Vector2(-87, 73)
+shape = SubResource("RectangleShape2D_hmwrk")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Firstcity/StaticBody2D"]
+position = Vector2(43, -43)
+shape = SubResource("RectangleShape2D_isgot")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Firstcity/StaticBody2D"]
+position = Vector2(-9, -121)
+shape = SubResource("RectangleShape2D_1ej18")
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Firstcity/StaticBody2D"]
+polygon = PackedVector2Array(62, -40, 137, -40, 137, -20, 62, -20)
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Firstcity/StaticBody2D"]
+build_mode = 1
+polygon = PackedVector2Array(-50, -37, -50, -72, -50, -98, 30, -98, 31, -72, -50, -72, 31, -73, 32, -37, 32, -54, 32, -44, -17, -44, -17, -54, -17, -30, -17, -54, -44, -54, -45, -29, -50, -54)
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="Firstcity/StaticBody2D"]
+polygon = PackedVector2Array(136, -96, 136, -130, 56, -131, 57, -96, 56, -58, 56, -58, 60, -58, 60, -49, 61, -58, 136, -57, 137, -49)
+
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="Firstcity/StaticBody2D"]
+polygon = PackedVector2Array(-86, -131, -84, -46, -113, -46, -113, -52, -90, -52, -90, -132, -87, -132)
+
+[node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="Firstcity/StaticBody2D"]
+polygon = PackedVector2Array(-181, -52, -146, -52, -144, -46, -180, -45)
+
+[node name="CollisionPolygon2D7" type="CollisionPolygon2D" parent="Firstcity/StaticBody2D"]
+polygon = PackedVector2Array(-86, -43, -86, -39, -81, -39, -81, -42, -82, -48, -82, -57, -80, -64, -86, -64, -87, -57, -85, -52)
+
+[node name="CollisionPolygon2D8" type="CollisionPolygon2D" parent="Firstcity/StaticBody2D"]
+build_mode = 1
+polygon = PackedVector2Array(22, 103, 23, 79, 146, 79, 144, 54, 116, 52, 115, 34, 80, 34, 80, 52, 51, 53, 52, 79, 146, 79, 146, 79, 146, 103)
+
+[node name="CollisionPolygon2D9" type="CollisionPolygon2D" parent="Firstcity/StaticBody2D"]
+polygon = PackedVector2Array(-91, 15, -84, 14, -84, 22, -85, 27, -84, 33, -83, 38, -90, 38, -90, 35, -87, 31, -88, 23)
+
+[node name="CollisionPolygon2D10" type="CollisionPolygon2D" parent="Firstcity/StaticBody2D"]
+polygon = PackedVector2Array(34, -84, 55, -84, 56, -90, 33, -90)
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Firstcity/StaticBody2D"]
+position = Vector2(-50, 60)
+shape = SubResource("RectangleShape2D_pp68f")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Firstcity/StaticBody2D"]
+position = Vector2(-21, 69)
+shape = SubResource("RectangleShape2D_ci7jk")
+
+[node name="Bob" parent="." instance=ExtResource("2_pp68f")]
+position = Vector2(-115, 24)
+
+[node name="Camera2D" type="Camera2D" parent="Bob"]
+position = Vector2(2, -7)
+zoom = Vector2(5.44, 5.44)
+process_callback = 0
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(0, 2)
+script = ExtResource("3_pp68f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-159, 11)
+shape = SubResource("RectangleShape2D_mtkil")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]

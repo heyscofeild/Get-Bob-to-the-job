@@ -15,3 +15,6 @@ res://scripts/area_2droom.gd
 res://scripts/area_2d.gd
 res://scripts/area_2dhoumtou_train.gd
 res://scripts/train_to_houmtou.gd
+res://complete scenes/first_city.tscn
+res://scripts/firstcity.gd
+res://scripts/train_firscity.gd

@@ -12,7 +12,12 @@ res://scripts/area_2d.gd
 res://scripts/area_2dhoumtou_train.gd
 res://scripts/train_to_houmtou.gd
 res://complete scenes/first_city.tscn
+<<<<<<< Updated upstream
 res://scripts/firstcity.gd
 res://scripts/train_firscity.gd
 res://scenes/npc_one.tscn
 >>>>>>> b0ddb98a91fa8502408617d9593b2bf905bf3a56
+=======
+res://scripts/main_menu.gd
+res://complete scenes/main menu.tscn
+>>>>>>> Stashed changes

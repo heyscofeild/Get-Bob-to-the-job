@@ -19,3 +19,6 @@ res://complete scenes/first_city.tscn
 res://scripts/firstcity.gd
 res://scripts/train_firscity.gd
 res://scenes/npc_one.tscn
+res://ui/main menu.tscn
+res://ui/main_menu.gd
+res://scenes/main menu.tscn

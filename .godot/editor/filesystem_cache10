@@ -1,5 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1752208324
+::res://::1752245904
+main_menu.gd::GDScript/GDScript::2587068743581519768::1752245744::0::1::::<>Control<><>0<>0<><>::
 ::res://addons/::1752206528
 ::res://addons/dialogue_manager/::1752206530
 constants.gd::GDScript/GDScript::4240262336831424009::1752206529::0::1::::DMConstants<>RefCounted<><>0<>0<><>::
@@ -94,38 +95,43 @@ firstcity.png::CompressedTexture2D/CompressedTexture2D::6993210439057762258::175
 houseasset-Recovered1.png::CompressedTexture2D/CompressedTexture2D::2326331584668409893::1752071920::1752072032::1::::<><><>0<>0<>2eea07b7cf7544d441d818bae88f1ca5<>res://.godot/imported/houseasset-Recovered1.png-5ff8e57981e7470c06d12b5141fced6c.ctex::
 layer_1_ground.png::CompressedTexture2D/CompressedTexture2D::6308932076901833043::1752102407::1752102464::1::::<><><>0<>0<>c4ad672ce34afcc18a63e552702062b3<>res://.godot/imported/layer_1_ground.png-fc52fd39e144b25d313de18b0043581f.ctex::
 train_station.png::CompressedTexture2D/CompressedTexture2D::86140072472003987::1752102407::1752102965::1::::<><><>0<>0<>38362792aa736c1a68e9deda53785172<>res://.godot/imported/train_station.png-0046fe5e5a3c81e44afb23fe6f020627.ctex::
-::res://complete scenes/::1752210609
-first_city.tscn::PackedScene::6248409957718135778::1752210609::0::1::::<><><>0<>0<><>::uid://c6vtfijc8ffpi::::res://assets/places/firstcity.png<>uid://iq52ppkfnxyo::::res://scenes/bob.tscn<>uid://cgmrlt7g21yuc::::res://scripts/firstcity.gd<>uid://bncd2bedymv5j::::res://scenes/npc_one.tscn<>uid://bjm5ehydcokck::::res://music themes/fr4s - 8bit2.mp3
-houmtou.tscn::PackedScene::7609417450442893641::1752210609::0::1::::<><><>0<>0<><>::uid://p1fq88et8qtg::::res://scenes/houmtou_background.tscn<>uid://iq52ppkfnxyo::::res://scenes/bob.tscn<>uid://dmm2k3nue4u32::::res://music themes/Next to You.mp3<>uid://buc3r1coc8fsy::::res://music themes/wind1.wav<>uid://bc480iirk3wsx::::res://scripts/area_2dhoumtou_train.gd
-Room.tscn::PackedScene::142353046826710210::1752210609::0::1::::<><><>0<>0<><>::uid://bi5cy55l2op5e::::res://scenes/room_background.tscn<>uid://iq52ppkfnxyo::::res://scenes/bob.tscn<>uid://bjm5ehydcokck::::res://music themes/fr4s - 8bit2.mp3<>uid://bu0okkgej15b2::::res://scripts/area_2droom.gd
-trainstation.tscn::PackedScene::6752883560003641760::1752210609::0::1::::<><><>0<>0<><>::uid://bhyyj4dwgra6::::res://assets/places/train_station.png<>uid://iq52ppkfnxyo::::res://scenes/bob.tscn<>uid://buc3r1coc8fsy::::res://music themes/wind1.wav<>uid://bjm5ehydcokck::::res://music themes/fr4s - 8bit2.mp3<>uid://vkuxl6ettpx7::::res://scripts/train_to_houmtou.gd<>uid://bi334gt2wh7yy::::res://scripts/train_firscity.gd<>uid://bncd2bedymv5j::::res://scenes/npc_one.tscn<>uid://77vsoa1ruwcy::::res://scenes/npc_two.tscn
-::res://music themes/::1752211204
+::res://complete scenes/::1752245673
+first_city.tscn::PackedScene/PackedScene::6248409957718135778::1752245618::0::1::::<><><>0<>0<><>::uid://c6vtfijc8ffpi::::res://assets/places/firstcity.png<>uid://iq52ppkfnxyo::::res://scenes/bob.tscn<>uid://cgmrlt7g21yuc::::res://scripts/firstcity.gd<>uid://bncd2bedymv5j::::res://scenes/npc_one.tscn<>uid://bjm5ehydcokck::::res://music themes/fr4s - 8bit2.mp3
+houmtou.tscn::PackedScene/PackedScene::7609417450442893641::1752245224::0::1::::<><><>0<>0<><>::uid://p1fq88et8qtg::::res://scenes/houmtou_background.tscn<>uid://iq52ppkfnxyo::::res://scenes/bob.tscn<>uid://dmm2k3nue4u32::::res://music themes/Next to You.mp3<>uid://buc3r1coc8fsy::::res://music themes/wind1.wav<>uid://bc480iirk3wsx::::res://scripts/area_2dhoumtou_train.gd
+Room.tscn::PackedScene/PackedScene::142353046826710210::1752245673::0::1::::<><><>0<>0<><>::uid://bi5cy55l2op5e::::res://scenes/room_background.tscn<>uid://iq52ppkfnxyo::::res://scenes/bob.tscn<>uid://g51xpbybuy3l::::res://music themes/We are safe.wav<>uid://bu0okkgej15b2::::res://scripts/area_2droom.gd
+trainstation.tscn::PackedScene/PackedScene::6752883560003641760::1752245618::0::1::::<><><>0<>0<><>::uid://bhyyj4dwgra6::::res://assets/places/train_station.png<>uid://iq52ppkfnxyo::::res://scenes/bob.tscn<>uid://buc3r1coc8fsy::::res://music themes/wind1.wav<>uid://bjm5ehydcokck::::res://music themes/fr4s - 8bit2.mp3<>uid://vkuxl6ettpx7::::res://scripts/train_to_houmtou.gd<>uid://bi334gt2wh7yy::::res://scripts/train_firscity.gd<>uid://bncd2bedymv5j::::res://scenes/npc_one.tscn<>uid://77vsoa1ruwcy::::res://scenes/npc_two.tscn
+::res://music themes/::1752245618
 claimed_by_the_void.mp3::AudioStreamMP3/AudioStreamMP3::3423827343105080560::1752157802::1752180373::1::::<><><>0<>0<>032163ac13a3d14a94093392d4c92ba1<>res://.godot/imported/claimed_by_the_void.mp3-f354682530a5fc17d7b3842d12e2b66e.mp3str::
 claimed_by_the_void_loop.mp3::AudioStreamMP3/AudioStreamMP3::5177648596972282435::1752157802::1752180373::1::::<><><>0<>0<>d8a537fb9ad0ba695d5b2bad6508e74c<>res://.godot/imported/claimed_by_the_void_loop.mp3-feb7f1ee4f749ffe7b4af5ad07819701.mp3str::
 claimed_by_the_void_loop.wav::AudioStreamWAV/AudioStreamWAV::2150667707845949471::1752157802::1752157804::1::::<><><>0<>0<>d5ef96ad0cc5e236dda5149f8d6d04c8<>res://.godot/imported/claimed_by_the_void_loop.wav-d76633f41e9c8c8e55159055f9c690a0.sample::
 claimed_by_the_void_mix.ogg::AudioStreamOggVorbis/AudioStreamOggVorbis::3480689787672117083::1752157802::1752180373::1::::<><><>0<>0<>96c405ad966799706335d8002a5787c7<>res://.godot/imported/claimed_by_the_void_mix.ogg-46c320342f3c5a61f789b9ad849dfb1d.oggvorbisstr::
 down to business.mp3::AudioStreamWAV/AudioStreamWAV::8972870687632970554::1752157810::1752180373::1::::<><><>0<>0<>8b62b2872a4611678bc7a9bdb7865264<>res://.godot/imported/down to business.mp3-c22d7aedae9ad0966fa4f35a2fc60834.sample::
-Ejimas1.ogg::AudioStreamOggVorbis::8060423379315289715::1752211204::1752211204::1::::<><><>0<>0<>d4cd890ba5a85c19993efc61c8caad95<>res://.godot/imported/Ejimas1.ogg-80602be1b58a1a8abe7b1aea2956fa0f.oggvorbisstr::
+Ejimas1.ogg::AudioStreamOggVorbis/AudioStreamOggVorbis::8060423379315289715::1752211204::1752211204::1::::<><><>0<>0<>d4cd890ba5a85c19993efc61c8caad95<>res://.godot/imported/Ejimas1.ogg-80602be1b58a1a8abe7b1aea2956fa0f.oggvorbisstr::
 fr4s - 8bit2.mp3::AudioStreamMP3/AudioStreamMP3::3044721867321021158::1752157810::1752209485::1::::<><><>0<>0<>ae323684a058f28f220f05f2b105f7f0<>res://.godot/imported/fr4s - 8bit2.mp3-d7a87686dc9c7a098150682b856e0b90.mp3str::
 Next to You.mp3::AudioStreamMP3/AudioStreamMP3::8027959416179631755::1752157815::1752180238::1::::<><><>0<>0<>6e2b748368e83f44ab0762ef8d748e78<>res://.godot/imported/Next to You.mp3-b590d18ee5a7d3d51b2e48d555c04344.mp3str::
 void_5.mp3::AudioStreamMP3/AudioStreamMP3::7474420695971621326::1752157825::1752180503::1::::<><><>0<>0<>d8f50ec542ecd40cbfb9d5e6125084b1<>res://.godot/imported/void_5.mp3-71cbc42dfce3934ec8481c1a9f03d92c.mp3str::
 We are safe.wav::AudioStreamWAV/AudioStreamWAV::484684900009386131::1752157825::1752180447::1::::<><><>0<>0<>87123a8cd6b7c7c90c7165ab114fc07b<>res://.godot/imported/We are safe.wav-2bbfb8302fdc005566429e2d0cedd6ad.sample::
 wind1.wav::AudioStreamWAV/AudioStreamWAV::3796058115592497144::1752157825::1752180212::1::::<><><>0<>0<>7f9e83e64af1735e7c7787180198d59b<>res://.godot/imported/wind1.wav-4b6d024e82a16a892e6bc028d7fba121.sample::
-::res://scenes/::1752209405
-bob.tscn::PackedScene::596411330871534290::1752209405::0::1::::<><><>0<>0<><>::uid://cvsbm7lvjq0am::::res://scripts/character_body_2d.gd<>uid://xiby3djla7op::::res://assets/charachters/BoB1d.png<>uid://dtllh86t7rvck::::res://assets/charachters/BoB2yemch.png<>uid://bvlmbh1ibjlla::::res://assets/charachters/BoB3df.png
-houmtou_background.tscn::PackedScene::1106840418299899332::1752209357::0::1::::<><><>0<>0<><>::uid://cv5dgpep60qdv::::res://assets/places/layer_1_ground.png<>uid://cqlng4u1brnnk::::res://scripts/area_2d.gd
+::res://scenes/::1752245618
+bob.tscn::PackedScene/PackedScene::596411330871534290::1752213851::0::1::::<><><>0<>0<><>::uid://cvsbm7lvjq0am::::res://scripts/character_body_2d.gd<>uid://xiby3djla7op::::res://assets/charachters/BoB1d.png<>uid://dtllh86t7rvck::::res://assets/charachters/BoB2yemch.png<>uid://bvlmbh1ibjlla::::res://assets/charachters/BoB3df.png<>uid://dmgavwktm70ct::::res://sounds/Ejimas1.ogg
+houmtou_background.tscn::PackedScene/PackedScene::1106840418299899332::1752209357::0::1::::<><><>0<>0<><>::uid://cv5dgpep60qdv::::res://assets/places/layer_1_ground.png<>uid://cqlng4u1brnnk::::res://scripts/area_2d.gd
 lilgirl.tscn::PackedScene/PackedScene::8288470919660288069::1752206046::0::1::::<><><>0<>0<><>::uid://123wm0qoks1q::::res://assets/charachters/NPClilgirl.png
-npc_one.tscn::PackedScene/PackedScene::3303234832780816281::1752205871::0::1::::<><><>0<>0<><>::uid://poim1slr2b0x::::res://assets/charachters/NPC.png
+npc_one.tscn::PackedScene/PackedScene::3303234832780816281::1752245224::0::1::::<><><>0<>0<><>::uid://poim1slr2b0x::::res://assets/charachters/NPC.png
 npc_two.tscn::PackedScene/PackedScene::2313411022217085348::1752206129::0::1::::<><><>0<>0<><>::uid://bbxcoy8mt6lh5::::res://assets/charachters/NPC2.png
 room_background.tscn::PackedScene/PackedScene::3010028681039479996::1752202686::0::1::::<><><>0<>0<><>::uid://8e5lutf1ycc0::::res://assets/places/houseasset-Recovered1.png
-::res://scripts/::1752201980
-area_2d.gd::GDScript/GDScript::5919372611815354704::1752186310::0::1::::<>Area2D<><>0<>0<><>::
-area_2dhoumtou_train.gd::GDScript/GDScript::2588714064777943667::1752186890::0::1::::<>Area2D<><>0<>0<><>::
-area_2droom.gd::GDScript/GDScript::3842675430840175893::1752201980::0::1::::<>Area2D<><>0<>0<><>::
-character_body_2d.gd::GDScript/GDScript::6284049728584465248::1752187537::0::1::::<>CharacterBody2D<><>0<>0<><>::
-firstcity.gd::GDScript/GDScript::5219799842560235466::1752199761::0::1::::<>Area2D<><>0<>0<><>::
-train_firscity.gd::GDScript/GDScript::3007486219479590400::1752200753::0::1::::<>Area2D<><>0<>0<><>::
-train_to_houmtou.gd::GDScript/GDScript::1495865532908105202::1752187806::0::1::::<>Area2D<><>0<>0<><>::
-::res://sounds/::1752211247
-Ejimas1.ogg::AudioStreamOggVorbis::8013953114774396379::1752211247::1752211248::1::::<><><>0<>0<>2fecb21e6006e1445c2aa3d100a7ceb6<>res://.godot/imported/Ejimas1.ogg-6e0c9fe732ac972aaecd680b17fe421e.oggvorbisstr::
-::res://ui/::1752155467
+::res://scripts/::1752245904
+area_2d.gd::GDScript/GDScript::5919372611815354704::1752245366::0::1::::<>Area2D<><>0<>0<><>::
+area_2dhoumtou_train.gd::GDScript/GDScript::2588714064777943667::1752245366::0::1::::<>Area2D<><>0<>0<><>::
+area_2droom.gd::GDScript/GDScript::3842675430840175893::1752245366::0::1::::<>Area2D<><>0<>0<><>::
+character_body_2d.gd::GDScript/GDScript::6284049728584465248::1752245366::0::1::::<>CharacterBody2D<><>0<>0<><>::
+firstcity.gd::GDScript/GDScript::5219799842560235466::1752245366::0::1::::<>Area2D<><>0<>0<><>::
+main_menu.gd::GDScript::2428879433257764687::1752245780::0::1::::<>Control<><>0<>0<><>::
+train_firscity.gd::GDScript/GDScript::3007486219479590400::1752245366::0::1::::<>Area2D<><>0<>0<><>::
+train_to_houmtou.gd::GDScript/GDScript::1495865532908105202::1752245366::0::1::::<>Area2D<><>0<>0<><>::
+::res://sounds/::1752213286
+Ejimas1.ogg::AudioStreamOggVorbis/AudioStreamOggVorbis::8013953114774396379::1752211247::1752213286::1::::<><><>0<>0<>ef1bb7993a894c42ae05a8e88fb8e714<>res://.godot/imported/Ejimas1.ogg-6e0c9fe732ac972aaecd680b17fe421e.oggvorbisstr::
+::res://ui/::1752245904
+city.png::CompressedTexture2D/CompressedTexture2D::1375405390486795157::1752245800::1752245800::1::::<><><>0<>0<>52f7f78a6c88e9269887fa1482756537<>res://.godot/imported/city.png-2de463820630558a85c996c83410d33d.ctex::
+main menu.tscn::PackedScene/PackedScene::-1::1752245768::0::1::::<><><>0<>0<><>::
+Pixel Digivolve Italic.otf::FontFile/FontFile::1364977513323421030::1752245826::1752245827::1::::<><><>0<>0<>cccc46b3bf95d82ce488dfe637c45d6d<>res://.godot/imported/Pixel Digivolve Italic.otf-d917f0afc5b1f7c91e25617abf1cc6ac.fontdata::
+Pixel Digivolve.otf::FontFile/FontFile::1142311844951732974::1752245806::1752245807::1::::<><><>0<>0<>9a27fb77c5d20aa47250e3d0bc0149b8<>res://.godot/imported/Pixel Digivolve.otf-c46580fe606bd8e85304ff0ab0f21bbe.fontdata::

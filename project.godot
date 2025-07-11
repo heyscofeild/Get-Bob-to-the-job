@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="GetBobToTheJob"
-run/main_scene="uid://ca7sff0lmavi"
+run/main_scene="uid://buxf2qjtwa6vn"
 config/features=PackedStringArray("4.4", "Forward Plus")
 
 [autoload]

@@ -2,8 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://bhyyj4dwgra6" path="res://assets/places/train_station.png" id="1_1ysrl"]
 [ext_resource type="PackedScene" uid="uid://iq52ppkfnxyo" path="res://scenes/bob.tscn" id="2_u1xp2"]
-[ext_resource type="AudioStream" uid="uid://deqwu8cek0sa5" path="res://music themes/void_5.mp3" id="3_ho27t"]
 [ext_resource type="AudioStream" uid="uid://buc3r1coc8fsy" path="res://music themes/wind1.wav" id="4_gfhfj"]
+[ext_resource type="AudioStream" uid="uid://bjm5ehydcokck" path="res://music themes/fr4s - 8bit2.mp3" id="4_pr481"]
 [ext_resource type="Script" uid="uid://vkuxl6ettpx7" path="res://scripts/train_to_houmtou.gd" id="5_gfhfj"]
 [ext_resource type="Script" uid="uid://bi334gt2wh7yy" path="res://scripts/train_firscity.gd" id="6_pr481"]
 
@@ -87,18 +87,18 @@ polygon = PackedVector2Array(-180, -4, -180, 4, -167, 8, -6, 10, -6, -2)
 position = Vector2(128, 48)
 up_direction = Vector2(1, 0)
 
-[node name="Camera2D" type="Camera2D" parent="Bob"]
-position = Vector2(1, -9)
-zoom = Vector2(7, 7)
-
-[node name="Void5" type="AudioStreamPlayer2D" parent="."]
-position = Vector2(0, 2)
-stream = ExtResource("3_ho27t")
-autoplay = true
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(21, -48)
+zoom = Vector2(3.53, 3.53)
 
 [node name="Wind1" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(-1, 1)
 stream = ExtResource("4_gfhfj")
+autoplay = true
+
+[node name="Fr4s-8Bit2" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(-3, 3)
+stream = ExtResource("4_pr481")
 autoplay = true
 
 [node name="Area2D" type="Area2D" parent="."]

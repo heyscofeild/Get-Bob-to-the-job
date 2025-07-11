@@ -126,5 +126,5 @@ animation = &"walking forward"
 autoplay = "walking forward"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, -14)
+position = Vector2(1, -13)
 shape = SubResource("RectangleShape2D_i2t6t")

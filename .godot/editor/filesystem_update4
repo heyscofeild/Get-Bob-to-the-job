@@ -18,3 +18,4 @@ res://scripts/train_to_houmtou.gd
 res://complete scenes/first_city.tscn
 res://scripts/firstcity.gd
 res://scripts/train_firscity.gd
+res://scenes/npc_one.tscn

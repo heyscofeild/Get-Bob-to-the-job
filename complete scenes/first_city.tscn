@@ -1,8 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://cva1ntmha50fe"]
+[gd_scene load_steps=13 format=3 uid="uid://cva1ntmha50fe"]
 
 [ext_resource type="Texture2D" uid="uid://c6vtfijc8ffpi" path="res://assets/places/firstcity.png" id="1_7ogqr"]
 [ext_resource type="PackedScene" uid="uid://iq52ppkfnxyo" path="res://scenes/bob.tscn" id="2_pp68f"]
 [ext_resource type="Script" uid="uid://cgmrlt7g21yuc" path="res://scripts/firstcity.gd" id="3_pp68f"]
+[ext_resource type="PackedScene" uid="uid://bncd2bedymv5j" path="res://scenes/npc_one.tscn" id="4_ci7jk"]
+[ext_resource type="AudioStream" uid="uid://bjm5ehydcokck" path="res://music themes/fr4s - 8bit2.mp3" id="5_hmwrk"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ci7jk"]
 radius = 20.025
@@ -92,12 +94,17 @@ position = Vector2(-21, 69)
 shape = SubResource("RectangleShape2D_ci7jk")
 
 [node name="Bob" parent="." instance=ExtResource("2_pp68f")]
-position = Vector2(-115, 24)
+position = Vector2(-119, 17)
 
-[node name="Camera2D" type="Camera2D" parent="Bob"]
-position = Vector2(2, -7)
-zoom = Vector2(5.44, 5.44)
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(14, -14)
+zoom = Vector2(4.38, 4.38)
 process_callback = 0
+
+[node name="Fr4s-8Bit2" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(0, 2)
+stream = ExtResource("5_hmwrk")
+autoplay = true
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2(0, 2)
@@ -106,6 +113,10 @@ script = ExtResource("3_pp68f")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(-159, 11)
 shape = SubResource("RectangleShape2D_mtkil")
+
+[node name="npc_one" parent="Area2D" instance=ExtResource("4_ci7jk")]
+position = Vector2(-54, -27)
+scale = Vector2(0.12, 0.12)
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
 [connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]

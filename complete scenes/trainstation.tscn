@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://c3hfagrcngxrc"]
+[gd_scene load_steps=12 format=3 uid="uid://c3hfagrcngxrc"]
 
 [ext_resource type="Texture2D" uid="uid://bhyyj4dwgra6" path="res://assets/places/train_station.png" id="1_1ysrl"]
 [ext_resource type="PackedScene" uid="uid://iq52ppkfnxyo" path="res://scenes/bob.tscn" id="2_u1xp2"]
@@ -6,6 +6,8 @@
 [ext_resource type="AudioStream" uid="uid://bjm5ehydcokck" path="res://music themes/fr4s - 8bit2.mp3" id="4_pr481"]
 [ext_resource type="Script" uid="uid://vkuxl6ettpx7" path="res://scripts/train_to_houmtou.gd" id="5_gfhfj"]
 [ext_resource type="Script" uid="uid://bi334gt2wh7yy" path="res://scripts/train_firscity.gd" id="6_pr481"]
+[ext_resource type="PackedScene" uid="uid://bncd2bedymv5j" path="res://scenes/npc_one.tscn" id="7_06c70"]
+[ext_resource type="PackedScene" uid="uid://77vsoa1ruwcy" path="res://scenes/npc_two.tscn" id="8_rke2w"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1ysrl"]
 radius = 5.37675
@@ -115,6 +117,20 @@ script = ExtResource("6_pr481")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
 position = Vector2(215, 46)
 shape = SubResource("CapsuleShape2D_sd5nm")
+
+[node name="npc_one" parent="." instance=ExtResource("7_06c70")]
+position = Vector2(201, -10)
+scale = Vector2(0.13, 0.13)
+skew = 0.141372
+
+[node name="npc_two" parent="." instance=ExtResource("8_rke2w")]
+position = Vector2(173, -9)
+scale = Vector2(0.13, 0.13)
+skew = -0.139626
+
+[node name="npc_one2" parent="." instance=ExtResource("7_06c70")]
+position = Vector2(-95, 23)
+scale = Vector2(0.12, 0.12)
 
 [connection signal="body_entered" from="Area2D" to="Bob" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

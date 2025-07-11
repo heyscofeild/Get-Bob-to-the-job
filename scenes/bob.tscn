@@ -1,9 +1,10 @@
-[gd_scene load_steps=19 format=3 uid="uid://iq52ppkfnxyo"]
+[gd_scene load_steps=20 format=3 uid="uid://iq52ppkfnxyo"]
 
 [ext_resource type="Script" uid="uid://cvsbm7lvjq0am" path="res://scripts/character_body_2d.gd" id="1_eiv2h"]
 [ext_resource type="Texture2D" uid="uid://xiby3djla7op" path="res://assets/charachters/BoB1d.png" id="2_i2t6t"]
 [ext_resource type="Texture2D" uid="uid://dtllh86t7rvck" path="res://assets/charachters/BoB2yemch.png" id="3_eiv2h"]
 [ext_resource type="Texture2D" uid="uid://bvlmbh1ibjlla" path="res://assets/charachters/BoB3df.png" id="4_1c5bq"]
+[ext_resource type="AudioStream" uid="uid://dmgavwktm70ct" path="res://sounds/Ejimas1.ogg" id="5_eiv2h"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_s7djh"]
 atlas = ExtResource("2_i2t6t")
@@ -128,3 +129,14 @@ autoplay = "walking forward"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, -13)
 shape = SubResource("RectangleShape2D_i2t6t")
+
+[node name="footsteps_sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_eiv2h")
+volume_db = -11.341
+pitch_scale = 1.01
+
+[node name="Timer" type="Timer" parent="."]
+process_callback = 0
+wait_time = 0.214
+autostart = true
+ignore_time_scale = true

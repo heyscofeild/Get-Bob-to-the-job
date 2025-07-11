@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dm3r83x1si7tn"
+path="res://.godot/imported/Ejimas1.ogg-80602be1b58a1a8abe7b1aea2956fa0f.oggvorbisstr"
+
+[deps]
+
+source_file="res://music themes/Ejimas1.ogg"
+dest_files=["res://.godot/imported/Ejimas1.ogg-80602be1b58a1a8abe7b1aea2956fa0f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

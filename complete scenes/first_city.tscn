@@ -115,7 +115,7 @@ position = Vector2(-159, 11)
 shape = SubResource("RectangleShape2D_mtkil")
 
 [node name="npc_one" parent="Area2D" instance=ExtResource("4_ci7jk")]
-position = Vector2(-54, -27)
+position = Vector2(-57, -25)
 scale = Vector2(0.12, 0.12)
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

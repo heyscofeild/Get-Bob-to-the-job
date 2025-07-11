@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://c6cypb6i7qbnx"
-path="res://.godot/imported/Pixel Digivolve.otf-2937f2c12f8d3ee34980b77809bcd3cd.fontdata"
+uid="uid://c4l88edk84h7x"
+path="res://.godot/imported/Pixel Digivolve Italic.otf-d917f0afc5b1f7c91e25617abf1cc6ac.fontdata"
 
 [deps]
 
-source_file="res://scenes/Pixel Digivolve.otf"
-dest_files=["res://.godot/imported/Pixel Digivolve.otf-2937f2c12f8d3ee34980b77809bcd3cd.fontdata"]
+source_file="res://ui/Pixel Digivolve Italic.otf"
+dest_files=["res://.godot/imported/Pixel Digivolve Italic.otf-d917f0afc5b1f7c91e25617abf1cc6ac.fontdata"]
 
 [params]
 

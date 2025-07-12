@@ -19,7 +19,7 @@ func _physics_process(delta: float) -> void:
 			footsteps_sound.play()
 			timer.start()
 		# Play footstep sound with delay
-		
+		move_and_slide()
 
 		# Animation logic
 		if abs(direction.x) > abs(direction.y):
@@ -37,7 +37,7 @@ func _physics_process(delta: float) -> void:
 		timer.stop()
 		anim_sprite.stop()
 
-	move_and_slide()
+	
 
 	# Interaction key
 	if Input.is_action_just_pressed("interact"):

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bkuoclx15s33a"
-path="res://.godot/imported/city.png-fa18ec977fd5fa0de9c20815e4781e65.ctex"
+uid="uid://ceuosg6u8egqk"
+path="res://.godot/imported/NPC_fertass2.png-5bb0bf2d2992778f400e74d84c12b561.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/city.png"
-dest_files=["res://.godot/imported/city.png-fa18ec977fd5fa0de9c20815e4781e65.ctex"]
+source_file="res://assets/charachters/NPC_fertass2.png"
+dest_files=["res://.godot/imported/NPC_fertass2.png-5bb0bf2d2992778f400e74d84c12b561.ctex"]
 
 [params]
 

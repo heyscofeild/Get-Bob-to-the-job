@@ -1,0 +1,138 @@
+[gd_scene load_steps=14 format=3 uid="uid://d0hqc6t5ttyk6"]
+
+[ext_resource type="Texture2D" uid="uid://c6ax8ggftofyd" path="res://assets/places/5th_reworked.png" id="1_7tc8m"]
+[ext_resource type="Texture2D" uid="uid://b4nm33ci1ykn6" path="res://assets/places/bus_miyett.png" id="2_7tc8m"]
+[ext_resource type="PackedScene" uid="uid://iq52ppkfnxyo" path="res://scenes/bob.tscn" id="3_lbpdl"]
+[ext_resource type="AudioStream" uid="uid://bjm5ehydcokck" path="res://music themes/fr4s - 8bit2.mp3" id="4_lbpdl"]
+[ext_resource type="Script" uid="uid://bbkh531srrus6" path="res://scripts/area_5thto4th.gd" id="5_ppiqs"]
+[ext_resource type="Script" uid="uid://b53kpl3il7e5b" path="res://scripts/back_to_train.gd" id="5_x76ws"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ppiqs"]
+size = Vector2(32.8608, 12.9184)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x76ws"]
+size = Vector2(28.8669, 11.322)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_76gtw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cpxol"]
+size = Vector2(27.2664, 14.1035)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h8yap"]
+size = Vector2(50.0202, 20)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_x76ws"]
+radius = 15.0096
+height = 116.119
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_76gtw"]
+size = Vector2(45.9992, 24.5314)
+
+[node name="5th_scene" type="Node2D"]
+scale = Vector2(-1, 1)
+
+[node name="5ThReworked" type="Sprite2D" parent="."]
+position = Vector2(2.75002, 0.749977)
+scale = Vector2(1.472, 1.377)
+texture = ExtResource("1_7tc8m")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="5ThReworked"]
+position = Vector2(-0.26302, 2.2096)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="5ThReworked/StaticBody2D"]
+position = Vector2(-58.8287, -36.5109)
+shape = SubResource("RectangleShape2D_ppiqs")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="5ThReworked/StaticBody2D"]
+position = Vector2(-95.5113, 44.4846)
+shape = SubResource("RectangleShape2D_x76ws")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="5ThReworked/StaticBody2D"]
+position = Vector2(43.0475, -44.1919)
+shape = SubResource("CircleShape2D_76gtw")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="5ThReworked/StaticBody2D"]
+position = Vector2(-164.387, 45.1389)
+shape = SubResource("RectangleShape2D_cpxol")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="5ThReworked/StaticBody2D"]
+position = Vector2(-19.0251, -19.2551)
+build_mode = 1
+polygon = PackedVector2Array(-165.515, -121.028, 172.102, -119.318, 169.572, 120.344, -165.702, 125.631)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="5ThReworked/StaticBody2D"]
+polygon = PackedVector2Array(75.3989, -133.312, 76.3633, -36.1953, 27.2664, -35.6692, 27.617, -27.7778, 80.2209, -26.7256, 81.273, -132.155)
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="5ThReworked/StaticBody2D"]
+polygon = PackedVector2Array(145.362, -130.471, 146.502, 99.2214, 149.22, 101.115, 148.694, -130.261)
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="5ThReworked/StaticBody2D"]
+position = Vector2(-745.442, -3.94455)
+polygon = PackedVector2Array(685.561, 46.2425, 685.035, 54.9757, 819.613, 54.5548, 819.613, 100.535, 824.874, 101.588, 824.523, 44.8747, 687.051, 46.453)
+
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="5ThReworked/StaticBody2D"]
+polygon = PackedVector2Array(-158.601, -132.471, -158.25, -102.799, -158.776, -39.0362, -158.951, -65.867, -122.479, -65.867, -123.093, -52.9251, -80.3963, -51.3468, -79.4319, -41.6667, -79.8703, -134.47)
+
+[node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="5ThReworked/StaticBody2D"]
+polygon = PackedVector2Array(-49.2723, -131.734, -48.7463, -100.274, -48.9216, -39.878, -46.7298, -60.8165, -18.499, -61.2374, -17.973, -48.1902, 29.1075, -48.1902, 29.8089, -38.6153, 28.7568, -63.1313, 29.4582, -99.2214, 28.9321, -130.892)
+
+[node name="CollisionPolygon2D7" type="CollisionPolygon2D" parent="5ThReworked/StaticBody2D"]
+position = Vector2(0.175346, -0.210438)
+polygon = PackedVector2Array(-72.6811, 101.957, -72.5057, 86.069, -82.4128, 87.4369, -82.4128, 62.8157, -123.795, 61.7635, -129.669, 59.3434, -129.055, 50.0842, -149.044, 50.2946, -149.395, 100.589)
+
+[node name="CollisionPolygon2D8" type="CollisionPolygon2D" parent="5ThReworked/StaticBody2D"]
+polygon = PackedVector2Array(-63.2124, 99.3266, -65.4042, 92.2769, -63.037, 79.9663, -36.8227, 79.9663, -35.5076, 54.5034, -6.57549, 54.0825, -7.36455, 35.1431, 26.9157, 34.5118, 27.091, 52.9251, 55.1464, 54.0825, 54.7081, 97.7483)
+
+[node name="BusMiyett" type="Sprite2D" parent="5ThReworked"]
+position = Vector2(-121.481, 6.56779)
+scale = Vector2(0.472811, 0.689617)
+texture = ExtResource("2_7tc8m")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="5ThReworked/BusMiyett"]
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="5ThReworked/BusMiyett/StaticBody2D"]
+position = Vector2(-24.3754, -34.3903)
+scale = Vector2(1.741, 1.47424)
+shape = SubResource("RectangleShape2D_h8yap")
+
+[node name="Bob" parent="5ThReworked" instance=ExtResource("3_lbpdl")]
+position = Vector2(71.5036, 15.3063)
+scale = Vector2(-0.823, 0.853)
+motion_mode = 1
+slide_on_ceiling = false
+floor_stop_on_slope = false
+
+[node name="Area2D" type="Area2D" parent="5ThReworked"]
+position = Vector2(-133.215, 12.2599)
+rotation = 1.56254
+scale = Vector2(0.437843, 0.345129)
+skew = -0.00503147
+script = ExtResource("5_ppiqs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="5ThReworked/Area2D"]
+position = Vector2(25.8046, -3.9922)
+shape = SubResource("CapsuleShape2D_x76ws")
+
+[node name="Area2D2" type="Area2D" parent="5ThReworked"]
+script = ExtResource("5_x76ws")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="5ThReworked/Area2D2"]
+position = Vector2(112.368, -114.259)
+shape = SubResource("RectangleShape2D_76gtw")
+
+[node name="Fr4s-8Bit2" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(1, 21)
+stream = ExtResource("4_lbpdl")
+volume_db = -20.441
+autoplay = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-25, -17)
+scale = Vector2(0.454555, 0.448356)
+zoom = Vector2(3.32, 3.32)
+
+[connection signal="body_entered" from="5ThReworked/Area2D" to="5ThReworked/Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="5ThReworked/Area2D" to="5ThReworked/Area2D" method="_on_body_exited"]
+[connection signal="body_entered" from="5ThReworked/Area2D2" to="5ThReworked/Bob" method="_on_area_2d_2_body_entered"]
+[connection signal="body_entered" from="5ThReworked/Area2D2" to="5ThReworked/Area2D2" method="_on_body_entered"]
+[connection signal="body_exited" from="5ThReworked/Area2D2" to="5ThReworked/Area2D2" method="_on_body_exited"]

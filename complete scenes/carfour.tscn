@@ -1,0 +1,71 @@
+[gd_scene load_steps=9 format=3 uid="uid://dqi3171our0ww"]
+
+[ext_resource type="Texture2D" uid="uid://croxr6x064em8" path="res://assets/places/the8.png" id="1_pbple"]
+[ext_resource type="PackedScene" uid="uid://iq52ppkfnxyo" path="res://scenes/bob.tscn" id="2_11gdc"]
+[ext_resource type="Script" uid="uid://n1hsrpmapgwi" path="res://scripts/reroadpart2.gd" id="3_11gdc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pbple"]
+size = Vector2(87.0144, 12.1583)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_11gdc"]
+size = Vector2(89.9281, 13.5971)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4v2xo"]
+size = Vector2(33.741, 30.1439)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qkgwc"]
+radius = 16.6092
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_55g5a"]
+radius = 8.0
+height = 60.1297
+
+[node name="endscene" type="Node2D"]
+
+[node name="The8" type="Sprite2D" parent="."]
+position = Vector2(-5, -37)
+scale = Vector2(1.39, 1.39)
+texture = ExtResource("1_pbple")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="The8"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="The8/StaticBody2D"]
+position = Vector2(-125.558, 10.0719)
+shape = SubResource("RectangleShape2D_pbple")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="The8/StaticBody2D"]
+position = Vector2(119.784, 16.223)
+shape = SubResource("RectangleShape2D_11gdc")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="The8/StaticBody2D"]
+position = Vector2(-123.741, 53.9568)
+shape = SubResource("RectangleShape2D_4v2xo")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="The8/StaticBody2D"]
+position = Vector2(136.691, 61.8705)
+shape = SubResource("CircleShape2D_qkgwc")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="The8/StaticBody2D"]
+polygon = PackedVector2Array(-38.8489, 23.741, -79.1367, 24.4604, -79.8561, -106.475, 71.9425, -105.036, 73.3813, 26.6187, 26.6187, 23.741, 28.777, 0.719425, -38.1295, -2.15827, -38.8489, 21.5827)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="The8/StaticBody2D"]
+build_mode = 1
+polygon = PackedVector2Array(-170.504, -117.266, 163.309, -116.547, 165.468, 106.475, -172.662, 106.475)
+
+[node name="Bob" parent="The8" instance=ExtResource("2_11gdc")]
+position = Vector2(-2.15827, 71.223)
+
+[node name="Camera2D" type="Camera2D" parent="The8"]
+position = Vector2(-4.31655, -5.7554)
+zoom = Vector2(3.83, 3.83)
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("3_11gdc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-6, 98)
+rotation = -1.55683
+shape = SubResource("CapsuleShape2D_55g5a")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]

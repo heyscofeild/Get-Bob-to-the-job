@@ -1,23 +1,22 @@
-[gd_scene load_steps=12 format=3 uid="uid://c3hfagrcngxrc"]
+[gd_scene load_steps=10 format=3 uid="uid://c3hfagrcngxrc"]
 
 [ext_resource type="Texture2D" uid="uid://bhyyj4dwgra6" path="res://assets/places/train_station.png" id="1_1ysrl"]
 [ext_resource type="PackedScene" uid="uid://iq52ppkfnxyo" path="res://scenes/bob.tscn" id="2_u1xp2"]
+[ext_resource type="AudioStream" uid="uid://dmm2k3nue4u32" path="res://music themes/Next to You.mp3" id="4_06c70"]
 [ext_resource type="AudioStream" uid="uid://buc3r1coc8fsy" path="res://music themes/wind1.wav" id="4_gfhfj"]
-[ext_resource type="AudioStream" uid="uid://bjm5ehydcokck" path="res://music themes/fr4s - 8bit2.mp3" id="4_pr481"]
 [ext_resource type="Script" uid="uid://vkuxl6ettpx7" path="res://scripts/train_to_houmtou.gd" id="5_gfhfj"]
-[ext_resource type="Script" path="res://scripts/train_firscity.gd" id="6_pr481"]
-[ext_resource type="PackedScene" uid="uid://bncd2bedymv5j" path="res://scenes/npc_one.tscn" id="7_06c70"]
-[ext_resource type="PackedScene" uid="uid://77vsoa1ruwcy" path="res://scenes/npc_two.tscn" id="8_rke2w"]
+[ext_resource type="Script" uid="uid://bi334gt2wh7yy" path="res://scripts/train_firscity.gd" id="6_pr481"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1ysrl"]
 radius = 5.37675
 height = 18.9736
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pr481"]
-height = 110.036
+height = 50.1147
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sd5nm"]
-height = 58.0
+radius = 10.0204
+height = 89.9741
 
 [node name="trainstation" type="Node2D"]
 
@@ -98,39 +97,26 @@ position = Vector2(-1, 1)
 stream = ExtResource("4_gfhfj")
 autoplay = true
 
-[node name="Fr4s-8Bit2" type="AudioStreamPlayer2D" parent="."]
-position = Vector2(-3, 3)
-stream = ExtResource("4_pr481")
-autoplay = true
+[node name="NextToYou" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(2, 3)
+stream = ExtResource("4_06c70")
+volume_db = -22.593
 
 [node name="Area2D" type="Area2D" parent="."]
 script = ExtResource("5_gfhfj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(140, 101)
-rotation = -1.58127
+position = Vector2(213, 46)
+rotation = -3.16254
 shape = SubResource("CapsuleShape2D_pr481")
 
 [node name="Area2D2" type="Area2D" parent="."]
 script = ExtResource("6_pr481")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
-position = Vector2(215, 46)
+position = Vector2(138, 100)
+rotation = -1.56032
 shape = SubResource("CapsuleShape2D_sd5nm")
-
-[node name="npc_one" parent="." instance=ExtResource("7_06c70")]
-position = Vector2(201, -10)
-scale = Vector2(0.13, 0.13)
-skew = 0.141372
-
-[node name="npc_two" parent="." instance=ExtResource("8_rke2w")]
-position = Vector2(173, -9)
-scale = Vector2(0.13, 0.13)
-skew = -0.139626
-
-[node name="npc_one2" parent="." instance=ExtResource("7_06c70")]
-position = Vector2(-95, 23)
-scale = Vector2(0.12, 0.12)
 
 [connection signal="body_entered" from="Area2D" to="Bob" method="_on_area_2d_body_entered"]
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

@@ -1,10 +1,10 @@
-[gd_scene load_steps=13 format=3 uid="uid://cva1ntmha50fe"]
+[gd_scene load_steps=14 format=3 uid="uid://cva1ntmha50fe"]
 
 [ext_resource type="Texture2D" uid="uid://c6vtfijc8ffpi" path="res://assets/places/firstcity.png" id="1_7ogqr"]
 [ext_resource type="PackedScene" uid="uid://iq52ppkfnxyo" path="res://scenes/bob.tscn" id="2_pp68f"]
-[ext_resource type="Script" path="res://scripts/firstcity.gd" id="3_pp68f"]
-[ext_resource type="PackedScene" uid="uid://bncd2bedymv5j" path="res://scenes/npc_one.tscn" id="4_ci7jk"]
+[ext_resource type="Script" uid="uid://cgmrlt7g21yuc" path="res://scripts/firstcity.gd" id="3_pp68f"]
 [ext_resource type="AudioStream" uid="uid://bjm5ehydcokck" path="res://music themes/fr4s - 8bit2.mp3" id="5_hmwrk"]
+[ext_resource type="Script" uid="uid://bhq38ramtwrbp" path="res://scripts/area_first_5th.gd" id="6_isgot"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ci7jk"]
 radius = 20.025
@@ -27,10 +27,15 @@ size = Vector2(49, 20)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mtkil"]
 size = Vector2(20, 64.5)
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1ej18"]
+radius = 7.0
+height = 56.0
+
 [node name="first_city" type="Node2D"]
 
 [node name="Firstcity" type="Sprite2D" parent="."]
 position = Vector2(8, 6)
+scale = Vector2(1.31, 1.31)
 texture = ExtResource("1_7ogqr")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Firstcity"]
@@ -93,12 +98,13 @@ shape = SubResource("RectangleShape2D_pp68f")
 position = Vector2(-21, 69)
 shape = SubResource("RectangleShape2D_ci7jk")
 
-[node name="Bob" parent="." instance=ExtResource("2_pp68f")]
-position = Vector2(-119, 17)
+[node name="Bob" parent="Firstcity" instance=ExtResource("2_pp68f")]
+position = Vector2(-5.34351, 23.6641)
+scale = Vector2(0.763359, 0.763359)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(14, -14)
-zoom = Vector2(4.38, 4.38)
+zoom = Vector2(3.48, 3.48)
 process_callback = 0
 
 [node name="Fr4s-8Bit2" type="AudioStreamPlayer2D" parent="."]
@@ -111,12 +117,18 @@ position = Vector2(0, 2)
 script = ExtResource("3_pp68f")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(-159, 11)
+position = Vector2(-207, 15)
 shape = SubResource("RectangleShape2D_mtkil")
 
-[node name="npc_one" parent="Area2D" instance=ExtResource("4_ci7jk")]
-position = Vector2(-57, -25)
-scale = Vector2(0.12, 0.12)
+[node name="Area2D2" type="Area2D" parent="."]
+script = ExtResource("6_isgot")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2(227, 15)
+rotation = -3.13112
+shape = SubResource("CapsuleShape2D_1ej18")
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
 [connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]
+[connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D2" to="Area2D2" method="_on_body_exited"]

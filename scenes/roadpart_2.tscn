@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=3 uid="uid://cikexv3is27gy"]
+
+[ext_resource type="PackedScene" uid="uid://vwy8kg8owhc2" path="res://scenes/roadtwobackground.tscn" id="1_gpc5g"]
+[ext_resource type="PackedScene" uid="uid://iq52ppkfnxyo" path="res://scenes/bob.tscn" id="2_s3rh2"]
+[ext_resource type="Script" uid="uid://dp2r50tfuhnd5" path="res://scripts/back_road_onee.gd" id="3_s3rh2"]
+[ext_resource type="Script" uid="uid://1wv34a86f1qe" path="res://scripts/to_carfour.gd" id="4_impiu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_impiu"]
+size = Vector2(20, 47.5)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gpc5g"]
+height = 60.0
+
+[node name="roadpart2" type="Node2D"]
+
+[node name="roadtwobackground" parent="." instance=ExtResource("1_gpc5g")]
+position = Vector2(0, 2)
+scale = Vector2(0.16, 0.16)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-1, -19)
+zoom = Vector2(3.57, 3.57)
+
+[node name="Bob" parent="." instance=ExtResource("2_s3rh2")]
+position = Vector2(-142, 12)
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("3_s3rh2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-208, 1)
+shape = SubResource("RectangleShape2D_impiu")
+
+[node name="Area2D2" type="Area2D" parent="."]
+script = ExtResource("4_impiu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2(214, 9)
+shape = SubResource("CapsuleShape2D_gpc5g")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]
+[connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D2" to="Area2D2" method="_on_body_exited"]

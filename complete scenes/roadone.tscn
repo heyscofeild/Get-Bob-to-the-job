@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bivi6ihvdasnh"]
+
+[ext_resource type="PackedScene" uid="uid://cxjq4f8kg4ogt" path="res://scenes/roadone_background.tscn" id="1_p14t4"]
+[ext_resource type="PackedScene" uid="uid://iq52ppkfnxyo" path="res://scenes/bob.tscn" id="2_sua14"]
+
+[node name="roadone" type="Node2D"]
+
+[node name="roadone_background" parent="." instance=ExtResource("1_p14t4")]
+position = Vector2(1, 0)
+scale = Vector2(1.381, 1.38)
+
+[node name="Bob" parent="roadone_background" instance=ExtResource("2_sua14")]
+position = Vector2(-148.811, 22)
+scale = Vector2(0.8, 0.8)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(1, -19)
+zoom = Vector2(3.3, 3.3)

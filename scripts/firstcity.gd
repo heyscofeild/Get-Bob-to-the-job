@@ -12,4 +12,4 @@ func _on_body_exited(body: PhysicsBody2D) -> void:
 func _process(delta):
 	if entered == true:
 		if Input.is_action_just_pressed("interact"):
-			get_tree().change_scene_to_file("res://complete scenes/trainstation.tscn")
+			get_tree().change_scene_to_file("res://complete scenes/roadtwo.tscn")

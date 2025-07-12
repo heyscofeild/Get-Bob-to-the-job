@@ -1,7 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://bivi6ihvdasnh"]
+[gd_scene load_steps=7 format=3 uid="uid://bivi6ihvdasnh"]
 
 [ext_resource type="PackedScene" uid="uid://cxjq4f8kg4ogt" path="res://scenes/roadone_background.tscn" id="1_p14t4"]
 [ext_resource type="PackedScene" uid="uid://iq52ppkfnxyo" path="res://scenes/bob.tscn" id="2_sua14"]
+[ext_resource type="AudioStream" uid="uid://d03r4s45ewhug" path="res://music themes/down to business.mp3" id="3_sua14"]
+[ext_resource type="PackedScene" uid="uid://dqc851jrcmox6" path="res://scenes/lilgirl.tscn" id="4_xmt43"]
+[ext_resource type="PackedScene" uid="uid://vx4eyvuh448u" path="res://scenes/npc_black_side.tscn" id="5_xtn3p"]
+[ext_resource type="PackedScene" uid="uid://jgau3dnodqmn" path="res://scenes/npc_rouge.tscn" id="6_du8ml"]
 
 [node name="roadone" type="Node2D"]
 
@@ -16,3 +20,20 @@ scale = Vector2(0.8, 0.8)
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(1, -19)
 zoom = Vector2(3.3, 3.3)
+
+[node name="DownToBusiness" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(1, 3)
+stream = ExtResource("3_sua14")
+autoplay = true
+
+[node name="lilgirl" parent="." instance=ExtResource("4_xmt43")]
+position = Vector2(-224, -78)
+scale = Vector2(0.09, 0.09)
+
+[node name="npc_black_side" parent="." instance=ExtResource("5_xtn3p")]
+position = Vector2(61, -141)
+scale = Vector2(-0.09, 0.09)
+
+[node name="npc_rouge" parent="." instance=ExtResource("6_du8ml")]
+position = Vector2(134, -86)
+scale = Vector2(0.11, 0.11)

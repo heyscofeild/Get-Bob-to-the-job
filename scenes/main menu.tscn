@@ -1,6 +1,6 @@
 [gd_scene load_steps=14 format=3 uid="uid://buxf2qjtwa6vn"]
 
-[ext_resource type="Script" uid="uid://bc4gv5y4q5r7e" path="res://main_menu.gd" id="1_xsilq"]
+[ext_resource type="Script" uid="uid://bc4gv5y4q5r7e" path="res://scripts/main_menu.gd" id="1_xsilq"]
 [ext_resource type="Texture2D" uid="uid://tuiyxcdsc4pt" path="res://ui/city.png" id="2_km7eu"]
 [ext_resource type="FontFile" uid="uid://tpg8lerto6x3" path="res://ui/Pixel Digivolve Italic.otf" id="3_5a6dn"]
 [ext_resource type="FontFile" uid="uid://qjlyd3dqg1ss" path="res://ui/Pixel Digivolve.otf" id="4_ljdde"]
@@ -178,6 +178,7 @@ position = Vector2(887, 316)
 stream = ExtResource("5_km7eu")
 volume_db = -25.103
 autoplay = true
+stream_paused = true
 
 [connection signal="pressed" from="Panel/VBoxContainer/Button" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Panel/VBoxContainer/Button2" to="." method="_on_resume_pressed"]

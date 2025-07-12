@@ -1,11 +1,14 @@
-[gd_scene load_steps=14 format=3 uid="uid://d0hqc6t5ttyk6"]
+[gd_scene load_steps=18 format=3 uid="uid://d0hqc6t5ttyk6"]
 
 [ext_resource type="Texture2D" uid="uid://c6ax8ggftofyd" path="res://assets/places/5th_reworked.png" id="1_7tc8m"]
 [ext_resource type="Texture2D" uid="uid://b4nm33ci1ykn6" path="res://assets/places/bus_miyett.png" id="2_7tc8m"]
 [ext_resource type="PackedScene" uid="uid://iq52ppkfnxyo" path="res://scenes/bob.tscn" id="3_lbpdl"]
-[ext_resource type="AudioStream" uid="uid://bjm5ehydcokck" path="res://music themes/fr4s - 8bit2.mp3" id="4_lbpdl"]
 [ext_resource type="Script" uid="uid://bbkh531srrus6" path="res://scripts/area_5thto4th.gd" id="5_ppiqs"]
 [ext_resource type="Script" uid="uid://b53kpl3il7e5b" path="res://scripts/back_to_train.gd" id="5_x76ws"]
+[ext_resource type="Script" uid="uid://dpg0nke88yt7r" path="res://scripts/walk_to_moma.gd" id="6_cpxol"]
+[ext_resource type="AudioStream" uid="uid://dmm2k3nue4u32" path="res://music themes/Next to You.mp3" id="6_x76ws"]
+[ext_resource type="PackedScene" uid="uid://dvntuvut84xyt" path="res://scenes/dead_police.tscn" id="7_h8yap"]
+[ext_resource type="PackedScene" uid="uid://dos8mkdbrv41l" path="res://scenes/npc_black.tscn" id="8_h8yap"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ppiqs"]
 size = Vector2(32.8608, 12.9184)
@@ -23,10 +26,13 @@ size = Vector2(50.0202, 20)
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_x76ws"]
 radius = 15.0096
-height = 116.119
+height = 47.275
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_76gtw"]
 size = Vector2(45.9992, 24.5314)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nan6n"]
+size = Vector2(16.6203, 45.9332)
 
 [node name="5th_scene" type="Node2D"]
 scale = Vector2(-1, 1)
@@ -56,9 +62,9 @@ position = Vector2(-164.387, 45.1389)
 shape = SubResource("RectangleShape2D_cpxol")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="5ThReworked/StaticBody2D"]
-position = Vector2(-19.0251, -19.2551)
+position = Vector2(-18.5889, -18.0048)
 build_mode = 1
-polygon = PackedVector2Array(-165.515, -121.028, 172.102, -119.318, 169.572, 120.344, -165.702, 125.631)
+polygon = PackedVector2Array(-165.515, -121.028, 172.102, -119.318, 169.572, 120.344, -165.702, 125.631, -165.671, 85.0455, -165.082, 61.0022, -163.043, -14.5243, -165.325, -50.3111)
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="5ThReworked/StaticBody2D"]
 polygon = PackedVector2Array(75.3989, -133.312, 76.3633, -36.1953, 27.2664, -35.6692, 27.617, -27.7778, 80.2209, -26.7256, 81.273, -132.155)
@@ -81,22 +87,23 @@ position = Vector2(0.175346, -0.210438)
 polygon = PackedVector2Array(-72.6811, 101.957, -72.5057, 86.069, -82.4128, 87.4369, -82.4128, 62.8157, -123.795, 61.7635, -129.669, 59.3434, -129.055, 50.0842, -149.044, 50.2946, -149.395, 100.589)
 
 [node name="CollisionPolygon2D8" type="CollisionPolygon2D" parent="5ThReworked/StaticBody2D"]
+position = Vector2(0.432843, 0.15062)
 polygon = PackedVector2Array(-63.2124, 99.3266, -65.4042, 92.2769, -63.037, 79.9663, -36.8227, 79.9663, -35.5076, 54.5034, -6.57549, 54.0825, -7.36455, 35.1431, 26.9157, 34.5118, 27.091, 52.9251, 55.1464, 54.0825, 54.7081, 97.7483)
 
 [node name="BusMiyett" type="Sprite2D" parent="5ThReworked"]
-position = Vector2(-121.481, 6.56779)
+position = Vector2(-50.7813, 4.53887)
 scale = Vector2(0.472811, 0.689617)
 texture = ExtResource("2_7tc8m")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="5ThReworked/BusMiyett"]
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="5ThReworked/BusMiyett/StaticBody2D"]
-position = Vector2(-24.3754, -34.3903)
+position = Vector2(-24.4261, -29.486)
 scale = Vector2(1.741, 1.47424)
 shape = SubResource("RectangleShape2D_h8yap")
 
 [node name="Bob" parent="5ThReworked" instance=ExtResource("3_lbpdl")]
-position = Vector2(71.5036, 15.3063)
+position = Vector2(119.735, -9.98546)
 scale = Vector2(-0.823, 0.853)
 motion_mode = 1
 slide_on_ceiling = false
@@ -110,7 +117,7 @@ skew = -0.00503147
 script = ExtResource("5_ppiqs")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="5ThReworked/Area2D"]
-position = Vector2(25.8046, -3.9922)
+position = Vector2(7.77848, -209.26)
 shape = SubResource("CapsuleShape2D_x76ws")
 
 [node name="Area2D2" type="Area2D" parent="5ThReworked"]
@@ -120,19 +127,37 @@ script = ExtResource("5_x76ws")
 position = Vector2(112.368, -114.259)
 shape = SubResource("RectangleShape2D_76gtw")
 
-[node name="Fr4s-8Bit2" type="AudioStreamPlayer2D" parent="."]
-position = Vector2(1, 21)
-stream = ExtResource("4_lbpdl")
-volume_db = -20.441
-autoplay = true
+[node name="Area2D3" type="Area2D" parent="5ThReworked"]
+script = ExtResource("6_cpxol")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="5ThReworked/Area2D3"]
+position = Vector2(-171.026, 6.71752)
+shape = SubResource("RectangleShape2D_nan6n")
+
+[node name="dead_police" parent="5ThReworked" instance=ExtResource("7_h8yap")]
+position = Vector2(102.072, 77.8867)
+rotation = 1.60396
+scale = Vector2(0.13, 0.13)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(-25, -17)
 scale = Vector2(0.454555, 0.448356)
 zoom = Vector2(3.32, 3.32)
 
+[node name="NextToYou" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(-2, 3)
+stream = ExtResource("6_x76ws")
+volume_db = -6.814
+autoplay = true
+
+[node name="npc_black" parent="." instance=ExtResource("8_h8yap")]
+position = Vector2(-34, -3)
+scale = Vector2(0.13, 0.13)
+
 [connection signal="body_entered" from="5ThReworked/Area2D" to="5ThReworked/Area2D" method="_on_body_entered"]
 [connection signal="body_exited" from="5ThReworked/Area2D" to="5ThReworked/Area2D" method="_on_body_exited"]
 [connection signal="body_entered" from="5ThReworked/Area2D2" to="5ThReworked/Bob" method="_on_area_2d_2_body_entered"]
 [connection signal="body_entered" from="5ThReworked/Area2D2" to="5ThReworked/Area2D2" method="_on_body_entered"]
 [connection signal="body_exited" from="5ThReworked/Area2D2" to="5ThReworked/Area2D2" method="_on_body_exited"]
+[connection signal="body_entered" from="5ThReworked/Area2D3" to="5ThReworked/Area2D3" method="_on_body_entered"]
+[connection signal="body_exited" from="5ThReworked/Area2D3" to="5ThReworked/Area2D3" method="_on_body_exited"]

@@ -1,8 +1,13 @@
-[gd_scene load_steps=9 format=3 uid="uid://dqi3171our0ww"]
+[gd_scene load_steps=14 format=3 uid="uid://dqi3171our0ww"]
 
 [ext_resource type="Texture2D" uid="uid://croxr6x064em8" path="res://assets/places/the8.png" id="1_pbple"]
 [ext_resource type="PackedScene" uid="uid://iq52ppkfnxyo" path="res://scenes/bob.tscn" id="2_11gdc"]
 [ext_resource type="Script" uid="uid://n1hsrpmapgwi" path="res://scripts/reroadpart2.gd" id="3_11gdc"]
+[ext_resource type="AudioStream" uid="uid://be58o6bxvrva6" path="res://music themes/8bit Bossa.mp3" id="4_4v2xo"]
+[ext_resource type="PackedScene" uid="uid://77vsoa1ruwcy" path="res://scenes/npc_two.tscn" id="5_qkgwc"]
+[ext_resource type="PackedScene" uid="uid://cdwfm8tv0h3rk" path="res://scenes/npc_black_dos.tscn" id="6_jqnbw"]
+[ext_resource type="PackedScene" uid="uid://dj41ctucmaw68" path="res://scenes/npc_grey_dos.tscn" id="7_ykrns"]
+[ext_resource type="PackedScene" uid="uid://bncd2bedymv5j" path="res://scenes/npc_one.tscn" id="8_sukc3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pbple"]
 size = Vector2(87.0144, 12.1583)
@@ -66,6 +71,40 @@ script = ExtResource("3_11gdc")
 position = Vector2(-6, 98)
 rotation = -1.55683
 shape = SubResource("CapsuleShape2D_55g5a")
+
+[node name="8BitBossa" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(1, 1)
+stream = ExtResource("4_4v2xo")
+volume_db = -8.607
+autoplay = true
+
+[node name="npc_two" parent="." instance=ExtResource("5_qkgwc")]
+position = Vector2(115, 68)
+scale = Vector2(0.14, 0.14)
+
+[node name="npc_black_dos" parent="." instance=ExtResource("6_jqnbw")]
+position = Vector2(-221, -163)
+scale = Vector2(0.13, 0.13)
+
+[node name="npc_black_dos2" parent="." instance=ExtResource("6_jqnbw")]
+position = Vector2(199, -146)
+scale = Vector2(0.1, 0.1)
+
+[node name="npc_black_dos3" parent="." instance=ExtResource("6_jqnbw")]
+position = Vector2(147, -117)
+scale = Vector2(0.11, 0.11)
+
+[node name="npc_grey_dos" parent="." instance=ExtResource("7_ykrns")]
+position = Vector2(-140, -136)
+scale = Vector2(0.09, 0.09)
+
+[node name="npc_grey_dos2" parent="." instance=ExtResource("7_ykrns")]
+position = Vector2(-193, -111)
+scale = Vector2(0.09, 0.09)
+
+[node name="npc_one" parent="." instance=ExtResource("8_sukc3")]
+position = Vector2(-221, 18)
+scale = Vector2(0.13, 0.13)
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
 [connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]

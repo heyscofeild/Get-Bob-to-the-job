@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dvntuvut84xyt"]
+
+[ext_resource type="Texture2D" uid="uid://cca4541pgvaxn" path="res://assets/charachters/Deadpolice.png" id="1_xpd1b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w3kwd"]
+size = Vector2(133, 233)
+
+[node name="dead_police" type="StaticBody2D"]
+
+[node name="Deadpolice" type="Sprite2D" parent="."]
+position = Vector2(8, -106)
+texture = ExtResource("1_xpd1b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(9.5, -107.5)
+shape = SubResource("RectangleShape2D_w3kwd")

@@ -1,10 +1,13 @@
-[gd_scene load_steps=14 format=3 uid="uid://cva1ntmha50fe"]
+[gd_scene load_steps=17 format=3 uid="uid://cva1ntmha50fe"]
 
 [ext_resource type="Texture2D" uid="uid://c6vtfijc8ffpi" path="res://assets/places/firstcity.png" id="1_7ogqr"]
 [ext_resource type="PackedScene" uid="uid://iq52ppkfnxyo" path="res://scenes/bob.tscn" id="2_pp68f"]
 [ext_resource type="Script" uid="uid://cgmrlt7g21yuc" path="res://scripts/firstcity.gd" id="3_pp68f"]
+[ext_resource type="PackedScene" uid="uid://bncd2bedymv5j" path="res://scenes/npc_one.tscn" id="4_ci7jk"]
 [ext_resource type="AudioStream" uid="uid://bjm5ehydcokck" path="res://music themes/fr4s - 8bit2.mp3" id="5_hmwrk"]
+[ext_resource type="AudioStream" uid="uid://dmm2k3nue4u32" path="res://music themes/Next to You.mp3" id="6_1ej18"]
 [ext_resource type="Script" uid="uid://bhq38ramtwrbp" path="res://scripts/area_first_5th.gd" id="6_isgot"]
+[ext_resource type="PackedScene" uid="uid://co0fdxc8amm7f" path="res://scenes/bakery_guy.tscn" id="7_mtkil"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ci7jk"]
 radius = 20.025
@@ -127,6 +130,24 @@ script = ExtResource("6_isgot")
 position = Vector2(227, 15)
 rotation = -3.13112
 shape = SubResource("CapsuleShape2D_1ej18")
+
+[node name="NextToYou" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(2, 2)
+stream = ExtResource("6_1ej18")
+autoplay = true
+stream_paused = true
+
+[node name="bakery_guy" parent="." instance=ExtResource("7_mtkil")]
+position = Vector2(24, -29)
+scale = Vector2(0.13, 0.13)
+
+[node name="npc_one" parent="." instance=ExtResource("4_ci7jk")]
+position = Vector2(56, 104)
+scale = Vector2(0.14, 0.14)
+
+[node name="npc_one2" parent="." instance=ExtResource("4_ci7jk")]
+position = Vector2(29, 108)
+scale = Vector2(0.12, 0.12)
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
 [connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]

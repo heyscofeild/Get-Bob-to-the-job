@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbepgyali2vhr"]
+
+[ext_resource type="Texture2D" uid="uid://cgbhfcpqcnuuu" path="res://assets/charachters/NPC_momgirl.png" id="1_4nqk5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oskpv"]
+size = Vector2(155, 232)
+
+[node name="moma_girl" type="StaticBody2D"]
+
+[node name="NpcMomgirl" type="Sprite2D" parent="."]
+position = Vector2(8, -98)
+texture = ExtResource("1_4nqk5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.5, -106)
+shape = SubResource("RectangleShape2D_oskpv")

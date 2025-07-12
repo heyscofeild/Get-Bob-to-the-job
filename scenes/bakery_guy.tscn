@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://co0fdxc8amm7f"]
+
+[ext_resource type="Texture2D" uid="uid://bnvrobkthur65" path="res://assets/charachters/bakeryguy.png" id="1_1s73e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4q0k3"]
+size = Vector2(144, 279)
+
+[node name="bakery_guy" type="StaticBody2D"]
+
+[node name="Bakeryguy" type="Sprite2D" parent="."]
+position = Vector2(10, -114)
+texture = ExtResource("1_1s73e")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -135.5)
+shape = SubResource("RectangleShape2D_4q0k3")

@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://vx4eyvuh448u"]
+
+[ext_resource type="Texture2D" uid="uid://dj67syl7m2qrt" path="res://assets/charachters/NPC_fertass.png" id="1_0tsnx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wenfg"]
+atlas = ExtResource("1_0tsnx")
+region = Rect2(0, 288, 196, 288)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dfgme"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wenfg")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7k5t4"]
+size = Vector2(145, 261)
+
+[node name="npc_black_side" type="StaticBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(39, -144)
+sprite_frames = SubResource("SpriteFrames_dfgme")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(21.5, -120.5)
+shape = SubResource("RectangleShape2D_7k5t4")

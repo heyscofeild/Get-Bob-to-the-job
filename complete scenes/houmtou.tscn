@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://dgob81w1jt50x"]
+[gd_scene load_steps=8 format=3 uid="uid://dgob81w1jt50x"]
 
 [ext_resource type="PackedScene" uid="uid://p1fq88et8qtg" path="res://scenes/houmtou_background.tscn" id="1_g8pq8"]
 [ext_resource type="PackedScene" uid="uid://iq52ppkfnxyo" path="res://scenes/bob.tscn" id="2_t3pf8"]
-[ext_resource type="AudioStream" uid="uid://dmm2k3nue4u32" path="res://music themes/Next to You.mp3" id="3_bypyd"]
+[ext_resource type="AudioStream" uid="uid://be58o6bxvrva6" path="res://music themes/8bit Bossa.mp3" id="4_2fg06"]
 [ext_resource type="AudioStream" uid="uid://buc3r1coc8fsy" path="res://music themes/wind1.wav" id="4_hkmew"]
 [ext_resource type="Script" uid="uid://bc480iirk3wsx" path="res://scripts/area_2dhoumtou_train.gd" id="5_2fg06"]
+[ext_resource type="PackedScene" uid="uid://vx4eyvuh448u" path="res://scenes/npc_black_side.tscn" id="6_a8gq6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2fg06"]
 size = Vector2(25, 20)
@@ -25,11 +26,19 @@ limit_left = -326
 limit_right = 390
 limit_smoothed = true
 
-[node name="NextToYou" type="AudioStreamPlayer2D" parent="."]
-position = Vector2(-7, -75)
-stream = ExtResource("3_bypyd")
-volume_db = -26.179
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("5_2fg06")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-316.5, -13)
+shape = SubResource("RectangleShape2D_2fg06")
+
+[node name="8BitBossa" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(-6, -71)
+stream = ExtResource("4_2fg06")
+volume_db = -15.062
 autoplay = true
+stream_paused = true
 
 [node name="Wind1" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(-7, -73)
@@ -37,12 +46,9 @@ stream = ExtResource("4_hkmew")
 volume_db = -8.248
 autoplay = true
 
-[node name="Area2D" type="Area2D" parent="."]
-script = ExtResource("5_2fg06")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(-316.5, -13)
-shape = SubResource("RectangleShape2D_2fg06")
+[node name="npc_black_side" parent="." instance=ExtResource("6_a8gq6")]
+position = Vector2(349, 0)
+scale = Vector2(-0.11, 0.1)
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
 [connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]

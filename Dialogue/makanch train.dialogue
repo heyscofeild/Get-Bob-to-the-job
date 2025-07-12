@@ -1,0 +1,13 @@
+~ start
+Stranger : i heard there is no train going today.
++2 stress
+- Why ?
+	You didnt hear pf the accident.
+	- not again its the third time this week(punch him).
+		.... 
+	- i am gonna be late for work again boss said that that was my last chance.
+		yeah whatever.
+		- punch him. => END
+		- leave. => END
+		
+=> END

@@ -135,7 +135,6 @@ shape = SubResource("CapsuleShape2D_1ej18")
 position = Vector2(2, 2)
 stream = ExtResource("6_1ej18")
 autoplay = true
-stream_paused = true
 
 [node name="bakery_guy" parent="." instance=ExtResource("7_mtkil")]
 position = Vector2(24, -29)

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bxyk70tgsxodg"
+path="res://.godot/imported/dead policeman.dialogue-c497615580146013de98ecbb190c0410.tres"
+
+[deps]
+
+source_file="res://Dialogue/dead policeman.dialogue"
+dest_files=["res://.godot/imported/dead policeman.dialogue-c497615580146013de98ecbb190c0410.tres"]
+
+[params]
+
+defaults=true

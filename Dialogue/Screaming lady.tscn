@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://dir2x5mc5rsfm"]
+
+[ext_resource type="Script" uid="uid://r8hcm6tttlmc" path="res://Helpers/Actionables/ki_ynod.gd" id="1_iid05"]
+[ext_resource type="Resource" uid="uid://dcpfia3tx1drk" path="res://Dialogue/Screaming women.dialogue" id="2_iid05"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yma6l"]
+size = Vector2(42.2691, 63)
+
+[node name="Screaming women" type="Area2D"]
+position = Vector2(35, 33)
+collision_layer = 16
+script = ExtResource("1_iid05")
+dialogue_res = ExtResource("2_iid05")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4, -7)
+shape = SubResource("RectangleShape2D_yma6l")

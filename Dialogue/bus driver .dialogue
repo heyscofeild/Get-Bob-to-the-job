@@ -1,0 +1,10 @@
+~ start
+Bus driver: Get to the bus we are leaving.
+- where are you going
+	downtown (skip one area and get faster to work)
+	- whats that blue liquid 
+		Bus driver: Dont worry about it. 
+		+5 stress
+- I prefer walking
++3 stress
+=> END

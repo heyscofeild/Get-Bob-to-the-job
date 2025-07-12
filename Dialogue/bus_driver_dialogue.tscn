@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0jhspe07vwe6"]
+
+[ext_resource type="Script" uid="uid://r8hcm6tttlmc" path="res://Helpers/Actionables/ki_ynod.gd" id="1_bmjuk"]
+[ext_resource type="Resource" uid="uid://c5tbklv8f1ivw" path="res://Dialogue/bus driver .dialogue" id="2_bmjuk"]
+
+[node name="bus driver dialogue" type="Area2D"]
+script = ExtResource("1_bmjuk")
+dialogue_res = ExtResource("2_bmjuk")

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dcpfia3tx1drk"
+path="res://.godot/imported/Screaming women.dialogue-9142b986596fea3e09b617d36b93ad41.tres"
+
+[deps]
+
+source_file="res://Dialogue/Screaming women.dialogue"
+dest_files=["res://.godot/imported/Screaming women.dialogue-9142b986596fea3e09b617d36b93ad41.tres"]
+
+[params]
+
+defaults=true

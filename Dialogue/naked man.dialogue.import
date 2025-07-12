@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://e7f5rtw4gdyi"
+path="res://.godot/imported/naked man.dialogue-b6e4591ccf80c3ac39a807c1874edad1.tres"
+
+[deps]
+
+source_file="res://Dialogue/naked man.dialogue"
+dest_files=["res://.godot/imported/naked man.dialogue-b6e4591ccf80c3ac39a807c1874edad1.tres"]
+
+[params]
+
+defaults=true

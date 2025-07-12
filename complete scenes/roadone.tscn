@@ -1,13 +1,22 @@
-[gd_scene load_steps=7 format=3 uid="uid://bivi6ihvdasnh"]
+[gd_scene load_steps=11 format=3 uid="uid://bivi6ihvdasnh"]
 
 [ext_resource type="PackedScene" uid="uid://cxjq4f8kg4ogt" path="res://scenes/roadone_background.tscn" id="1_p14t4"]
 [ext_resource type="PackedScene" uid="uid://iq52ppkfnxyo" path="res://scenes/bob.tscn" id="2_sua14"]
 [ext_resource type="AudioStream" uid="uid://d03r4s45ewhug" path="res://music themes/down to business.mp3" id="3_sua14"]
 [ext_resource type="PackedScene" uid="uid://dqc851jrcmox6" path="res://scenes/lilgirl.tscn" id="4_xmt43"]
+[ext_resource type="PackedScene" uid="uid://duurop6n8hrg0" path="res://Helpers/Actionables/litle_girl.tscn" id="5_du8ml"]
 [ext_resource type="PackedScene" uid="uid://vx4eyvuh448u" path="res://scenes/npc_black_side.tscn" id="5_xtn3p"]
 [ext_resource type="PackedScene" uid="uid://jgau3dnodqmn" path="res://scenes/npc_rouge.tscn" id="6_du8ml"]
+[ext_resource type="PackedScene" uid="uid://c0n0v41x45a25" path="res://Dialogue/kidnapers.tscn" id="7_xtn3p"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w84le"]
+size = Vector2(291.528, 341.528)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_du8ml"]
+size = Vector2(567.727, 190.909)
 
 [node name="roadone" type="Node2D"]
+metadata/_edit_vertical_guides_ = [-276.0]
 
 [node name="roadone_background" parent="." instance=ExtResource("1_p14t4")]
 position = Vector2(1, 0)
@@ -30,6 +39,13 @@ autoplay = true
 position = Vector2(-224, -78)
 scale = Vector2(0.09, 0.09)
 
+[node name="litle girl" parent="lilgirl" instance=ExtResource("5_du8ml")]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="lilgirl/litle girl"]
+position = Vector2(20.9028, 184.792)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_w84le")
+
 [node name="npc_black_side" parent="." instance=ExtResource("5_xtn3p")]
 position = Vector2(61, -141)
 scale = Vector2(-0.09, 0.09)
@@ -37,3 +53,9 @@ scale = Vector2(-0.09, 0.09)
 [node name="npc_rouge" parent="." instance=ExtResource("6_du8ml")]
 position = Vector2(134, -86)
 scale = Vector2(0.11, 0.11)
+
+[node name="kidnapers" parent="npc_rouge" instance=ExtResource("7_xtn3p")]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="npc_rouge/kidnapers"]
+position = Vector2(-100, 63.6364)
+shape = SubResource("RectangleShape2D_du8ml")

@@ -1,13 +1,17 @@
-[gd_scene load_steps=14 format=3 uid="uid://dqi3171our0ww"]
+[gd_scene load_steps=20 format=3 uid="uid://dqi3171our0ww"]
 
 [ext_resource type="Texture2D" uid="uid://croxr6x064em8" path="res://assets/places/the8.png" id="1_pbple"]
 [ext_resource type="PackedScene" uid="uid://iq52ppkfnxyo" path="res://scenes/bob.tscn" id="2_11gdc"]
+[ext_resource type="PackedScene" uid="uid://dos8mkdbrv41l" path="res://scenes/npc_black.tscn" id="2_ykrns"]
 [ext_resource type="Script" uid="uid://n1hsrpmapgwi" path="res://scripts/reroadpart2.gd" id="3_11gdc"]
+[ext_resource type="PackedScene" uid="uid://f2ugf1llluf" path="res://Dialogue/ending.tscn" id="3_sukc3"]
 [ext_resource type="AudioStream" uid="uid://be58o6bxvrva6" path="res://music themes/8bit Bossa.mp3" id="4_4v2xo"]
 [ext_resource type="PackedScene" uid="uid://77vsoa1ruwcy" path="res://scenes/npc_two.tscn" id="5_qkgwc"]
 [ext_resource type="PackedScene" uid="uid://cdwfm8tv0h3rk" path="res://scenes/npc_black_dos.tscn" id="6_jqnbw"]
 [ext_resource type="PackedScene" uid="uid://dj41ctucmaw68" path="res://scenes/npc_grey_dos.tscn" id="7_ykrns"]
 [ext_resource type="PackedScene" uid="uid://bncd2bedymv5j" path="res://scenes/npc_one.tscn" id="8_sukc3"]
+[ext_resource type="PackedScene" uid="uid://b5oil3o82fu68" path="res://Helpers/Actionables/naked_man.tscn" id="11_l7fxn"]
+[ext_resource type="Resource" uid="uid://e7f5rtw4gdyi" path="res://Dialogue/naked man.dialogue" id="12_nodpo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pbple"]
 size = Vector2(87.0144, 12.1583)
@@ -21,9 +25,15 @@ size = Vector2(33.741, 30.1439)
 [sub_resource type="CircleShape2D" id="CircleShape2D_qkgwc"]
 radius = 16.6092
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l7fxn"]
+size = Vector2(109.627, 64.8133)
+
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_55g5a"]
 radius = 8.0
 height = 60.1297
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nodpo"]
+size = Vector2(330.769, 338.462)
 
 [node name="endscene" type="Node2D"]
 
@@ -56,6 +66,17 @@ polygon = PackedVector2Array(-38.8489, 23.741, -79.1367, 24.4604, -79.8561, -106
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="The8/StaticBody2D"]
 build_mode = 1
 polygon = PackedVector2Array(-170.504, -117.266, 163.309, -116.547, 165.468, 106.475, -172.662, 106.475)
+
+[node name="npc_black" parent="The8/StaticBody2D/CollisionPolygon2D2" instance=ExtResource("2_ykrns")]
+position = Vector2(-4.31654, 28.0576)
+scale = Vector2(0.105, 0.105)
+
+[node name="ending" parent="The8/StaticBody2D/CollisionPolygon2D2/npc_black" instance=ExtResource("3_sukc3")]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="The8/StaticBody2D/CollisionPolygon2D2/npc_black/ending"]
+position = Vector2(-2.28882e-05, 22.4066)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_l7fxn")
 
 [node name="Bob" parent="The8" instance=ExtResource("2_11gdc")]
 position = Vector2(-2.15827, 71.223)
@@ -91,7 +112,7 @@ position = Vector2(199, -146)
 scale = Vector2(0.1, 0.1)
 
 [node name="npc_black_dos3" parent="." instance=ExtResource("6_jqnbw")]
-position = Vector2(147, -117)
+position = Vector2(159, -131)
 scale = Vector2(0.11, 0.11)
 
 [node name="npc_grey_dos" parent="." instance=ExtResource("7_ykrns")]
@@ -103,8 +124,16 @@ position = Vector2(-193, -111)
 scale = Vector2(0.09, 0.09)
 
 [node name="npc_one" parent="." instance=ExtResource("8_sukc3")]
-position = Vector2(-221, 18)
+position = Vector2(-107, 79)
 scale = Vector2(0.13, 0.13)
+
+[node name="Naked man" parent="npc_one" instance=ExtResource("11_l7fxn")]
+position = Vector2(7.69232, 0)
+dialogue_res = ExtResource("12_nodpo")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="npc_one/Naked man"]
+position = Vector2(103.846, -46.1539)
+shape = SubResource("RectangleShape2D_nodpo")
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
 [connection signal="body_exited" from="Area2D" to="Area2D" method="_on_body_exited"]

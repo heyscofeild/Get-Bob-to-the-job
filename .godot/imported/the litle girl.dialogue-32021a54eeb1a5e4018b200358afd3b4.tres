@@ -1,0 +1,119 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_8wfjs"]
+
+[resource]
+script = ExtResource("1_8wfjs")
+using_states = PackedStringArray()
+titles = {
+"start": "2"
+}
+character_names = PackedStringArray("litle girl", "Bob")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "2",
+&"type": "title"
+},
+"1": {
+&"id": "1",
+&"next_id": "2",
+&"type": ""
+},
+"10": {
+&"id": "10",
+&"next_id": "11",
+&"text": "its not my problem after all",
+&"type": "response"
+},
+"11": {
+&"id": "11",
+&"next_id": "12",
+&"text": "+5 stress (shame on you)",
+&"type": "dialogue"
+},
+"12": {
+&"id": "12",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"13": {
+&"id": "13",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"2": {
+&"character": "litle girl",
+&"id": "2",
+&"next_id": "3",
+&"text": "LA LA LA LA LA.",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Bob",
+&"id": "3",
+&"next_id": "4",
+&"text": "yo do you live here",
+&"type": "dialogue"
+},
+"4": {
+&"character": "litle girl",
+&"id": "4",
+&"next_id": "5",
+&"text": "no i live one block away",
+&"type": "dialogue"
+},
+"5": {
+&"character": "Bob",
+&"id": "5",
+&"next_id": "6",
+&"text": "your mom is looking  for you.",
+&"type": "dialogue"
+},
+"6": {
+&"character": "litle girl",
+&"id": "6",
+&"next_id": "7",
+&"text": "whatever.",
+&"type": "dialogue"
+},
+"7": {
+&"id": "7",
+&"next_id": "8",
+&"responses": PackedStringArray("7", "10"),
+&"text": "i will kidnap you if you wont go to your mom (scare her)",
+&"type": "response"
+},
+"8": {
+&"character": "litle girl",
+&"id": "8",
+&"next_id": "9",
+&"text": "AAAHHHHHHHHH (she is traumatized).",
+&"type": "dialogue"
+},
+"9": {
+&"id": "9",
+&"next_id": "12",
+&"text": "+15 stress (shame on you)",
+&"type": "dialogue"
+}
+}
+raw_text = "~ start
+
+litle girl : LA LA LA LA LA.
+Bob: yo do you live here
+litle girl : no i live one block away
+Bob : your mom is looking  for you.
+litle girl : whatever.
+ - i will kidnap you if you wont go to your mom (scare her)
+	litle girl : AAAHHHHHHHHH (she is traumatized).
+	+15 stress (shame on you)
+- its not my problem after all
+	+5 stress (shame on you)
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

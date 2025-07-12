@@ -1,0 +1,167 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_bj6df"]
+
+[resource]
+script = ExtResource("1_bj6df")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Bob", "strangers")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"character": "Bob",
+&"id": "1",
+&"next_id": "2",
+&"text": "yoo did you take that girl",
+&"type": "dialogue"
+},
+"10": {
+&"id": "10",
+&"next_id": "11",
+&"text": "They are dead (they did not kidnap her btw)",
+&"type": "dialogue"
+},
+"11": {
+&"id": "11",
+&"next_id": "19",
+&"text": "+10 stress",
+&"type": "dialogue"
+},
+"12": {
+&"id": "12",
+&"next_id": "13",
+&"text": "let them run away",
+&"type": "response"
+},
+"13": {
+&"id": "13",
+&"next_id": "14",
+&"text": "it wasnt my problem anyway",
+&"type": "dialogue"
+},
+"14": {
+&"id": "14",
+&"next_id": "19",
+&"text": "+5 stress",
+&"type": "dialogue"
+},
+"15": {
+&"id": "15",
+&"next_id": "16",
+&"text": "fight them",
+&"type": "response"
+},
+"16": {
+&"id": "16",
+&"next_id": "17",
+&"text": "you got injred",
+&"type": "dialogue"
+},
+"17": {
+&"id": "17",
+&"next_id": "19",
+&"text": "+12 stress",
+&"type": "dialogue"
+},
+"18": {
+&"id": "18",
+&"next_id": "19",
+&"type": ""
+},
+"19": {
+&"id": "19",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"2": {
+&"character": "strangers",
+&"id": "2",
+&"next_id": "3",
+&"text": "What are you talking about.",
+&"type": "dialogue"
+},
+"20": {
+&"id": "20",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"3": {
+&"character": "Bob",
+&"id": "3",
+&"next_id": "4",
+&"text": "come on dont play stupid the lady said that she saw you running away",
+&"type": "dialogue"
+},
+"4": {
+&"character": "strangers",
+&"id": "4",
+&"next_id": "5",
+&"text": "this is your last warning.",
+&"type": "dialogue"
+},
+"5": {
+&"id": "5",
+&"next_id": "6",
+&"text": "+2 stress",
+&"type": "dialogue"
+},
+"6": {
+&"id": "6",
+&"next_id": "7",
+&"responses": PackedStringArray("6", "15"),
+&"text": "show your gun",
+&"type": "response"
+},
+"7": {
+&"id": "7",
+&"next_id": "8",
+&"text": "they are runing away",
+&"type": "dialogue"
+},
+"8": {
+&"id": "8",
+&"next_id": "9",
+&"text": "+2 stress",
+&"type": "dialogue"
+},
+"9": {
+&"id": "9",
+&"next_id": "10",
+&"responses": PackedStringArray("9", "12"),
+&"text": "shoot them",
+&"type": "response"
+}
+}
+raw_text = "~ start
+Bob : yoo did you take that girl
+strangers : What are you talking about.
+Bob : come on dont play stupid the lady said that she saw you running away
+strangers : this is your last warning.
++2 stress
+- show your gun
+	they are runing away
+	+2 stress
+	- shoot them
+		They are dead (they did not kidnap her btw)
+		+10 stress
+	- let them run away
+		it wasnt my problem anyway 
+		+5 stress
+- fight them
+	you got injred
+	+12 stress
+		
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

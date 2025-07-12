@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://d2rbku3aumsff"
+path="res://.godot/imported/wlid 7ouma.dialogue-5be0a541a9df1af4d5cc53a52d113523.tres"
+
+[deps]
+
+source_file="res://Dialogue/wlid 7ouma.dialogue"
+dest_files=["res://.godot/imported/wlid 7ouma.dialogue-5be0a541a9df1af4d5cc53a52d113523.tres"]
+
+[params]
+
+defaults=true

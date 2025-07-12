@@ -4,6 +4,15 @@ const SPEED = 9000.0
 @onready var anim_sprite = $AnimatedSprite2D
 @onready var footsteps_sound: AudioStreamPlayer2D = $footsteps_sound
 @onready var timer: Timer = $Timer
+@onready var actionable_finder: Area2D =$"Direction/Actionable finder"
+
+
+func _unhandled_input(_event: InputEvent) -> void:
+	if Input.is_action_just_pressed("ui_accept"):
+		var actionables = actionable_finder.get_overlapping_areas()
+		if actionables.size() > 0:
+			actionables[0].action()
+			return
 
 func _physics_process(delta: float) -> void:
 	# Direction input

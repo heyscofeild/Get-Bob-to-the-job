@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://c5tbklv8f1ivw"
+path="res://.godot/imported/bus driver .dialogue-9bc645c2fb1f165d2004a7805599520b.tres"
+
+[deps]
+
+source_file="res://Dialogue/bus driver .dialogue"
+dest_files=["res://.godot/imported/bus driver .dialogue-9bc645c2fb1f165d2004a7805599520b.tres"]
+
+[params]
+
+defaults=true

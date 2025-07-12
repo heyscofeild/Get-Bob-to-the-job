@@ -1,0 +1,90 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_1261o"]
+
+[resource]
+script = ExtResource("1_1261o")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Stranger women", "Bob")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"character": "Stranger women",
+&"id": "1",
+&"next_id": "2",
+&"text": "HEEEELLLP!!!! HEEEELPPP!",
+&"type": "dialogue"
+},
+"2": {
+&"id": "2",
+&"next_id": "3",
+&"responses": PackedStringArray("2"),
+&"text": "whats up miss",
+&"type": "response"
+},
+"3": {
+&"id": "3",
+&"next_id": "4",
+&"text": "they got my child last time i have seen her there where 2 man wearing black running.",
+&"type": "dialogue"
+},
+"4": {
+&"id": "4",
+&"next_id": "5",
+&"responses": PackedStringArray("4"),
+&"text": "i will get her miss",
+&"type": "response"
+},
+"5": {
+&"id": "5",
+&"next_id": "6",
+&"text": "+4 stress",
+&"type": "dialogue"
+},
+"6": {
+&"id": "6",
+&"next_id": "7",
+&"responses": PackedStringArray("6"),
+&"text": "thats your problem",
+&"type": "response"
+},
+"7": {
+&"character": "Bob",
+&"id": "7",
+&"next_id": "8",
+&"text": "HAHAHAHAHA",
+&"type": "dialogue"
+},
+"8": {
+&"id": "8",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"9": {
+&"id": "9",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+}
+}
+raw_text = "~ start
+Stranger women: HEEEELLLP!!!! HEEEELPPP!
+- whats up miss
+	they got my child last time i have seen her there where 2 man wearing black running.
+	- i will get her miss
+	+4 stress
+	- thats your problem 
+		Bob : HAHAHAHAHA
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

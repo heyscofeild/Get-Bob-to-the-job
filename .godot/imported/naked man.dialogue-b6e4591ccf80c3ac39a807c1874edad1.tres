@@ -1,0 +1,60 @@
+[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_yib6c"]
+
+[resource]
+script = ExtResource("1_yib6c")
+using_states = PackedStringArray()
+titles = {
+"start": "1"
+}
+character_names = PackedStringArray("Naked man", "Bon")
+first_title = "0"
+lines = {
+"0": {
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
+},
+"1": {
+&"character": "Naked man",
+&"id": "1",
+&"next_id": "2",
+&"text": "Damn its hot in here.",
+&"type": "dialogue"
+},
+"2": {
+&"character": "Bon",
+&"id": "2",
+&"next_id": "3",
+&"text": "so you got naked ?",
+&"type": "dialogue"
+},
+"3": {
+&"character": "Naked man",
+&"id": "3",
+&"next_id": "4",
+&"text": "well its obvious.",
+&"type": "dialogue"
+},
+"4": {
+&"id": "4",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+},
+"5": {
+&"id": "5",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
+}
+}
+raw_text = "~ start
+Naked man : Damn its hot in here.
+Bon : so you got naked ?
+Naked man : well its obvious.
+=> END"
+metadata/dialogue_manager_version = "3.7.1"

@@ -1,27 +1,17 @@
-res://complete scenes/Room.tscn
-res://scenes/main menu.tscn
-res://complete scenes/first_city.tscn
-res://complete scenes/5_th_scene.tscn
-res://complete scenes/trainstation.tscn
 res://complete scenes/houmtou.tscn
-res://scripts/area_5thto4th.gd
-res://scripts/area_first_5th.gd
-res://scripts/character_body_2d.gd
-res://scenes/roadtwobackground.tscn
-res://scenes/houmtou_background.tscn
-res://complete scenes/carfour.tscn
-res://scenes/roadone_background.tscn
-res://complete scenes/roadone.tscn
+res://complete scenes/trainstation.tscn
+res://complete scenes/5_th_scene.tscn
 res://complete scenes/roadtwo.tscn
-res://scripts/roadtwoexit.gd
-res://scripts/roadone_back_to_two.gd
-res://scripts/back_to_train.gd
-res://scripts/train_firscity.gd
-res://scripts/firstcity.gd
+res://complete scenes/first_city.tscn
+res://complete scenes/roadone.tscn
+res://complete scenes/carfour.tscn
 res://scenes/roadpart_2.tscn
-res://scripts/backto5thscene.gd
-res://scripts/area_2d_topart2.gd
-res://scripts/back_road_onee.gd
-res://scripts/to_carfour.gd
-res://scripts/reroadpart2.gd
-res://scripts/walk_to_moma.gd
+res://scenes/bob.tscn
+res://scripts/area_5thto4th.gd
+res://complete scenes/Room.tscn
+res://Dialogue/dead_policeman.tscn
+res://Dialogue/ending.tscn
+res://Dialogue/Screaming lady.tscn
+res://Dialogue/kidnapers.tscn
+res://Helpers/Actionables/litle_girl.tscn
+res://Helpers/Actionables/naked_man.tscn

@@ -1,14 +1,16 @@
-[gd_scene load_steps=18 format=3 uid="uid://d0hqc6t5ttyk6"]
+[gd_scene load_steps=22 format=3 uid="uid://d0hqc6t5ttyk6"]
 
 [ext_resource type="Texture2D" uid="uid://c6ax8ggftofyd" path="res://assets/places/5th_reworked.png" id="1_7tc8m"]
 [ext_resource type="Texture2D" uid="uid://b4nm33ci1ykn6" path="res://assets/places/bus_miyett.png" id="2_7tc8m"]
 [ext_resource type="PackedScene" uid="uid://iq52ppkfnxyo" path="res://scenes/bob.tscn" id="3_lbpdl"]
+[ext_resource type="PackedScene" uid="uid://b0jhspe07vwe6" path="res://Dialogue/bus_driver_dialogue.tscn" id="3_nan6n"]
 [ext_resource type="Script" uid="uid://bbkh531srrus6" path="res://scripts/area_5thto4th.gd" id="5_ppiqs"]
 [ext_resource type="Script" uid="uid://b53kpl3il7e5b" path="res://scripts/back_to_train.gd" id="5_x76ws"]
 [ext_resource type="Script" uid="uid://dpg0nke88yt7r" path="res://scripts/walk_to_moma.gd" id="6_cpxol"]
 [ext_resource type="AudioStream" uid="uid://dmm2k3nue4u32" path="res://music themes/Next to You.mp3" id="6_x76ws"]
 [ext_resource type="PackedScene" uid="uid://dvntuvut84xyt" path="res://scenes/dead_police.tscn" id="7_h8yap"]
 [ext_resource type="PackedScene" uid="uid://dos8mkdbrv41l" path="res://scenes/npc_black.tscn" id="8_h8yap"]
+[ext_resource type="PackedScene" uid="uid://cxwprmp584uo5" path="res://Dialogue/dead_policeman.tscn" id="11_xq0ik"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ppiqs"]
 size = Vector2(32.8608, 12.9184)
@@ -24,15 +26,20 @@ size = Vector2(27.2664, 14.1035)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h8yap"]
 size = Vector2(50.0202, 20)
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_x76ws"]
-radius = 15.0096
-height = 47.275
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e1obm"]
+size = Vector2(21.1147, 57.3619)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_76gtw"]
 size = Vector2(45.9992, 24.5314)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nan6n"]
 size = Vector2(16.6203, 45.9332)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xq0ik"]
+size = Vector2(230.769, 369.231)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vfrua"]
+size = Vector2(74, 15)
 
 [node name="5th_scene" type="Node2D"]
 scale = Vector2(-1, 1)
@@ -62,7 +69,7 @@ position = Vector2(-164.387, 45.1389)
 shape = SubResource("RectangleShape2D_cpxol")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="5ThReworked/StaticBody2D"]
-position = Vector2(-18.5889, -18.0048)
+position = Vector2(-19.9476, -21.6359)
 build_mode = 1
 polygon = PackedVector2Array(-165.515, -121.028, 172.102, -119.318, 169.572, 120.344, -165.702, 125.631, -165.671, 85.0455, -165.082, 61.0022, -163.043, -14.5243, -165.325, -50.3111)
 
@@ -91,11 +98,12 @@ position = Vector2(0.432843, 0.15062)
 polygon = PackedVector2Array(-63.2124, 99.3266, -65.4042, 92.2769, -63.037, 79.9663, -36.8227, 79.9663, -35.5076, 54.5034, -6.57549, 54.0825, -7.36455, 35.1431, 26.9157, 34.5118, 27.091, 52.9251, 55.1464, 54.0825, 54.7081, 97.7483)
 
 [node name="BusMiyett" type="Sprite2D" parent="5ThReworked"]
-position = Vector2(-50.7813, 4.53887)
-scale = Vector2(0.472811, 0.689617)
+position = Vector2(-98.3356, -1.27086)
+scale = Vector2(-0.764, 0.69)
 texture = ExtResource("2_7tc8m")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="5ThReworked/BusMiyett"]
+position = Vector2(0.107112, -4.21229)
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="5ThReworked/BusMiyett/StaticBody2D"]
 position = Vector2(-24.4261, -29.486)
@@ -117,8 +125,8 @@ skew = -0.00503147
 script = ExtResource("5_ppiqs")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="5ThReworked/Area2D"]
-position = Vector2(7.77848, -209.26)
-shape = SubResource("CapsuleShape2D_x76ws")
+position = Vector2(-19.2729, -160.33)
+shape = SubResource("RectangleShape2D_e1obm")
 
 [node name="Area2D2" type="Area2D" parent="5ThReworked"]
 script = ExtResource("5_x76ws")
@@ -128,6 +136,7 @@ position = Vector2(112.368, -114.259)
 shape = SubResource("RectangleShape2D_76gtw")
 
 [node name="Area2D3" type="Area2D" parent="5ThReworked"]
+collision_layer = 2
 script = ExtResource("6_cpxol")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="5ThReworked/Area2D3"]
@@ -153,6 +162,19 @@ autoplay = true
 [node name="npc_black" parent="." instance=ExtResource("8_h8yap")]
 position = Vector2(-34, -3)
 scale = Vector2(0.13, 0.13)
+
+[node name="bus driver dialogue" parent="npc_black" instance=ExtResource("3_nan6n")]
+collision_layer = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="npc_black/bus driver dialogue"]
+position = Vector2(53.8462, -15.3846)
+shape = SubResource("RectangleShape2D_xq0ik")
+
+[node name="dead policeman" parent="." instance=ExtResource("11_xq0ik")]
+
+[node name="polceman collision" type="CollisionShape2D" parent="dead policeman"]
+position = Vector2(167, 86.5)
+shape = SubResource("RectangleShape2D_vfrua")
 
 [connection signal="body_entered" from="5ThReworked/Area2D" to="5ThReworked/Area2D" method="_on_body_entered"]
 [connection signal="body_exited" from="5ThReworked/Area2D" to="5ThReworked/Area2D" method="_on_body_exited"]

@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://duurop6n8hrg0"]
+
+[ext_resource type="Script" uid="uid://r8hcm6tttlmc" path="res://Helpers/Actionables/ki_ynod.gd" id="1_78med"]
+[ext_resource type="Resource" uid="uid://bkpnd3ngmvcqv" path="res://Dialogue/the litle girl.dialogue" id="2_w1h4j"]
+
+[node name="litle girl" type="Area2D"]
+collision_layer = 16
+script = ExtResource("1_78med")
+dialogue_res = ExtResource("2_w1h4j")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.73085, -123)

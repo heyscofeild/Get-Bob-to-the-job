@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://cxwprmp584uo5"]
+
+[ext_resource type="Script" uid="uid://r8hcm6tttlmc" path="res://Helpers/Actionables/ki_ynod.gd" id="1_aqyn0"]
+[ext_resource type="Resource" uid="uid://bxyk70tgsxodg" path="res://Dialogue/dead policeman.dialogue" id="2_aqyn0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cb00a"]
+size = Vector2(126.538, 154)
+
+[node name="dead policeman" type="Area2D"]
+collision_layer = 16
+script = ExtResource("1_aqyn0")
+dialogue_res = ExtResource("2_aqyn0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.73085, -123)
+shape = SubResource("RectangleShape2D_cb00a")

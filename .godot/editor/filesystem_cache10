@@ -1,174 +1,199 @@
 afef6734802ee6c19677a3e11de0f0e6
-::res://::1752298278
-main_menu.gd::GDScript/GDScript::2587068743581519768::1752245744::0::1::::<>Control<><>0<>0<><>::
-::res://addons/::1752206528
-::res://addons/dialogue_manager/::1752206530
-constants.gd::GDScript/GDScript::4240262336831424009::1752206529::0::1::::DMConstants<>RefCounted<><>0<>0<><>::
-dialogue_label.gd::GDScript/GDScript::480611383085669467::1752206529::0::1::::DialogueLabel<>RichTextLabel<><>0<>1<><>::
-dialogue_label.tscn::PackedScene/PackedScene::5518490004210093266::1752206529::0::1::::<><><>0<>0<><>::uid://g32um0mltv5d::::res://addons/dialogue_manager/dialogue_label.gd
-dialogue_line.gd::GDScript/GDScript::1208905219044177333::1752206529::0::1::::DialogueLine<>RefCounted<><>0<>0<><>::
-dialogue_manager.gd::GDScript/GDScript::6774079045493014679::1752206529::0::1::::<>Node<><>0<>0<><>::
-dialogue_resource.gd::GDScript/GDScript::7268423792262407282::1752206529::0::1::::DialogueResource<>Resource<><>0<>1<><>::
-dialogue_response.gd::GDScript/GDScript::5668140482552713515::1752206529::0::1::::DialogueResponse<>RefCounted<><>0<>0<><>::
-dialogue_responses_menu.gd::GDScript/GDScript::2520211531407682507::1752206529::0::1::::DialogueResponsesMenu<>Container<><>0<>0<><>::
-editor_translation_parser_plugin.gd::GDScript/GDScript::6952218891186463517::1752206529::0::1::::DMTranslationParserPlugin<>EditorTranslationParserPlugin<><>0<>0<><>::
-export_plugin.gd::GDScript/GDScript::1265275163198105838::1752206529::0::1::::DMExportPlugin<>EditorExportPlugin<><>0<>0<><>::
-import_plugin.gd::GDScript/GDScript::7696928728755687928::1752206529::0::1::::DMImportPlugin<>EditorImportPlugin<><>0<>1<><>::
-inspector_plugin.gd::GDScript/GDScript::1803949233426909353::1752206529::0::1::::DMInspectorPlugin<>EditorInspectorPlugin<><>0<>1<><>::
-plugin.cfg::TextFile/TextFile::527249957140486300::1752206530::0::1::::<><><>0<>0<><>::
-plugin.gd::GDScript/GDScript::3484415935520294050::1752206530::0::1::::<>EditorPlugin<><>0<>1<><>::
-settings.gd::GDScript/GDScript::5108079527952811623::1752206530::0::1::::DMSettings<>Node<><>0<>1<><>::
-test_scene.gd::GDScript/GDScript::7098965565189014022::1752206530::0::1::::BaseDialogueTestScene<>Node2D<><>0<>0<><>::
-test_scene.tscn::PackedScene/PackedScene::1416400481679934567::1752206530::0::1::::<><><>0<>0<><>::uid://c8e16qdgu40wo::::res://addons/dialogue_manager/test_scene.gd
-::res://addons/dialogue_manager/assets/::1752247675
-banner.png::CompressedTexture2D/CompressedTexture2D::5712008637852493176::1752206528::1752206530::1::::<><><>0<>0<>d121565a1da2130f8932d6ef1533620f<>res://.godot/imported/banner.png-7e9e6a304eef850602c8d5afb80df9c3.ctex::
-icon.svg::CompressedTexture2D/CompressedTexture2D::9148339284877624195::1752206528::1752247675::1::::<><><>0<>0<>1f523c0ffc790e9669090bedffd6f123<>res://.godot/imported/icon.svg-17eb5d3e2a3cfbe59852220758c5b7bd.ctex::
-responses_menu.svg::CompressedTexture2D/CompressedTexture2D::8371359403825774630::1752206528::1752247675::1::::<><><>0<>0<>80641983a0c27ba88b462ca888bb16e7<>res://.godot/imported/responses_menu.svg-87cf63ca685d53616205049572f4eb8f.ctex::
-update.svg::CompressedTexture2D/CompressedTexture2D::9126631778427806641::1752206528::1752206530::1::::<><><>0<>0<>0755cd49aa8e1669d0212cb241a62c99<>res://.godot/imported/update.svg-f1628866ed4eb2e13e3b81f75443687e.ctex::
-::res://addons/dialogue_manager/compiler/::1752206528
-compilation.gd::GDScript/GDScript::8435982758891914948::1752206528::0::1::::DMCompilation<>RefCounted<><>0<>0<><>::
-compiled_line.gd::GDScript/GDScript::7649120004260577713::1752206528::0::1::::DMCompiledLine<>RefCounted<><>0<>0<><>::
-compiler.gd::GDScript/GDScript::5303696050206197991::1752206528::0::1::::DMCompiler<>RefCounted<><>0<>0<><>::
-compiler_regex.gd::GDScript/GDScript::9165052392053180153::1752206528::0::1::::DMCompilerRegEx<>RefCounted<><>0<>0<><>::
-compiler_result.gd::GDScript/GDScript::8024167698061597328::1752206528::0::1::::DMCompilerResult<>RefCounted<><>0<>0<><>::
-expression_parser.gd::GDScript/GDScript::7247739263438014932::1752206528::0::1::::DMExpressionParser<>RefCounted<><>0<>0<><>::
-resolved_goto_data.gd::GDScript/GDScript::795231697771193068::1752206528::0::1::::DMResolvedGotoData<>RefCounted<><>0<>0<><>::
-resolved_line_data.gd::GDScript/GDScript::1777277417610975140::1752206528::0::1::::DMResolvedLineData<>RefCounted<><>0<>0<><>::
-resolved_tag_data.gd::GDScript/GDScript::5896399040320884562::1752206528::0::1::::DMResolvedTagData<>RefCounted<><>0<>0<><>::
-tree_line.gd::GDScript/GDScript::8465725649013103477::1752206528::0::1::::DMTreeLine<>RefCounted<><>0<>0<><>::
-::res://addons/dialogue_manager/components/::1752206529
-code_edit.gd::GDScript/GDScript::7800679268525320339::1752206528::0::1::::DMCodeEdit<>CodeEdit<><>0<>1<><>::
-code_edit.tscn::PackedScene/PackedScene::5379618807048408118::1752206528::0::1::::<><><>0<>0<><>::uid://klpiq4tk3t7a::::res://addons/dialogue_manager/components/code_edit_syntax_highlighter.gd<>uid://djeybvlb332mp::::res://addons/dialogue_manager/components/code_edit.gd
-code_edit_syntax_highlighter.gd::GDScript/GDScript::725522518968407852::1752206528::0::1::::DMSyntaxHighlighter<>SyntaxHighlighter<><>0<>1<><>::
-download_update_panel.gd::GDScript/GDScript::734216442502960101::1752206528::0::1::::<>Control<><>0<>1<><>::
-download_update_panel.tscn::PackedScene/PackedScene::1130642722554629364::1752206528::0::1::::<><><>0<>0<><>::uid://kpwo418lb2t2::::res://addons/dialogue_manager/components/download_update_panel.gd<>uid://d3baj6rygkb3f::::res://addons/dialogue_manager/assets/update.svg
-errors_panel.gd::GDScript/GDScript::9079096441402695493::1752206529::0::1::::<>HBoxContainer<><>0<>1<><>::
-errors_panel.tscn::PackedScene/PackedScene::6105315990352960875::1752206529::0::1::::<><><>0<>0<><>::uid://d2l8nlb6hhrfp::::res://addons/dialogue_manager/components/errors_panel.gd
-files_list.gd::GDScript/GDScript::8284045900259767284::1752206529::0::1::::<>VBoxContainer<><>0<>1<><>::
-files_list.tscn::PackedScene/PackedScene::8113335055803740416::1752206529::0::1::::<><><>0<>0<><>::uid://dqa4a4wwoo0aa::::res://addons/dialogue_manager/components/files_list.gd<>uid://d3lr2uas6ax8v::::res://addons/dialogue_manager/assets/icon.svg
-find_in_files.gd::GDScript/GDScript::1182765515527006779::1752206529::0::1::::<>Control<><>0<>1<><>::
-find_in_files.tscn::PackedScene/PackedScene::1783514634430556025::1752206529::0::1::::<><><>0<>0<><>::uid://q368fmxxa8sd::::res://addons/dialogue_manager/components/find_in_files.gd
-search_and_replace.gd::GDScript/GDScript::5354046340595921918::1752206529::0::1::::<>VBoxContainer<><>0<>1<><>::
-search_and_replace.tscn::PackedScene/PackedScene::458254375860855630::1752206529::0::1::::<><><>0<>0<><>::uid://cijsmjkq21cdq::::res://addons/dialogue_manager/components/search_and_replace.gd
-title_list.gd::GDScript/GDScript::8936306253701215758::1752206529::0::1::::<>VBoxContainer<><>0<>1<><>::
-title_list.tscn::PackedScene/PackedScene::6134415340044566558::1752206529::0::1::::<><><>0<>0<><>::uid://d0k2wndjj0ifm::::res://addons/dialogue_manager/components/title_list.gd
-update_button.gd::GDScript/GDScript::6020914491248730085::1752206529::0::1::::<>Button<><>0<>1<><>::
-update_button.tscn::PackedScene/PackedScene::5825087957514786930::1752206529::0::1::::<><><>0<>0<><>::uid://cr1tt12dh5ecr::::res://addons/dialogue_manager/components/update_button.gd<>uid://qdxrxv3c3hxk::::res://addons/dialogue_manager/components/download_update_panel.tscn
-::res://addons/dialogue_manager/components/editor_property/::1752206529
-editor_property.gd::GDScript/GDScript::963484252339980827::1752206528::0::1::::<>EditorProperty<><>0<>1<><>::
-editor_property_control.gd::GDScript/GDScript::8171099031067179274::1752206529::0::1::::<>HBoxContainer<><>0<>1<><>::
-editor_property_control.tscn::PackedScene/PackedScene::1689506734256736329::1752206529::0::1::::<><><>0<>0<><>::uid://dooe2pflnqtve::::res://addons/dialogue_manager/components/editor_property/editor_property_control.gd<>uid://b16uuqjuof3n5::::res://addons/dialogue_manager/components/editor_property/resource_button.tscn<>uid://dnufpcdrreva3::::res://addons/dialogue_manager/components/files_list.tscn
-resource_button.gd::GDScript/GDScript::7184489175127453302::1752206529::0::1::::<>Button<><>0<>1<><>::
-resource_button.tscn::PackedScene/PackedScene::4276577239595711888::1752206529::0::1::::<><><>0<>0<><>::uid://damhqta55t67c::::res://addons/dialogue_manager/components/editor_property/resource_button.gd
-::res://addons/dialogue_manager/example_balloon/::1752206529
-example_balloon.gd::GDScript/GDScript::9030794338866587503::1752206529::0::1::::DialogueManagerExampleBalloon<>CanvasLayer<><>0<>0<><>::
-example_balloon.tscn::PackedScene/PackedScene::2304415056852043862::1752206529::0::1::::<><><>0<>0<><>::uid://d1wt4ma6055l8::::res://addons/dialogue_manager/example_balloon/example_balloon.gd<>uid://ckvgyvclnwggo::::res://addons/dialogue_manager/dialogue_label.tscn<>uid://bb52rsfwhkxbn::::res://addons/dialogue_manager/dialogue_responses_menu.gd
-small_example_balloon.tscn::PackedScene/PackedScene::1883859960814163368::1752206529::0::1::::<><><>0<>0<><>::uid://d1wt4ma6055l8::::res://addons/dialogue_manager/example_balloon/example_balloon.gd<>uid://ckvgyvclnwggo::::res://addons/dialogue_manager/dialogue_label.tscn<>uid://bb52rsfwhkxbn::::res://addons/dialogue_manager/dialogue_responses_menu.gd
-::res://addons/dialogue_manager/l10n/::1752206530
-en.mo::Translation/Translation::-1::1752206529::0::1::::<><><>0<>0<><>::
-en.po::Translation/Translation::-1::1752206529::0::1::::<><><>0<>0<><>::
-es.po::Translation/Translation::-1::1752206529::0::1::::<><><>0<>0<><>::
-uk.po::Translation/Translation::-1::1752206529::0::1::::<><><>0<>0<><>::
-zh.po::Translation/Translation::-1::1752206529::0::1::::<><><>0<>0<><>::
-zh_TW.po::Translation/Translation::-1::1752206530::0::1::::<><><>0<>0<><>::
-::res://addons/dialogue_manager/utilities/::1752206530
-builtins.gd::GDScript/GDScript::3309659326762652343::1752206530::0::1::::<>Object<><>0<>0<><>::
-dialogue_cache.gd::GDScript/GDScript::9130733358047983146::1752206530::0::1::::DMCache<>Node<><>0<>0<><>::
-::res://addons/dialogue_manager/views/::1752206530
-main_view.gd::GDScript/GDScript::5365867961863611872::1752206530::0::1::::<>Control<><>0<>1<><>::
-main_view.tscn::PackedScene/PackedScene::4884668666408697448::1752206530::0::1::::<><><>0<>0<><>::uid://cipjcc7bkh1pc::::res://addons/dialogue_manager/views/main_view.gd<>uid://civ6shmka5e8u::::res://addons/dialogue_manager/components/code_edit.tscn<>uid://dnufpcdrreva3::::res://addons/dialogue_manager/components/files_list.tscn<>uid://ctns6ouwwd68i::::res://addons/dialogue_manager/components/title_list.tscn<>uid://co8yl23idiwbi::::res://addons/dialogue_manager/components/update_button.tscn<>uid://gr8nakpbrhby::::res://addons/dialogue_manager/components/search_and_replace.tscn<>uid://cs8pwrxr5vxix::::res://addons/dialogue_manager/components/errors_panel.tscn<>uid://klpiq4tk3t7a::::res://addons/dialogue_manager/components/code_edit_syntax_highlighter.gd<>uid://cnm67htuohhlo::::res://addons/dialogue_manager/assets/banner.png<>uid://0n7hwviyyly4::::res://addons/dialogue_manager/components/find_in_files.tscn
-::res://assets/::1752102965
-::res://assets/charachters/::1752264553
-bakeryguy.png::CompressedTexture2D/CompressedTexture2D::3343284842659304304::1752264540::1752264540::1::::<><><>0<>0<>39f4568c6ad1dabfb45481d4f8a612fc<>res://.godot/imported/bakeryguy.png-3f4beb6e6c2db00dd61fe67c7f475dba.ctex::
-BoB1.png::CompressedTexture2D/CompressedTexture2D::5581432097768337584::1752071920::1752072010::1::::<><><>0<>0<>b123f72a659bc2ca1d10364731961722<>res://.godot/imported/BoB1.png-9dfa706917c179fff836651372a2db57.ctex::
-BoB1d.png::CompressedTexture2D/CompressedTexture2D::1630963477465580283::1752153427::1752153387::1::::<><><>0<>0<>adbfff7840a49d044e800aec5d845610<>res://.godot/imported/BoB1d.png-1e0768593e9153727329b8e42373b4c0.ctex::
-BoB2.png::CompressedTexture2D/CompressedTexture2D::1475770299861124882::1752071920::1752072013::1::::<><><>0<>0<>f571902ee3bb38406ed9a578422dbd67<>res://.godot/imported/BoB2.png-77383c62e689f0773a9f3c6f378b8c04.ctex::
-BoB2yemch.png::CompressedTexture2D/CompressedTexture2D::8516240405040561354::1752153815::1752153815::1::::<><><>0<>0<>ffee4d7f8e34b9ea74cc5b25d24f6fd6<>res://.godot/imported/BoB2yemch.png-43dbaffeadbe01117c39ac96dc47fe6c.ctex::
-BoB3.png::CompressedTexture2D/CompressedTexture2D::5418401260280934526::1752071920::1752072017::1::::<><><>0<>0<>8ea3b16dc0f10ac83f6c3508e6c42897<>res://.godot/imported/BoB3.png-cfc90034882ca9990533580231d75df4.ctex::
-BoB3df.png::CompressedTexture2D/CompressedTexture2D::3883825353287093498::1752153409::1752153409::1::::<><><>0<>0<>a49135fce8d5edaf383ca30c639517ae<>res://.godot/imported/BoB3df.png-88bac2ef4f2c5be33bb70f7e904aaec7.ctex::
-Deadpolice.png::CompressedTexture2D/CompressedTexture2D::4915034985302085763::1752157843::1752157843::1::::<><><>0<>0<>725dac570ba323c419e774492a719c6b<>res://.godot/imported/Deadpolice.png-f72d780db4b5d6df4b0a1e8b0f62662a.ctex::
-NPC2.png::CompressedTexture2D/CompressedTexture2D::2504237962885505824::1752153399::1752153400::1::::<><><>0<>0<>ce476573850514272933a392da02bc2d<>res://.godot/imported/NPC2.png-57a13e2af8cfec83d3f9a1ee64b59d97.ctex::
-NPC.png::CompressedTexture2D/CompressedTexture2D::1082242502533466933::1752153399::1752153400::1::::<><><>0<>0<>b6cca5209e837a093e0a4a9b6edd2996<>res://.godot/imported/NPC.png-e886154133268b0386f9418c09bc5e3e.ctex::
-NPClilgirl.png::CompressedTexture2D/CompressedTexture2D::1882388166858227004::1752157849::1752157849::1::::<><><>0<>0<>e647c72e20dacb91f688851643f0a31e<>res://.godot/imported/NPClilgirl.png-ada559a60e9f4be4c934b4cb16509856.ctex::
-NPC_fertass2.png::CompressedTexture2D/CompressedTexture2D::5095766843190555826::1752264552::1752264553::1::::<><><>0<>0<>8d8e4c19c41b7cfe28c1f145f54b7784<>res://.godot/imported/NPC_fertass2.png-5bb0bf2d2992778f400e74d84c12b561.ctex::
-NPC_fertass3.png::CompressedTexture2D/CompressedTexture2D::2928223779959674987::1752264552::1752264553::1::::<><><>0<>0<>162bb62282f7dc8b44af2f43260adf79<>res://.godot/imported/NPC_fertass3.png-d54bb7e4fb5e7e9458c66ffe64216692.ctex::
-NPC_fertass.png::CompressedTexture2D/CompressedTexture2D::7856933721280564589::1752264552::1752264553::1::::<><><>0<>0<>6c871c2c71044efeede0cfc42bdb4e85<>res://.godot/imported/NPC_fertass.png-5ef3b64a5289ef7ea25d2d120f23f95a.ctex::
-NPC_momgirl.png::CompressedTexture2D/CompressedTexture2D::5196472883836286676::1752264552::1752264553::1::::<><><>0<>0<>a3f1e8028f60e24fab020ca904dc6427<>res://.godot/imported/NPC_momgirl.png-7bc2865162fadb065e8c4c702d6fb880.ctex::
-SCR-20250709-mexp.png::CompressedTexture2D/CompressedTexture2D::5085826887966685431::1752064831::1752064839::1::::<><><>0<>0<>472ea7729d45aa1e1da4fd9817da7e51<>res://.godot/imported/SCR-20250709-mexp.png-f321db638962a7bec05045600bd1edf0.ctex::
-::res://assets/places/::1752281463
-5thcity.png::CompressedTexture2D/CompressedTexture2D::269652783516180759::1752264565::1752264566::1::::<><><>0<>0<>ca5dc3e4510efa8ead18ee76fd411600<>res://.godot/imported/5thcity.png-6e90107293f2a70c322b8d5097515b48.ctex::
-5th_reworked.png::CompressedTexture2D/CompressedTexture2D::6950151266859747975::1752266251::1752266252::1::::<><><>0<>0<>29ee773b0e70cd21826332ee0ff57b7a<>res://.godot/imported/5th_reworked.png-6806a9bc6fab32954d569d86081a1fb9.ctex::
-bus_miyett.png::CompressedTexture2D/CompressedTexture2D::4449514140283948257::1752266092::1752266093::1::::<><><>0<>0<>798df96b233c867e0aa434151972d0f9<>res://.godot/imported/bus_miyett.png-6c2d2740cdc88316fc3e9e7e6faa8176.ctex::
-firstcity.png::CompressedTexture2D/CompressedTexture2D::6993210439057762258::1752197946::1752197946::1::::<><><>0<>0<>89e129ee329e255df76e152031b3fb5e<>res://.godot/imported/firstcity.png-d32b0adc8354dd6fea43aa7788266be9.ctex::
-houseasset-Recovered1.png::CompressedTexture2D/CompressedTexture2D::2326331584668409893::1752071920::1752072032::1::::<><><>0<>0<>2eea07b7cf7544d441d818bae88f1ca5<>res://.godot/imported/houseasset-Recovered1.png-5ff8e57981e7470c06d12b5141fced6c.ctex::
-layer_1_ground.png::CompressedTexture2D/CompressedTexture2D::6308932076901833043::1752102407::1752102464::1::::<><><>0<>0<>c4ad672ce34afcc18a63e552702062b3<>res://.godot/imported/layer_1_ground.png-fc52fd39e144b25d313de18b0043581f.ctex::
-scene_4.png::CompressedTexture2D/CompressedTexture2D::6134510629032999372::1752281461::1752281462::1::::<><><>0<>0<>a9217f5aa9bdf2334114411014488bb5<>res://.godot/imported/scene_4.png-a5190cce938e07611bc01c1ede321298.ctex::
-scene_6.png::CompressedTexture2D/CompressedTexture2D::553395890024612881::1752281461::1752281463::1::::<><><>0<>0<>23851c3a301b0ed14cabad96c62157cd<>res://.godot/imported/scene_6.png-5c376fb30180ed5841524bf7d1bf170a.ctex::
-the8.png::CompressedTexture2D/CompressedTexture2D::5996381512052414337::1752281461::1752281462::1::::<><><>0<>0<>41805a22cfdad43a7c98850f5181bf09<>res://.godot/imported/the8.png-42c76f1975999ceb3f8c50a971b0eda2.ctex::
-train_station.png::CompressedTexture2D/CompressedTexture2D::86140072472003987::1752102407::1752102965::1::::<><><>0<>0<>38362792aa736c1a68e9deda53785172<>res://.godot/imported/train_station.png-0046fe5e5a3c81e44afb23fe6f020627.ctex::
-::res://complete scenes/::1752296514
-5_th_scene.tscn::PackedScene/PackedScene::8929410488744970779::1752296514::0::1::::<><><>0<>0<><>::uid://c6ax8ggftofyd::::res://assets/places/5th_reworked.png<>uid://b4nm33ci1ykn6::::res://assets/places/bus_miyett.png<>uid://iq52ppkfnxyo::::res://scenes/bob.tscn<>uid://bjm5ehydcokck::::res://music themes/fr4s - 8bit2.mp3<>uid://bbkh531srrus6::::res://scripts/area_5thto4th.gd<>uid://b53kpl3il7e5b::::res://scripts/back_to_train.gd
-carfour.tscn::PackedScene/PackedScene::8300546799334927726::1752296514::0::1::::<><><>0<>0<><>::uid://croxr6x064em8::::res://assets/places/the8.png<>uid://iq52ppkfnxyo::::res://scenes/bob.tscn<>uid://n1hsrpmapgwi::::res://scripts/reroadpart2.gd
-first_city.tscn::PackedScene/PackedScene::6248409957718135778::1752296514::0::1::::<><><>0<>0<><>::uid://c6vtfijc8ffpi::::res://assets/places/firstcity.png<>uid://iq52ppkfnxyo::::res://scenes/bob.tscn<>uid://cgmrlt7g21yuc::::res://scripts/firstcity.gd<>uid://bjm5ehydcokck::::res://music themes/fr4s - 8bit2.mp3<>uid://bhq38ramtwrbp::::res://scripts/area_first_5th.gd
-houmtou.tscn::PackedScene/PackedScene::7609417450442893641::1752291956::0::1::::<><><>0<>0<><>::uid://p1fq88et8qtg::::res://scenes/houmtou_background.tscn<>uid://iq52ppkfnxyo::::res://scenes/bob.tscn<>uid://dmm2k3nue4u32::::res://music themes/Next to You.mp3<>uid://buc3r1coc8fsy::::res://music themes/wind1.wav<>uid://bc480iirk3wsx::::res://scripts/area_2dhoumtou_train.gd
-roadone.tscn::PackedScene/PackedScene::2991824893144405145::1752296514::0::1::::<><><>0<>0<><>::uid://cxjq4f8kg4ogt::::res://scenes/roadone_background.tscn<>uid://iq52ppkfnxyo::::res://scenes/bob.tscn
-roadtwo.tscn::PackedScene/PackedScene::8230085034889565591::1752296514::0::1::::<><><>0<>0<><>::uid://vwy8kg8owhc2::::res://scenes/roadtwobackground.tscn<>uid://iq52ppkfnxyo::::res://scenes/bob.tscn<>uid://d03r4s45ewhug::::res://music themes/down to business.mp3<>uid://byad2brkw77go::::res://scripts/roadtwoexit.gd<>uid://dgh4qlbcxhynd::::res://scripts/backto5thscene.gd
-Room.tscn::PackedScene/PackedScene::142353046826710210::1752282020::0::1::::<><><>0<>0<><>::uid://bi5cy55l2op5e::::res://scenes/room_background.tscn<>uid://iq52ppkfnxyo::::res://scenes/bob.tscn<>uid://g51xpbybuy3l::::res://music themes/We are safe.wav<>uid://bu0okkgej15b2::::res://scripts/area_2droom.gd
-trainstation.tscn::PackedScene/PackedScene::6752883560003641760::1752296514::0::1::::<><><>0<>0<><>::uid://bhyyj4dwgra6::::res://assets/places/train_station.png<>uid://iq52ppkfnxyo::::res://scenes/bob.tscn<>uid://dmm2k3nue4u32::::res://music themes/Next to You.mp3<>uid://buc3r1coc8fsy::::res://music themes/wind1.wav<>uid://vkuxl6ettpx7::::res://scripts/train_to_houmtou.gd<>uid://bi334gt2wh7yy::::res://scripts/train_firscity.gd
-::res://music themes/::1752298278
-8bit Bossa.mp3::AudioStreamMP3/AudioStreamMP3::2731137683585414891::1752298148::1752298269::1::::<><><>0<>0<>b9d05e9740e1af87304be35fa029ebc3<>res://.godot/imported/8bit Bossa.mp3-07217747f63292cf5068d32f90974a3a.mp3str::
-claimed_by_the_void.mp3::AudioStreamMP3/AudioStreamMP3::3423827343105080560::1752157802::1752246124::1::::<><><>0<>0<>032163ac13a3d14a94093392d4c92ba1<>res://.godot/imported/claimed_by_the_void.mp3-f354682530a5fc17d7b3842d12e2b66e.mp3str::
-claimed_by_the_void_loop.mp3::AudioStreamMP3/AudioStreamMP3::5177648596972282435::1752157802::1752180373::1::::<><><>0<>0<>d8a537fb9ad0ba695d5b2bad6508e74c<>res://.godot/imported/claimed_by_the_void_loop.mp3-feb7f1ee4f749ffe7b4af5ad07819701.mp3str::
-claimed_by_the_void_loop.wav::AudioStreamWAV/AudioStreamWAV::2150667707845949471::1752157802::1752157804::1::::<><><>0<>0<>d5ef96ad0cc5e236dda5149f8d6d04c8<>res://.godot/imported/claimed_by_the_void_loop.wav-d76633f41e9c8c8e55159055f9c690a0.sample::
-claimed_by_the_void_mix.ogg::AudioStreamOggVorbis/AudioStreamOggVorbis::3480689787672117083::1752157802::1752180373::1::::<><><>0<>0<>96c405ad966799706335d8002a5787c7<>res://.godot/imported/claimed_by_the_void_mix.ogg-46c320342f3c5a61f789b9ad849dfb1d.oggvorbisstr::
-down to business.mp3::AudioStreamWAV/AudioStreamWAV::8972870687632970554::1752157810::1752180373::1::::<><><>0<>0<>8b62b2872a4611678bc7a9bdb7865264<>res://.godot/imported/down to business.mp3-c22d7aedae9ad0966fa4f35a2fc60834.sample::
-Ejimas1.ogg::AudioStreamOggVorbis/AudioStreamOggVorbis::8060423379315289715::1752211204::1752211204::1::::<><><>0<>0<>d4cd890ba5a85c19993efc61c8caad95<>res://.godot/imported/Ejimas1.ogg-80602be1b58a1a8abe7b1aea2956fa0f.oggvorbisstr::
-fr4s - 8bit2.mp3::AudioStreamMP3/AudioStreamMP3::3044721867321021158::1752157810::1752209485::1::::<><><>0<>0<>ae323684a058f28f220f05f2b105f7f0<>res://.godot/imported/fr4s - 8bit2.mp3-d7a87686dc9c7a098150682b856e0b90.mp3str::
-Next to You.mp3::AudioStreamMP3/AudioStreamMP3::8027959416179631755::1752157815::1752180238::1::::<><><>0<>0<>6e2b748368e83f44ab0762ef8d748e78<>res://.godot/imported/Next to You.mp3-b590d18ee5a7d3d51b2e48d555c04344.mp3str::
-song21.mp3::AudioStreamMP3::3213511307964684167::1752298152::1752298278::1::::<><><>0<>0<>92bfc6a57571fc84bb10bca7f0103e57<>res://.godot/imported/song21.mp3-49fbc0ae323b29eef7dee84bd43462c9.mp3str::
-void_5.mp3::AudioStreamMP3/AudioStreamMP3::7474420695971621326::1752157825::1752180503::1::::<><><>0<>0<>d8f50ec542ecd40cbfb9d5e6125084b1<>res://.godot/imported/void_5.mp3-71cbc42dfce3934ec8481c1a9f03d92c.mp3str::
-We are safe.wav::AudioStreamWAV/AudioStreamWAV::484684900009386131::1752157825::1752180447::1::::<><><>0<>0<>87123a8cd6b7c7c90c7165ab114fc07b<>res://.godot/imported/We are safe.wav-2bbfb8302fdc005566429e2d0cedd6ad.sample::
-wind1.wav::AudioStreamWAV/AudioStreamWAV::3796058115592497144::1752157825::1752180212::1::::<><><>0<>0<>7f9e83e64af1735e7c7787180198d59b<>res://.godot/imported/wind1.wav-4b6d024e82a16a892e6bc028d7fba121.sample::
-::res://scenes/::1752297983
-bakery_guy.tscn::PackedScene/PackedScene::5807404777142214645::1752297078::0::1::::<><><>0<>0<><>::uid://bnvrobkthur65::::res://assets/charachters/bakeryguy.png
-bob.tscn::PackedScene/PackedScene::596411330871534290::1752213851::0::1::::<><><>0<>0<><>::uid://cvsbm7lvjq0am::::res://scripts/character_body_2d.gd<>uid://xiby3djla7op::::res://assets/charachters/BoB1d.png<>uid://dtllh86t7rvck::::res://assets/charachters/BoB2yemch.png<>uid://bvlmbh1ibjlla::::res://assets/charachters/BoB3df.png<>uid://dmgavwktm70ct::::res://sounds/Ejimas1.ogg
-dead_police.tscn::PackedScene/PackedScene::8661255151816401783::1752297165::0::1::::<><><>0<>0<><>::uid://cca4541pgvaxn::::res://assets/charachters/Deadpolice.png
-houmtou_background.tscn::PackedScene/PackedScene::1106840418299899332::1752284883::0::1::::<><><>0<>0<><>::uid://cv5dgpep60qdv::::res://assets/places/layer_1_ground.png<>uid://cqlng4u1brnnk::::res://scripts/area_2d.gd
-lilgirl.tscn::PackedScene/PackedScene::8288470919660288069::1752206046::0::1::::<><><>0<>0<><>::uid://123wm0qoks1q::::res://assets/charachters/NPClilgirl.png
-main menu.tscn::PackedScene/PackedScene::3838030901365939155::1752282020::0::1::::<><><>0<>0<><>::uid://bc4gv5y4q5r7e::::res://main_menu.gd<>uid://tuiyxcdsc4pt::::res://ui/city.png<>uid://tpg8lerto6x3::::res://ui/Pixel Digivolve Italic.otf<>uid://qjlyd3dqg1ss::::res://ui/Pixel Digivolve.otf<>uid://bo1r63fagbf6w::::res://music themes/claimed_by_the_void.mp3
-moma_girl.tscn::PackedScene/PackedScene::7238631136460470539::1752297258::0::1::::<><><>0<>0<><>::uid://cgbhfcpqcnuuu::::res://assets/charachters/NPC_momgirl.png
-npc_black.tscn::PackedScene/PackedScene::8181090281809912203::1752297772::0::1::::<><><>0<>0<><>::uid://dj67syl7m2qrt::::res://assets/charachters/NPC_fertass.png
-npc_black_dos.tscn::PackedScene/PackedScene::5029150986990004452::1752297874::0::1::::<><><>0<>0<><>::uid://dj67syl7m2qrt::::res://assets/charachters/NPC_fertass.png
-npc_black_side.tscn::PackedScene/PackedScene::1523215634628435458::1752297983::0::1::::<><><>0<>0<><>::uid://dj67syl7m2qrt::::res://assets/charachters/NPC_fertass.png
-npc_one.tscn::PackedScene/PackedScene::3303234832780816281::1752245224::0::1::::<><><>0<>0<><>::uid://poim1slr2b0x::::res://assets/charachters/NPC.png
-npc_rouge.tscn::PackedScene/PackedScene::644123051042471357::1752297667::0::1::::<><><>0<>0<><>::uid://ceuosg6u8egqk::::res://assets/charachters/NPC_fertass2.png
-npc_two.tscn::PackedScene/PackedScene::2313411022217085348::1752206129::0::1::::<><><>0<>0<><>::uid://bbxcoy8mt6lh5::::res://assets/charachters/NPC2.png
-roadone_background.tscn::PackedScene/PackedScene::6406787744813815263::1752295192::0::1::::<><><>0<>0<><>::uid://ctnuq13gv76uy::::res://assets/places/scene_4.png<>uid://ca7knvf3d3b4o::::res://scripts/roadone_back_to_two.gd<>uid://b4kgcseh1nsbk::::res://scripts/area_2d_topart2.gd
-roadpart_2.tscn::PackedScene/PackedScene::5355280981895449948::1752296514::0::1::::<><><>0<>0<><>::uid://vwy8kg8owhc2::::res://scenes/roadtwobackground.tscn<>uid://iq52ppkfnxyo::::res://scenes/bob.tscn<>uid://dp2r50tfuhnd5::::res://scripts/back_road_onee.gd<>uid://1wv34a86f1qe::::res://scripts/to_carfour.gd
-roadtwobackground.tscn::PackedScene/PackedScene::1520898702034530347::1752292329::0::1::::<><><>0<>0<><>::uid://h5cl48bmx1vh::::res://assets/places/scene_6.png
-room_background.tscn::PackedScene/PackedScene::3010028681039479996::1752202686::0::1::::<><><>0<>0<><>::uid://8e5lutf1ycc0::::res://assets/places/houseasset-Recovered1.png
-::res://scripts/::1752296397
-area_2d.gd::GDScript/GDScript::5919372611815354704::1752245366::0::1::::<>Area2D<><>0<>0<><>::
-area_2dhoumtou_train.gd::GDScript/GDScript::2588714064777943667::1752245366::0::1::::<>Area2D<><>0<>0<><>::
-area_2droom.gd::GDScript/GDScript::3842675430840175893::1752245366::0::1::::<>Area2D<><>0<>0<><>::
-area_2d_topart2.gd::GDScript/GDScript::4442909752233891292::1752295192::0::1::::<>Area2D<><>0<>0<><>::
-area_5thto4th.gd::GDScript/GDScript::2477733409298209451::1752281978::0::1::::<>Area2D<><>0<>0<><>::
-area_first_5th.gd::GDScript/GDScript::2912532533689059029::1752294064::0::1::::<>Area2D<><>0<>0<><>::
-backto5thscene.gd::GDScript/GDScript::7596635702102187589::1752294363::0::1::::<>Area2D<><>0<>0<><>::
-back_road_onee.gd::GDScript/GDScript::8268920010392811280::1752296209::0::1::::<>Area2D<><>0<>0<><>::
-back_to_train.gd::GDScript/GDScript::4550523148174806077::1752293336::0::1::::<>Area2D<><>0<>0<><>::
-character_body_2d.gd::GDScript/GDScript::6284049728584465248::1752293336::0::1::::<>CharacterBody2D<><>0<>0<><>::
-firstcity.gd::GDScript/GDScript::5219799842560235466::1752294013::0::1::::<>Area2D<><>0<>0<><>::
-reroadpart2.gd::GDScript/GDScript::966586868754469572::1752296397::0::1::::<>Area2D<><>0<>0<><>::
-roadone_back_to_two.gd::GDScript/GDScript::4839532952756221884::1752294130::0::1::::<>Area2D<><>0<>0<><>::
-roadtwoexit.gd::GDScript/GDScript::4071183377689683642::1752293994::0::1::::<>Area2D<><>0<>0<><>::
-to_carfour.gd::GDScript/GDScript::1871652828973766596::1752296300::0::1::::<>Area2D<><>0<>0<><>::
-train_firscity.gd::GDScript/GDScript::3007486219479590400::1752293631::0::1::::<>Area2D<><>0<>0<><>::
-train_to_houmtou.gd::GDScript/GDScript::1495865532908105202::1752245366::0::1::::<>Area2D<><>0<>0<><>::
-::res://sounds/::1752213286
-Ejimas1.ogg::AudioStreamOggVorbis/AudioStreamOggVorbis::8013953114774396379::1752211247::1752213286::1::::<><><>0<>0<>ef1bb7993a894c42ae05a8e88fb8e714<>res://.godot/imported/Ejimas1.ogg-6e0c9fe732ac972aaecd680b17fe421e.oggvorbisstr::
-::res://ui/::1752247571
-city.png::CompressedTexture2D/CompressedTexture2D::1375405390486795157::1752245800::1752247571::1::::<><><>0<>0<>52f7f78a6c88e9269887fa1482756537<>res://.godot/imported/city.png-2de463820630558a85c996c83410d33d.ctex::
-main_menu.gd::GDScript/GDScript::9206449190133898874::1752247468::0::1::::<>Control<><>0<>0<><>::
-Pixel Digivolve Italic.otf::FontFile/FontFile::1364977513323421030::1752245826::1752247571::1::::<><><>0<>0<>cccc46b3bf95d82ce488dfe637c45d6d<>res://.godot/imported/Pixel Digivolve Italic.otf-d917f0afc5b1f7c91e25617abf1cc6ac.fontdata::
-Pixel Digivolve.otf::FontFile/FontFile::1142311844951732974::1752245806::1752247571::1::::<><><>0<>0<>9a27fb77c5d20aa47250e3d0bc0149b8<>res://.godot/imported/Pixel Digivolve.otf-c46580fe606bd8e85304ff0ab0f21bbe.fontdata::
+::res://::1752355855
+::res://addons/::1752336095
+::res://addons/dialogue_manager/::1752336095
+constants.gd::GDScript/GDScript::4240262336831424009::1752336095::0::1::::DMConstants<>RefCounted<><>0<>0<><>::
+dialogue_label.gd::GDScript/GDScript::480611383085669467::1752336095::0::1::::DialogueLabel<>RichTextLabel<><>0<>1<><>::
+dialogue_label.tscn::PackedScene/PackedScene::5518490004210093266::1752336095::0::1::::<><><>0<>0<><>::uid://g32um0mltv5d::::res://addons/dialogue_manager/dialogue_label.gd
+dialogue_line.gd::GDScript/GDScript::1208905219044177333::1752336095::0::1::::DialogueLine<>RefCounted<><>0<>0<><>::
+dialogue_manager.gd::GDScript/GDScript::6774079045493014679::1752336095::0::1::::<>Node<><>0<>0<><>::
+dialogue_resource.gd::GDScript/GDScript::7268423792262407282::1752336095::0::1::::DialogueResource<>Resource<><>0<>1<><>::
+dialogue_response.gd::GDScript/GDScript::5668140482552713515::1752336095::0::1::::DialogueResponse<>RefCounted<><>0<>0<><>::
+dialogue_responses_menu.gd::GDScript/GDScript::2520211531407682507::1752336095::0::1::::DialogueResponsesMenu<>Container<><>0<>0<><>::
+editor_translation_parser_plugin.gd::GDScript/GDScript::6952218891186463517::1752336095::0::1::::DMTranslationParserPlugin<>EditorTranslationParserPlugin<><>0<>0<><>::
+export_plugin.gd::GDScript/GDScript::1265275163198105838::1752336095::0::1::::DMExportPlugin<>EditorExportPlugin<><>0<>0<><>::
+import_plugin.gd::GDScript/GDScript::7696928728755687928::1752336095::0::1::::DMImportPlugin<>EditorImportPlugin<><>0<>1<><>::
+inspector_plugin.gd::GDScript/GDScript::1803949233426909353::1752336095::0::1::::DMInspectorPlugin<>EditorInspectorPlugin<><>0<>1<><>::
+plugin.cfg::TextFile/TextFile::527249957140486300::1752336095::0::1::::<><><>0<>0<><>::
+plugin.gd::GDScript/GDScript::3484415935520294050::1752336095::0::1::::<>EditorPlugin<><>0<>1<><>::
+settings.gd::GDScript/GDScript::5108079527952811623::1752336095::0::1::::DMSettings<>Node<><>0<>1<><>::
+test_scene.gd::GDScript/GDScript::7098965565189014022::1752336095::0::1::::BaseDialogueTestScene<>Node2D<><>0<>0<><>::
+test_scene.tscn::PackedScene/PackedScene::1416400481679934567::1752336095::0::1::::<><><>0<>0<><>::uid://c8e16qdgu40wo::::res://addons/dialogue_manager/test_scene.gd
+::res://addons/dialogue_manager/assets/::1752336120
+banner.png::CompressedTexture2D/CompressedTexture2D::5712008637852493176::1752336095::1752336120::1::::<><><>0<>0<>d121565a1da2130f8932d6ef1533620f<>res://.godot/imported/banner.png-7e9e6a304eef850602c8d5afb80df9c3.ctex::
+icon.svg::CompressedTexture2D/CompressedTexture2D::9148339284877624195::1752336095::1752336120::1::::<><><>0<>0<>1f523c0ffc790e9669090bedffd6f123<>res://.godot/imported/icon.svg-17eb5d3e2a3cfbe59852220758c5b7bd.ctex::
+responses_menu.svg::CompressedTexture2D/CompressedTexture2D::8371359403825774630::1752336095::1752336120::1::::<><><>0<>0<>80641983a0c27ba88b462ca888bb16e7<>res://.godot/imported/responses_menu.svg-87cf63ca685d53616205049572f4eb8f.ctex::
+update.svg::CompressedTexture2D/CompressedTexture2D::9126631778427806641::1752336095::1752336120::1::::<><><>0<>0<>0755cd49aa8e1669d0212cb241a62c99<>res://.godot/imported/update.svg-f1628866ed4eb2e13e3b81f75443687e.ctex::
+::res://addons/dialogue_manager/compiler/::1752336095
+compilation.gd::GDScript/GDScript::8435982758891914948::1752336095::0::1::::DMCompilation<>RefCounted<><>0<>0<><>::
+compiled_line.gd::GDScript/GDScript::7649120004260577713::1752336095::0::1::::DMCompiledLine<>RefCounted<><>0<>0<><>::
+compiler.gd::GDScript/GDScript::5303696050206197991::1752336095::0::1::::DMCompiler<>RefCounted<><>0<>0<><>::
+compiler_regex.gd::GDScript/GDScript::9165052392053180153::1752336095::0::1::::DMCompilerRegEx<>RefCounted<><>0<>0<><>::
+compiler_result.gd::GDScript/GDScript::8024167698061597328::1752336095::0::1::::DMCompilerResult<>RefCounted<><>0<>0<><>::
+expression_parser.gd::GDScript/GDScript::7247739263438014932::1752336095::0::1::::DMExpressionParser<>RefCounted<><>0<>0<><>::
+resolved_goto_data.gd::GDScript/GDScript::795231697771193068::1752336095::0::1::::DMResolvedGotoData<>RefCounted<><>0<>0<><>::
+resolved_line_data.gd::GDScript/GDScript::1777277417610975140::1752336095::0::1::::DMResolvedLineData<>RefCounted<><>0<>0<><>::
+resolved_tag_data.gd::GDScript/GDScript::5896399040320884562::1752336095::0::1::::DMResolvedTagData<>RefCounted<><>0<>0<><>::
+tree_line.gd::GDScript/GDScript::8465725649013103477::1752336095::0::1::::DMTreeLine<>RefCounted<><>0<>0<><>::
+::res://addons/dialogue_manager/components/::1752336095
+code_edit.gd::GDScript/GDScript::7800679268525320339::1752336095::0::1::::DMCodeEdit<>CodeEdit<><>0<>1<><>::
+code_edit.tscn::PackedScene/PackedScene::5379618807048408118::1752336095::0::1::::<><><>0<>0<><>::uid://klpiq4tk3t7a::::res://addons/dialogue_manager/components/code_edit_syntax_highlighter.gd<>uid://djeybvlb332mp::::res://addons/dialogue_manager/components/code_edit.gd
+code_edit_syntax_highlighter.gd::GDScript/GDScript::725522518968407852::1752336095::0::1::::DMSyntaxHighlighter<>SyntaxHighlighter<><>0<>1<><>::
+download_update_panel.gd::GDScript/GDScript::734216442502960101::1752336095::0::1::::<>Control<><>0<>1<><>::
+download_update_panel.tscn::PackedScene/PackedScene::1130642722554629364::1752336095::0::1::::<><><>0<>0<><>::uid://kpwo418lb2t2::::res://addons/dialogue_manager/components/download_update_panel.gd<>uid://d3baj6rygkb3f::::res://addons/dialogue_manager/assets/update.svg
+errors_panel.gd::GDScript/GDScript::9079096441402695493::1752336095::0::1::::<>HBoxContainer<><>0<>1<><>::
+errors_panel.tscn::PackedScene/PackedScene::6105315990352960875::1752336095::0::1::::<><><>0<>0<><>::uid://d2l8nlb6hhrfp::::res://addons/dialogue_manager/components/errors_panel.gd
+files_list.gd::GDScript/GDScript::8284045900259767284::1752336095::0::1::::<>VBoxContainer<><>0<>1<><>::
+files_list.tscn::PackedScene/PackedScene::8113335055803740416::1752336095::0::1::::<><><>0<>0<><>::uid://dqa4a4wwoo0aa::::res://addons/dialogue_manager/components/files_list.gd<>uid://d3lr2uas6ax8v::::res://addons/dialogue_manager/assets/icon.svg
+find_in_files.gd::GDScript/GDScript::1182765515527006779::1752336095::0::1::::<>Control<><>0<>1<><>::
+find_in_files.tscn::PackedScene/PackedScene::1783514634430556025::1752336095::0::1::::<><><>0<>0<><>::uid://q368fmxxa8sd::::res://addons/dialogue_manager/components/find_in_files.gd
+search_and_replace.gd::GDScript/GDScript::5354046340595921918::1752336095::0::1::::<>VBoxContainer<><>0<>1<><>::
+search_and_replace.tscn::PackedScene/PackedScene::458254375860855630::1752336095::0::1::::<><><>0<>0<><>::uid://cijsmjkq21cdq::::res://addons/dialogue_manager/components/search_and_replace.gd
+title_list.gd::GDScript/GDScript::8936306253701215758::1752336095::0::1::::<>VBoxContainer<><>0<>1<><>::
+title_list.tscn::PackedScene/PackedScene::6134415340044566558::1752336095::0::1::::<><><>0<>0<><>::uid://d0k2wndjj0ifm::::res://addons/dialogue_manager/components/title_list.gd
+update_button.gd::GDScript/GDScript::6020914491248730085::1752336095::0::1::::<>Button<><>0<>1<><>::
+update_button.tscn::PackedScene/PackedScene::5825087957514786930::1752336095::0::1::::<><><>0<>0<><>::uid://cr1tt12dh5ecr::::res://addons/dialogue_manager/components/update_button.gd<>uid://qdxrxv3c3hxk::::res://addons/dialogue_manager/components/download_update_panel.tscn
+::res://addons/dialogue_manager/components/editor_property/::1752336095
+editor_property.gd::GDScript/GDScript::963484252339980827::1752336095::0::1::::<>EditorProperty<><>0<>1<><>::
+editor_property_control.gd::GDScript/GDScript::8171099031067179274::1752336095::0::1::::<>HBoxContainer<><>0<>1<><>::
+editor_property_control.tscn::PackedScene/PackedScene::1689506734256736329::1752336095::0::1::::<><><>0<>0<><>::uid://dooe2pflnqtve::::res://addons/dialogue_manager/components/editor_property/editor_property_control.gd<>uid://b16uuqjuof3n5::::res://addons/dialogue_manager/components/editor_property/resource_button.tscn<>uid://dnufpcdrreva3::::res://addons/dialogue_manager/components/files_list.tscn
+resource_button.gd::GDScript/GDScript::7184489175127453302::1752336095::0::1::::<>Button<><>0<>1<><>::
+resource_button.tscn::PackedScene/PackedScene::4276577239595711888::1752336095::0::1::::<><><>0<>0<><>::uid://damhqta55t67c::::res://addons/dialogue_manager/components/editor_property/resource_button.gd
+::res://addons/dialogue_manager/example_balloon/::1752336095
+example_balloon.gd::GDScript/GDScript::9030794338866587503::1752336095::0::1::::DialogueManagerExampleBalloon<>CanvasLayer<><>0<>0<><>::
+example_balloon.tscn::PackedScene/PackedScene::2304415056852043862::1752336095::0::1::::<><><>0<>0<><>::uid://d1wt4ma6055l8::::res://addons/dialogue_manager/example_balloon/example_balloon.gd<>uid://ckvgyvclnwggo::::res://addons/dialogue_manager/dialogue_label.tscn<>uid://bb52rsfwhkxbn::::res://addons/dialogue_manager/dialogue_responses_menu.gd
+small_example_balloon.tscn::PackedScene/PackedScene::1883859960814163368::1752336095::0::1::::<><><>0<>0<><>::uid://d1wt4ma6055l8::::res://addons/dialogue_manager/example_balloon/example_balloon.gd<>uid://ckvgyvclnwggo::::res://addons/dialogue_manager/dialogue_label.tscn<>uid://bb52rsfwhkxbn::::res://addons/dialogue_manager/dialogue_responses_menu.gd
+::res://addons/dialogue_manager/l10n/::1752336095
+en.mo::Translation/Translation::-1::1752336095::0::1::::<><><>0<>0<><>::
+en.po::Translation/Translation::-1::1752336095::0::1::::<><><>0<>0<><>::
+es.po::Translation/Translation::-1::1752336095::0::1::::<><><>0<>0<><>::
+uk.po::Translation/Translation::-1::1752336095::0::1::::<><><>0<>0<><>::
+zh.po::Translation/Translation::-1::1752336095::0::1::::<><><>0<>0<><>::
+zh_TW.po::Translation/Translation::-1::1752336095::0::1::::<><><>0<>0<><>::
+::res://addons/dialogue_manager/utilities/::1752336095
+builtins.gd::GDScript/GDScript::3309659326762652343::1752336095::0::1::::<>Object<><>0<>0<><>::
+dialogue_cache.gd::GDScript/GDScript::9130733358047983146::1752336095::0::1::::DMCache<>Node<><>0<>0<><>::
+::res://addons/dialogue_manager/views/::1752336095
+main_view.gd::GDScript/GDScript::5365867961863611872::1752336095::0::1::::<>Control<><>0<>1<><>::
+main_view.tscn::PackedScene/PackedScene::4884668666408697448::1752336095::0::1::::<><><>0<>0<><>::uid://cipjcc7bkh1pc::::res://addons/dialogue_manager/views/main_view.gd<>uid://civ6shmka5e8u::::res://addons/dialogue_manager/components/code_edit.tscn<>uid://dnufpcdrreva3::::res://addons/dialogue_manager/components/files_list.tscn<>uid://ctns6ouwwd68i::::res://addons/dialogue_manager/components/title_list.tscn<>uid://co8yl23idiwbi::::res://addons/dialogue_manager/components/update_button.tscn<>uid://gr8nakpbrhby::::res://addons/dialogue_manager/components/search_and_replace.tscn<>uid://cs8pwrxr5vxix::::res://addons/dialogue_manager/components/errors_panel.tscn<>uid://klpiq4tk3t7a::::res://addons/dialogue_manager/components/code_edit_syntax_highlighter.gd<>uid://cnm67htuohhlo::::res://addons/dialogue_manager/assets/banner.png<>uid://0n7hwviyyly4::::res://addons/dialogue_manager/components/find_in_files.tscn
+::res://assets/::1752336096
+::res://assets/charachters/::1752336121
+bakeryguy.png::CompressedTexture2D/CompressedTexture2D::3343284842659304304::1752336096::1752336120::1::::<><><>0<>0<>39f4568c6ad1dabfb45481d4f8a612fc<>res://.godot/imported/bakeryguy.png-3f4beb6e6c2db00dd61fe67c7f475dba.ctex::
+BoB1.png::CompressedTexture2D/CompressedTexture2D::5581432097768337584::1752336095::1752336120::1::::<><><>0<>0<>b123f72a659bc2ca1d10364731961722<>res://.godot/imported/BoB1.png-9dfa706917c179fff836651372a2db57.ctex::
+BoB1d.png::CompressedTexture2D/CompressedTexture2D::1630963477465580283::1752336095::1752336121::1::::<><><>0<>0<>adbfff7840a49d044e800aec5d845610<>res://.godot/imported/BoB1d.png-1e0768593e9153727329b8e42373b4c0.ctex::
+BoB2.png::CompressedTexture2D/CompressedTexture2D::1475770299861124882::1752336095::1752336120::1::::<><><>0<>0<>f571902ee3bb38406ed9a578422dbd67<>res://.godot/imported/BoB2.png-77383c62e689f0773a9f3c6f378b8c04.ctex::
+BoB2yemch.png::CompressedTexture2D/CompressedTexture2D::8516240405040561354::1752336095::1752336121::1::::<><><>0<>0<>ffee4d7f8e34b9ea74cc5b25d24f6fd6<>res://.godot/imported/BoB2yemch.png-43dbaffeadbe01117c39ac96dc47fe6c.ctex::
+BoB3.png::CompressedTexture2D/CompressedTexture2D::5418401260280934526::1752336095::1752336120::1::::<><><>0<>0<>8ea3b16dc0f10ac83f6c3508e6c42897<>res://.godot/imported/BoB3.png-cfc90034882ca9990533580231d75df4.ctex::
+BoB3df.png::CompressedTexture2D/CompressedTexture2D::3883825353287093498::1752336095::1752336121::1::::<><><>0<>0<>a49135fce8d5edaf383ca30c639517ae<>res://.godot/imported/BoB3df.png-88bac2ef4f2c5be33bb70f7e904aaec7.ctex::
+Deadpolice.png::CompressedTexture2D/CompressedTexture2D::4915034985302085763::1752336096::1752336120::1::::<><><>0<>0<>725dac570ba323c419e774492a719c6b<>res://.godot/imported/Deadpolice.png-f72d780db4b5d6df4b0a1e8b0f62662a.ctex::
+NPC2.png::CompressedTexture2D/CompressedTexture2D::2504237962885505824::1752336096::1752336121::1::::<><><>0<>0<>ce476573850514272933a392da02bc2d<>res://.godot/imported/NPC2.png-57a13e2af8cfec83d3f9a1ee64b59d97.ctex::
+NPC.png::CompressedTexture2D/CompressedTexture2D::1082242502533466933::1752336096::1752336121::1::::<><><>0<>0<>b6cca5209e837a093e0a4a9b6edd2996<>res://.godot/imported/NPC.png-e886154133268b0386f9418c09bc5e3e.ctex::
+NPClilgirl.png::CompressedTexture2D/CompressedTexture2D::1882388166858227004::1752336096::1752336120::1::::<><><>0<>0<>e647c72e20dacb91f688851643f0a31e<>res://.godot/imported/NPClilgirl.png-ada559a60e9f4be4c934b4cb16509856.ctex::
+NPC_fertass2.png::CompressedTexture2D/CompressedTexture2D::5095766843190555826::1752336096::1752336121::1::::<><><>0<>0<>8d8e4c19c41b7cfe28c1f145f54b7784<>res://.godot/imported/NPC_fertass2.png-5bb0bf2d2992778f400e74d84c12b561.ctex::
+NPC_fertass3.png::CompressedTexture2D/CompressedTexture2D::2928223779959674987::1752336096::1752336121::1::::<><><>0<>0<>162bb62282f7dc8b44af2f43260adf79<>res://.godot/imported/NPC_fertass3.png-d54bb7e4fb5e7e9458c66ffe64216692.ctex::
+NPC_fertass.png::CompressedTexture2D/CompressedTexture2D::7856933721280564589::1752336096::1752336121::1::::<><><>0<>0<>6c871c2c71044efeede0cfc42bdb4e85<>res://.godot/imported/NPC_fertass.png-5ef3b64a5289ef7ea25d2d120f23f95a.ctex::
+NPC_momgirl.png::CompressedTexture2D/CompressedTexture2D::5196472883836286676::1752336096::1752336121::1::::<><><>0<>0<>a3f1e8028f60e24fab020ca904dc6427<>res://.godot/imported/NPC_momgirl.png-7bc2865162fadb065e8c4c702d6fb880.ctex::
+SCR-20250709-mexp.png::CompressedTexture2D/CompressedTexture2D::5085826887966685431::1752336096::1752336121::1::::<><><>0<>0<>472ea7729d45aa1e1da4fd9817da7e51<>res://.godot/imported/SCR-20250709-mexp.png-f321db638962a7bec05045600bd1edf0.ctex::
+::res://assets/places/::1752336122
+5thcity.png::CompressedTexture2D/CompressedTexture2D::269652783516180759::1752336096::1752336122::1::::<><><>0<>0<>ca5dc3e4510efa8ead18ee76fd411600<>res://.godot/imported/5thcity.png-6e90107293f2a70c322b8d5097515b48.ctex::
+5th_reworked.png::CompressedTexture2D/CompressedTexture2D::6950151266859747975::1752336096::1752336121::1::::<><><>0<>0<>29ee773b0e70cd21826332ee0ff57b7a<>res://.godot/imported/5th_reworked.png-6806a9bc6fab32954d569d86081a1fb9.ctex::
+bus_miyett.png::CompressedTexture2D/CompressedTexture2D::4449514140283948257::1752336096::1752336120::1::::<><><>0<>0<>798df96b233c867e0aa434151972d0f9<>res://.godot/imported/bus_miyett.png-6c2d2740cdc88316fc3e9e7e6faa8176.ctex::
+firstcity.png::CompressedTexture2D/CompressedTexture2D::6993210439057762258::1752336096::1752336120::1::::<><><>0<>0<>89e129ee329e255df76e152031b3fb5e<>res://.godot/imported/firstcity.png-d32b0adc8354dd6fea43aa7788266be9.ctex::
+houseasset-Recovered1.png::CompressedTexture2D/CompressedTexture2D::2326331584668409893::1752336096::1752336120::1::::<><><>0<>0<>2eea07b7cf7544d441d818bae88f1ca5<>res://.godot/imported/houseasset-Recovered1.png-5ff8e57981e7470c06d12b5141fced6c.ctex::
+layer_1_ground.png::CompressedTexture2D/CompressedTexture2D::6308932076901833043::1752336096::1752336120::1::::<><><>0<>0<>c4ad672ce34afcc18a63e552702062b3<>res://.godot/imported/layer_1_ground.png-fc52fd39e144b25d313de18b0043581f.ctex::
+scene_4.png::CompressedTexture2D/CompressedTexture2D::6134510629032999372::1752336096::1752336120::1::::<><><>0<>0<>a9217f5aa9bdf2334114411014488bb5<>res://.godot/imported/scene_4.png-a5190cce938e07611bc01c1ede321298.ctex::
+scene_6.png::CompressedTexture2D/CompressedTexture2D::553395890024612881::1752336096::1752336122::1::::<><><>0<>0<>23851c3a301b0ed14cabad96c62157cd<>res://.godot/imported/scene_6.png-5c376fb30180ed5841524bf7d1bf170a.ctex::
+the8.png::CompressedTexture2D/CompressedTexture2D::5996381512052414337::1752336096::1752336120::1::::<><><>0<>0<>41805a22cfdad43a7c98850f5181bf09<>res://.godot/imported/the8.png-42c76f1975999ceb3f8c50a971b0eda2.ctex::
+train_station.png::CompressedTexture2D/CompressedTexture2D::86140072472003987::1752336096::1752336120::1::::<><><>0<>0<>38362792aa736c1a68e9deda53785172<>res://.godot/imported/train_station.png-0046fe5e5a3c81e44afb23fe6f020627.ctex::
+::res://complete scenes/::1752357129
+5_th_scene.tscn::PackedScene::8929410488744970779::1752357129::0::1::::<><><>0<>0<><>::uid://c6ax8ggftofyd::::res://assets/places/5th_reworked.png<>uid://b4nm33ci1ykn6::::res://assets/places/bus_miyett.png<>uid://iq52ppkfnxyo::::res://scenes/bob.tscn<>uid://b0jhspe07vwe6::::res://Dialogue/bus_driver_dialogue.tscn<>uid://bbkh531srrus6::::res://scripts/area_5thto4th.gd<>uid://b53kpl3il7e5b::::res://scripts/back_to_train.gd<>uid://dpg0nke88yt7r::::res://scripts/walk_to_moma.gd<>uid://dmm2k3nue4u32::::res://music themes/Next to You.mp3<>uid://dvntuvut84xyt::::res://scenes/dead_police.tscn<>uid://dos8mkdbrv41l::::res://scenes/npc_black.tscn<>uid://cxwprmp584uo5::::res://Dialogue/dead_policeman.tscn
+carfour.tscn::PackedScene::8300546799334927726::1752357129::0::1::::<><><>0<>0<><>::uid://croxr6x064em8::::res://assets/places/the8.png<>uid://iq52ppkfnxyo::::res://scenes/bob.tscn<>uid://dos8mkdbrv41l::::res://scenes/npc_black.tscn<>uid://n1hsrpmapgwi::::res://scripts/reroadpart2.gd<>uid://f2ugf1llluf::::res://Dialogue/ending.tscn<>uid://be58o6bxvrva6::::res://music themes/8bit Bossa.mp3<>uid://77vsoa1ruwcy::::res://scenes/npc_two.tscn<>uid://cdwfm8tv0h3rk::::res://scenes/npc_black_dos.tscn<>uid://dj41ctucmaw68::::res://scenes/npc_grey_dos.tscn<>uid://bncd2bedymv5j::::res://scenes/npc_one.tscn
+first_city.tscn::PackedScene::6248409957718135778::1752357129::0::1::::<><><>0<>0<><>::uid://c6vtfijc8ffpi::::res://assets/places/firstcity.png<>uid://iq52ppkfnxyo::::res://scenes/bob.tscn<>uid://cgmrlt7g21yuc::::res://scripts/firstcity.gd<>uid://bncd2bedymv5j::::res://scenes/npc_one.tscn<>uid://bjm5ehydcokck::::res://music themes/fr4s - 8bit2.mp3<>uid://dmm2k3nue4u32::::res://music themes/Next to You.mp3<>uid://bhq38ramtwrbp::::res://scripts/area_first_5th.gd<>uid://co0fdxc8amm7f::::res://scenes/bakery_guy.tscn
+houmtou.tscn::PackedScene::7609417450442893641::1752357129::0::1::::<><><>0<>0<><>::uid://p1fq88et8qtg::::res://scenes/houmtou_background.tscn<>uid://iq52ppkfnxyo::::res://scenes/bob.tscn<>uid://be58o6bxvrva6::::res://music themes/8bit Bossa.mp3<>uid://buc3r1coc8fsy::::res://music themes/wind1.wav<>uid://bc480iirk3wsx::::res://scripts/area_2dhoumtou_train.gd<>uid://vx4eyvuh448u::::res://scenes/npc_black_side.tscn<>uid://tt68s60u0rn5::::res://Helpers/Actionables/dialogue_wlid_7_ouma.tscn<>uid://d2rbku3aumsff::::res://Dialogue/wlid 7ouma.dialogue
+roadone.tscn::PackedScene::2991824893144405145::1752357129::0::1::::<><><>0<>0<><>::uid://cxjq4f8kg4ogt::::res://scenes/roadone_background.tscn<>uid://iq52ppkfnxyo::::res://scenes/bob.tscn<>uid://d03r4s45ewhug::::res://music themes/down to business.mp3<>uid://dqc851jrcmox6::::res://scenes/lilgirl.tscn<>uid://duurop6n8hrg0::::res://Helpers/Actionables/litle_girl.tscn<>uid://vx4eyvuh448u::::res://scenes/npc_black_side.tscn<>uid://jgau3dnodqmn::::res://scenes/npc_rouge.tscn<>uid://c0n0v41x45a25::::res://Dialogue/kidnapers.tscn
+roadtwo.tscn::PackedScene::8230085034889565591::1752357129::0::1::::<><><>0<>0<><>::uid://vwy8kg8owhc2::::res://scenes/roadtwobackground.tscn<>uid://iq52ppkfnxyo::::res://scenes/bob.tscn<>uid://d03r4s45ewhug::::res://music themes/down to business.mp3<>uid://byad2brkw77go::::res://scripts/roadtwoexit.gd<>uid://dgh4qlbcxhynd::::res://scripts/backto5thscene.gd<>uid://dmm2k3nue4u32::::res://music themes/Next to You.mp3<>uid://dbepgyali2vhr::::res://scenes/moma_girl.tscn<>uid://dir2x5mc5rsfm::::res://Dialogue/Screaming lady.tscn
+Room.tscn::PackedScene::142353046826710210::1752357946::0::1::::<><><>0<>0<><>::uid://bi5cy55l2op5e::::res://scenes/room_background.tscn<>uid://iq52ppkfnxyo::::res://scenes/bob.tscn<>uid://g51xpbybuy3l::::res://music themes/We are safe.wav<>uid://bu0okkgej15b2::::res://scripts/area_2droom.gd
+trainstation.tscn::PackedScene::6752883560003641760::1752357129::0::1::::<><><>0<>0<><>::uid://bhyyj4dwgra6::::res://assets/places/train_station.png<>uid://iq52ppkfnxyo::::res://scenes/bob.tscn<>uid://dmm2k3nue4u32::::res://music themes/Next to You.mp3<>uid://buc3r1coc8fsy::::res://music themes/wind1.wav<>uid://vkuxl6ettpx7::::res://scripts/train_to_houmtou.gd<>uid://bi334gt2wh7yy::::res://scripts/train_firscity.gd<>uid://bncd2bedymv5j::::res://scenes/npc_one.tscn<>uid://cdwfm8tv0h3rk::::res://scenes/npc_black_dos.tscn<>uid://77vsoa1ruwcy::::res://scenes/npc_two.tscn<>uid://jgau3dnodqmn::::res://scenes/npc_rouge.tscn<>uid://vx4eyvuh448u::::res://scenes/npc_black_side.tscn<>uid://dysqen5ollots::::res://Helpers/Actionables/makanch train.tscn
+::res://Dialogue/::1752357866
+bus driver .dialogue::Resource/Resource::6917809040490951680::1752356342::1752356342::1::::<><><>0<>0<>ef551c9d48c98c3e8ad232d40c6da149<>res://.godot/imported/bus driver .dialogue-9bc645c2fb1f165d2004a7805599520b.tres::uid://dbs4435dsf3ry::::res://addons/dialogue_manager/dialogue_resource.gd
+bus_driver_dialogue.tscn::PackedScene/PackedScene::4160179132879071175::1752340835::0::1::::<><><>0<>0<><>::uid://r8hcm6tttlmc::::res://Helpers/Actionables/ki_ynod.gd<>uid://c5tbklv8f1ivw::::res://Dialogue/bus driver .dialogue
+dead policeman.dialogue::Resource/Resource::4050974811530526204::1752356384::1752356384::1::::<><><>0<>0<>ba7003bbb6e2a96e7a50ef6f0e9f9356<>res://.godot/imported/dead policeman.dialogue-c497615580146013de98ecbb190c0410.tres::uid://dbs4435dsf3ry::::res://addons/dialogue_manager/dialogue_resource.gd
+dead_policeman.tscn::PackedScene/PackedScene::6433542849898735426::1752354134::0::1::::<><><>0<>0<><>::uid://r8hcm6tttlmc::::res://Helpers/Actionables/ki_ynod.gd<>uid://bxyk70tgsxodg::::res://Dialogue/dead policeman.dialogue
+ending.tscn::PackedScene/PackedScene::11997287513680737::1752354134::0::1::::<><><>0<>0<><>::uid://r8hcm6tttlmc::::res://Helpers/Actionables/ki_ynod.gd<>uid://03l3ddjpbwwi::::res://Dialogue/samir endinguntitled.dialogue
+kidnapers.tscn::PackedScene/PackedScene::6555956360057970772::1752355297::0::1::::<><><>0<>0<><>::uid://r8hcm6tttlmc::::res://Helpers/Actionables/ki_ynod.gd<>uid://u23cn3uvc4g5::::res://Dialogue/kidnappers.dialogue
+kidnappers.dialogue::Resource/Resource::1461219446500491838::1752356490::1752356490::1::::<><><>0<>0<>9afcecddad56a4d4f713b90db600fb9d<>res://.godot/imported/kidnappers.dialogue-cb93c1991a9d3aba5c3e6b6ccd15678d.tres::uid://dbs4435dsf3ry::::res://addons/dialogue_manager/dialogue_resource.gd
+makanch train.dialogue::Resource/Resource::7104486228331053085::1752356951::1752356951::1::::<><><>0<>0<>c92a9d8f817ac95ce8480610ffe501ca<>res://.godot/imported/makanch train.dialogue-7bf7d7f28660de2e8b9eb0872f6191e5.tres::uid://dbs4435dsf3ry::::res://addons/dialogue_manager/dialogue_resource.gd
+naked man.dialogue::Resource::347173544749831108::1752357946::1752357947::1::::<><><>0<>0<>cdc9ac01be201d5f5c22db4e37d1dfe6<>res://.godot/imported/naked man.dialogue-b6e4591ccf80c3ac39a807c1874edad1.tres::uid://dbs4435dsf3ry::::res://addons/dialogue_manager/dialogue_resource.gd
+samir endinguntitled.dialogue::Resource/Resource::1813241719847744548::1752356823::1752356823::1::::<><><>0<>0<>4c338b00f69998149bdd1b74e0c7c4cc<>res://.godot/imported/samir endinguntitled.dialogue-31c687a221ee75bde8551dd437449b69.tres::uid://dbs4435dsf3ry::::res://addons/dialogue_manager/dialogue_resource.gd
+Screaming lady.tscn::PackedScene/PackedScene::7757549248436892966::1752355297::0::1::::<><><>0<>0<><>::uid://r8hcm6tttlmc::::res://Helpers/Actionables/ki_ynod.gd<>uid://dcpfia3tx1drk::::res://Dialogue/Screaming women.dialogue
+Screaming women.dialogue::Resource/Resource::7330923320130894456::1752356309::1752356309::1::::<><><>0<>0<>63e5b83046cc3b7fc3d649ad44034413<>res://.godot/imported/Screaming women.dialogue-9142b986596fea3e09b617d36b93ad41.tres::uid://dbs4435dsf3ry::::res://addons/dialogue_manager/dialogue_resource.gd
+test.dialogue::Resource/Resource::8770001193462730980::1752338444::1752338445::1::::<><><>0<>0<>d8bc42289fa3a847d27e92767f6d6dc3<>res://.godot/imported/test.dialogue-bc09cbd57a6c9fedc45f7f3246e87a9d.tres::uid://dbs4435dsf3ry::::res://addons/dialogue_manager/dialogue_resource.gd
+the litle girl.dialogue::Resource::3120070955697738533::1752357121::1752357121::1::::<><><>0<>0<>cab31bcd82a091509ce8b7d9533f9b1a<>res://.godot/imported/the litle girl.dialogue-32021a54eeb1a5e4018b200358afd3b4.tres::uid://dbs4435dsf3ry::::res://addons/dialogue_manager/dialogue_resource.gd
+wlid 7ouma.dialogue::Resource/Resource::9089534919805755031::1752356898::1752356899::1::::<><><>0<>0<>7b15144dce5417f7c9c2546d9f2559bb<>res://.godot/imported/wlid 7ouma.dialogue-5be0a541a9df1af4d5cc53a52d113523.tres::uid://dbs4435dsf3ry::::res://addons/dialogue_manager/dialogue_resource.gd
+::res://Helpers/::1752336396
+::res://Helpers/Actionables/::1752357129
+dialogue_wlid_7_ouma.gd::GDScript/GDScript::8376485014686204980::1752337497::0::1::::<>Area2D<><>0<>0<><>::
+dialogue_wlid_7_ouma.tscn::PackedScene/PackedScene::1374753358897227524::1752340336::0::1::::<><><>0<>0<><>::uid://drlvqp60474aq::::res://Helpers/Actionables/dialogue_wlid_7_ouma.gd
+ki_ynod.gd::GDScript/GDScript::1261764077326260142::1752338421::0::1::::<>Area2D<><>0<>0<><>::
+makanch train.tscn::PackedScene/PackedScene::8881932442823968536::1752340336::0::1::::<><><>0<>0<><>::uid://r8hcm6tttlmc::::res://Helpers/Actionables/ki_ynod.gd<>uid://c8hp353l1yu5r::::res://Dialogue/makanch train.dialogue
+litle_girl.tscn::PackedScene::8605384505287088465::1752357129::0::1::::<><><>0<>0<><>::uid://r8hcm6tttlmc::::res://Helpers/Actionables/ki_ynod.gd<>uid://bkpnd3ngmvcqv::::res://Dialogue/the litle girl.dialogue
+::res://music themes/::1752336123
+8bit Bossa.mp3::AudioStreamMP3/AudioStreamMP3::2731137683585414891::1752336096::1752336120::1::::<><><>0<>0<>fb5bc6d0d45b1cb64689099c2f36a8f4<>res://.godot/imported/8bit Bossa.mp3-07217747f63292cf5068d32f90974a3a.mp3str::
+claimed_by_the_void.mp3::AudioStreamMP3/AudioStreamMP3::3423827343105080560::1752336096::1752336120::1::::<><><>0<>0<>032163ac13a3d14a94093392d4c92ba1<>res://.godot/imported/claimed_by_the_void.mp3-f354682530a5fc17d7b3842d12e2b66e.mp3str::
+claimed_by_the_void_loop.mp3::AudioStreamMP3/AudioStreamMP3::5177648596972282435::1752336096::1752336120::1::::<><><>0<>0<>d8a537fb9ad0ba695d5b2bad6508e74c<>res://.godot/imported/claimed_by_the_void_loop.mp3-feb7f1ee4f749ffe7b4af5ad07819701.mp3str::
+claimed_by_the_void_loop.wav::AudioStreamWAV/AudioStreamWAV::2150667707845949471::1752336096::1752336123::1::::<><><>0<>0<>d5ef96ad0cc5e236dda5149f8d6d04c8<>res://.godot/imported/claimed_by_the_void_loop.wav-d76633f41e9c8c8e55159055f9c690a0.sample::
+claimed_by_the_void_mix.ogg::AudioStreamOggVorbis/AudioStreamOggVorbis::3480689787672117083::1752336096::1752336120::1::::<><><>0<>0<>96c405ad966799706335d8002a5787c7<>res://.godot/imported/claimed_by_the_void_mix.ogg-46c320342f3c5a61f789b9ad849dfb1d.oggvorbisstr::
+down to business.mp3::AudioStreamWAV/AudioStreamWAV::8972870687632970554::1752336096::1752336122::1::::<><><>0<>0<>8b62b2872a4611678bc7a9bdb7865264<>res://.godot/imported/down to business.mp3-c22d7aedae9ad0966fa4f35a2fc60834.sample::
+Ejimas1.ogg::AudioStreamOggVorbis/AudioStreamOggVorbis::8060423379315289715::1752336096::1752336120::1::::<><><>0<>0<>d4cd890ba5a85c19993efc61c8caad95<>res://.godot/imported/Ejimas1.ogg-80602be1b58a1a8abe7b1aea2956fa0f.oggvorbisstr::
+fr4s - 8bit2.mp3::AudioStreamMP3/AudioStreamMP3::3044721867321021158::1752336096::1752336120::1::::<><><>0<>0<>ae323684a058f28f220f05f2b105f7f0<>res://.godot/imported/fr4s - 8bit2.mp3-d7a87686dc9c7a098150682b856e0b90.mp3str::
+Next to You.mp3::AudioStreamMP3/AudioStreamMP3::8027959416179631755::1752336096::1752336120::1::::<><><>0<>0<>6e2b748368e83f44ab0762ef8d748e78<>res://.godot/imported/Next to You.mp3-b590d18ee5a7d3d51b2e48d555c04344.mp3str::
+song21.mp3::AudioStreamMP3/AudioStreamMP3::3213511307964684167::1752336097::1752336120::1::::<><><>0<>0<>92bfc6a57571fc84bb10bca7f0103e57<>res://.godot/imported/song21.mp3-49fbc0ae323b29eef7dee84bd43462c9.mp3str::
+void_5.mp3::AudioStreamMP3/AudioStreamMP3::7474420695971621326::1752336097::1752336120::1::::<><><>0<>0<>d8f50ec542ecd40cbfb9d5e6125084b1<>res://.godot/imported/void_5.mp3-71cbc42dfce3934ec8481c1a9f03d92c.mp3str::
+We are safe.wav::AudioStreamWAV/AudioStreamWAV::484684900009386131::1752336096::1752336122::1::::<><><>0<>0<>87123a8cd6b7c7c90c7165ab114fc07b<>res://.godot/imported/We are safe.wav-2bbfb8302fdc005566429e2d0cedd6ad.sample::
+wind1.wav::AudioStreamWAV/AudioStreamWAV::3796058115592497144::1752336097::1752336122::1::::<><><>0<>0<>7f9e83e64af1735e7c7787180198d59b<>res://.godot/imported/wind1.wav-4b6d024e82a16a892e6bc028d7fba121.sample::
+::res://scenes/::1752357129
+bakery_guy.tscn::PackedScene/PackedScene::5807404777142214645::1752336097::0::1::::<><><>0<>0<><>::uid://bnvrobkthur65::::res://assets/charachters/bakeryguy.png
+bob.tscn::PackedScene/PackedScene::596411330871534290::1752355297::0::1::::<><><>0<>0<><>::uid://cvsbm7lvjq0am::::res://scripts/character_body_2d.gd<>uid://xiby3djla7op::::res://assets/charachters/BoB1d.png<>uid://dtllh86t7rvck::::res://assets/charachters/BoB2yemch.png<>uid://bvlmbh1ibjlla::::res://assets/charachters/BoB3df.png<>uid://dmgavwktm70ct::::res://sounds/Ejimas1.ogg
+dead_police.tscn::PackedScene/PackedScene::8661255151816401783::1752336097::0::1::::<><><>0<>0<><>::uid://cca4541pgvaxn::::res://assets/charachters/Deadpolice.png
+houmtou_background.tscn::PackedScene/PackedScene::1106840418299899332::1752336097::0::1::::<><><>0<>0<><>::uid://cv5dgpep60qdv::::res://assets/places/layer_1_ground.png<>uid://cqlng4u1brnnk::::res://scripts/area_2d.gd
+lilgirl.tscn::PackedScene/PackedScene::8288470919660288069::1752336097::0::1::::<><><>0<>0<><>::uid://123wm0qoks1q::::res://assets/charachters/NPClilgirl.png
+main menu.tscn::PackedScene/PackedScene::3838030901365939155::1752336097::0::1::::<><><>0<>0<><>::uid://bc4gv5y4q5r7e::::res://scripts/main_menu.gd<>uid://tuiyxcdsc4pt::::res://ui/city.png<>uid://tpg8lerto6x3::::res://ui/Pixel Digivolve Italic.otf<>uid://qjlyd3dqg1ss::::res://ui/Pixel Digivolve.otf<>uid://bo1r63fagbf6w::::res://music themes/claimed_by_the_void.mp3
+moma_girl.tscn::PackedScene/PackedScene::7238631136460470539::1752336097::0::1::::<><><>0<>0<><>::uid://cgbhfcpqcnuuu::::res://assets/charachters/NPC_momgirl.png
+npc_black.tscn::PackedScene/PackedScene::8181090281809912203::1752336097::0::1::::<><><>0<>0<><>::uid://dj67syl7m2qrt::::res://assets/charachters/NPC_fertass.png
+npc_black_dos.tscn::PackedScene/PackedScene::5029150986990004452::1752336097::0::1::::<><><>0<>0<><>::uid://dj67syl7m2qrt::::res://assets/charachters/NPC_fertass.png
+npc_black_side.tscn::PackedScene/PackedScene::1523215634628435458::1752336097::0::1::::<><><>0<>0<><>::uid://dj67syl7m2qrt::::res://assets/charachters/NPC_fertass.png
+npc_grey_dos.tscn::PackedScene/PackedScene::7852411841035740439::1752336097::0::1::::<><><>0<>0<><>::uid://bhypohaw0h308::::res://assets/charachters/NPC_fertass3.png
+npc_one.tscn::PackedScene/PackedScene::3303234832780816281::1752336097::0::1::::<><><>0<>0<><>::uid://poim1slr2b0x::::res://assets/charachters/NPC.png
+npc_rouge.tscn::PackedScene/PackedScene::644123051042471357::1752336097::0::1::::<><><>0<>0<><>::uid://ceuosg6u8egqk::::res://assets/charachters/NPC_fertass2.png
+npc_two.tscn::PackedScene/PackedScene::2313411022217085348::1752336097::0::1::::<><><>0<>0<><>::uid://bbxcoy8mt6lh5::::res://assets/charachters/NPC2.png
+roadone_background.tscn::PackedScene/PackedScene::6406787744813815263::1752336097::0::1::::<><><>0<>0<><>::uid://ctnuq13gv76uy::::res://assets/places/scene_4.png<>uid://ca7knvf3d3b4o::::res://scripts/roadone_back_to_two.gd<>uid://b4kgcseh1nsbk::::res://scripts/area_2d_topart2.gd
+roadpart_2.tscn::PackedScene::5355280981895449948::1752357129::0::1::::<><><>0<>0<><>::uid://vwy8kg8owhc2::::res://scenes/roadtwobackground.tscn<>uid://iq52ppkfnxyo::::res://scenes/bob.tscn<>uid://dp2r50tfuhnd5::::res://scripts/back_road_onee.gd<>uid://1wv34a86f1qe::::res://scripts/to_carfour.gd<>uid://buc3r1coc8fsy::::res://music themes/wind1.wav
+roadtwobackground.tscn::PackedScene/PackedScene::1520898702034530347::1752336097::0::1::::<><><>0<>0<><>::uid://h5cl48bmx1vh::::res://assets/places/scene_6.png
+room_background.tscn::PackedScene/PackedScene::3010028681039479996::1752336097::0::1::::<><><>0<>0<><>::uid://8e5lutf1ycc0::::res://assets/places/houseasset-Recovered1.png
+::res://scripts/::1752352066
+area_2d.gd::GDScript/GDScript::5919372611815354704::1752336097::0::1::::<>Area2D<><>0<>0<><>::
+area_2dhoumtou_train.gd::GDScript/GDScript::2588714064777943667::1752336097::0::1::::<>Area2D<><>0<>0<><>::
+area_2droom.gd::GDScript/GDScript::3842675430840175893::1752336097::0::1::::<>Area2D<><>0<>0<><>::
+area_2d_topart2.gd::GDScript/GDScript::4442909752233891292::1752336097::0::1::::<>Area2D<><>0<>0<><>::
+area_5thto4th.gd::GDScript/GDScript::2477733409298209451::1752352066::0::1::::<>Area2D<><>0<>0<><>::
+area_first_5th.gd::GDScript/GDScript::2912532533689059029::1752336097::0::1::::<>Area2D<><>0<>0<><>::
+backto5thscene.gd::GDScript/GDScript::7596635702102187589::1752336097::0::1::::<>Area2D<><>0<>0<><>::
+back_road_onee.gd::GDScript/GDScript::8268920010392811280::1752336097::0::1::::<>Area2D<><>0<>0<><>::
+back_to_train.gd::GDScript/GDScript::4550523148174806077::1752336097::0::1::::<>Area2D<><>0<>0<><>::
+character_body_2d.gd::GDScript/GDScript::6284049728584465248::1752338109::0::1::::<>CharacterBody2D<><>0<>0<><>::
+firstcity.gd::GDScript/GDScript::5219799842560235466::1752336097::0::1::::<>Area2D<><>0<>0<><>::
+main_menu.gd::GDScript/GDScript::2587068743581519768::1752336097::0::1::::<>Control<><>0<>0<><>::
+reroadpart2.gd::GDScript/GDScript::966586868754469572::1752336097::0::1::::<>Area2D<><>0<>0<><>::
+roadone_back_to_two.gd::GDScript/GDScript::4839532952756221884::1752336097::0::1::::<>Area2D<><>0<>0<><>::
+roadtwoexit.gd::GDScript/GDScript::4071183377689683642::1752336097::0::1::::<>Area2D<><>0<>0<><>::
+to_carfour.gd::GDScript/GDScript::1871652828973766596::1752336097::0::1::::<>Area2D<><>0<>0<><>::
+train_firscity.gd::GDScript/GDScript::3007486219479590400::1752336097::0::1::::<>Area2D<><>0<>0<><>::
+train_to_houmtou.gd::GDScript/GDScript::1495865532908105202::1752336097::0::1::::<>Area2D<><>0<>0<><>::
+walk_to_moma.gd::GDScript/GDScript::8226022645271226381::1752336097::0::1::::<>Area2D<><>0<>0<><>::
+::res://sounds/::1752336120
+Ejimas1.ogg::AudioStreamOggVorbis/AudioStreamOggVorbis::8013953114774396379::1752336097::1752336120::1::::<><><>0<>0<>ef1bb7993a894c42ae05a8e88fb8e714<>res://.godot/imported/Ejimas1.ogg-6e0c9fe732ac972aaecd680b17fe421e.oggvorbisstr::
+::res://ui/::1752336120
+city.png::CompressedTexture2D/CompressedTexture2D::1375405390486795157::1752336097::1752336120::1::::<><><>0<>0<>52f7f78a6c88e9269887fa1482756537<>res://.godot/imported/city.png-2de463820630558a85c996c83410d33d.ctex::
+main_menu.gd::GDScript/GDScript::9206449190133898874::1752336097::0::1::::<>Control<><>0<>0<><>::
+Pixel Digivolve Italic.otf::FontFile/FontFile::1364977513323421030::1752336097::1752336120::1::::<><><>0<>0<>cccc46b3bf95d82ce488dfe637c45d6d<>res://.godot/imported/Pixel Digivolve Italic.otf-d917f0afc5b1f7c91e25617abf1cc6ac.fontdata::
+Pixel Digivolve.otf::FontFile/FontFile::1142311844951732974::1752336097::1752336120::1::::<><><>0<>0<>9a27fb77c5d20aa47250e3d0bc0149b8<>res://.godot/imported/Pixel Digivolve.otf-c46580fe606bd8e85304ff0ab0f21bbe.fontdata::

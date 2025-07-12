@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://c0n0v41x45a25"]
+
+[ext_resource type="Script" uid="uid://r8hcm6tttlmc" path="res://Helpers/Actionables/ki_ynod.gd" id="1_nu4fy"]
+[ext_resource type="Resource" uid="uid://u23cn3uvc4g5" path="res://Dialogue/kidnappers.dialogue" id="2_nu4fy"]
+
+[node name="kidnapers" type="Area2D"]
+collision_layer = 16
+script = ExtResource("1_nu4fy")
+dialogue_res = ExtResource("2_nu4fy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.73085, -123)

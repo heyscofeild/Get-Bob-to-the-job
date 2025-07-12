@@ -1,0 +1,9 @@
+~ start
+Bob: What happened here dammm ? 
+Bob: what's up with this city 
+Bob: even police man are in danger 
++10 stress
+- search him
+	*got a gun 
+
+=> END

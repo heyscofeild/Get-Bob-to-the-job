@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://bkpnd3ngmvcqv"
+path="res://.godot/imported/the litle girl.dialogue-32021a54eeb1a5e4018b200358afd3b4.tres"
+
+[deps]
+
+source_file="res://Dialogue/the litle girl.dialogue"
+dest_files=["res://.godot/imported/the litle girl.dialogue-32021a54eeb1a5e4018b200358afd3b4.tres"]
+
+[params]
+
+defaults=true

@@ -70,6 +70,14 @@ respawn={
 ]
 }
 
+[internationalization]
+
+locale/translations_pot_files=PackedStringArray("res://Dialogue/wlid 7ouma.dialogue", "res://Dialogue/test.dialogue", "res://Dialogue/makanch train.dialogue", "res://Dialogue/bus driver .dialogue", "res://Dialogue/dead policeman.dialogue", "res://Dialogue/samir endinguntitled.dialogue", "res://Dialogue/Screaming women.dialogue", "res://Dialogue/kidnappers.dialogue", "res://Dialogue/the litle girl.dialogue", "res://Dialogue/naked man.dialogue")
+
+[layer_names]
+
+2d_physics/layer_5="Actionables"
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0

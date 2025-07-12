@@ -1,0 +1,20 @@
+~ start
+Bob : yoo did you take that girl
+strangers : What are you talking about.
+Bob : come on dont play stupid the lady said that she saw you running away
+strangers : this is your last warning.
++2 stress
+- show your gun
+	they are runing away
+	+2 stress
+	- shoot them
+		They are dead (they did not kidnap her btw)
+		+10 stress
+	- let them run away
+		it wasnt my problem anyway 
+		+5 stress
+- fight them
+	you got injred
+	+12 stress
+		
+=> END

@@ -1,0 +1,10 @@
+~ start
+Samir: wassup Bob
+- Doing good ?
+	Samir: yeah,what about you.
+	- Good,but sorry i am late for work.
+		Samir: good bye then. 
+- punch him.
+	Samir: you will regret that.
+	+5 stress
+=> END

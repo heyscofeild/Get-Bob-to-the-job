@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://f2ugf1llluf"]
+
+[ext_resource type="Script" uid="uid://r8hcm6tttlmc" path="res://Helpers/Actionables/ki_ynod.gd" id="1_b1j6y"]
+[ext_resource type="Resource" uid="uid://03l3ddjpbwwi" path="res://Dialogue/samir endinguntitled.dialogue" id="2_b1j6y"]
+
+[node name="ending" type="Area2D"]
+collision_layer = 16
+script = ExtResource("1_b1j6y")
+dialogue_res = ExtResource("2_b1j6y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.73085, -123)

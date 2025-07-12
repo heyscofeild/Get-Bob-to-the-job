@@ -1,0 +1,13 @@
+~ start
+
+litle girl : LA LA LA LA LA.
+Bob: yo do you live here
+litle girl : no i live one block away
+Bob : your mom is looking  for you.
+litle girl : whatever.
+ - i will kidnap you if you wont go to your mom (scare her)
+	litle girl : AAAHHHHHHHHH (she is traumatized).
+	+15 stress (shame on you)
+- its not my problem after all
+	+5 stress (shame on you)
+=> END

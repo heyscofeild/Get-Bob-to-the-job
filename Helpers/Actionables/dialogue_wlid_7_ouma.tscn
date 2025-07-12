@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://tt68s60u0rn5"]
+
+[ext_resource type="Script" uid="uid://drlvqp60474aq" path="res://Helpers/Actionables/dialogue_wlid_7_ouma.gd" id="1_5al7m"]
+
+[node name="dialogue wlid 7ouma" type="Area2D"]
+collision_layer = 17
+script = ExtResource("1_5al7m")

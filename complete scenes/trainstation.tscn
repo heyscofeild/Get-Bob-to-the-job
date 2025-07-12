@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://c3hfagrcngxrc"]
+[gd_scene load_steps=17 format=3 uid="uid://c3hfagrcngxrc"]
 
 [ext_resource type="Texture2D" uid="uid://bhyyj4dwgra6" path="res://assets/places/train_station.png" id="1_1ysrl"]
 [ext_resource type="PackedScene" uid="uid://iq52ppkfnxyo" path="res://scenes/bob.tscn" id="2_u1xp2"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://77vsoa1ruwcy" path="res://scenes/npc_two.tscn" id="8_rke2w"]
 [ext_resource type="PackedScene" uid="uid://jgau3dnodqmn" path="res://scenes/npc_rouge.tscn" id="9_rxrf2"]
 [ext_resource type="PackedScene" uid="uid://vx4eyvuh448u" path="res://scenes/npc_black_side.tscn" id="11_10u0n"]
+[ext_resource type="PackedScene" uid="uid://dysqen5ollots" path="res://Helpers/Actionables/makanch train.tscn" id="12_rxrf2"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1ysrl"]
 radius = 5.37675
@@ -22,6 +23,9 @@ height = 50.1147
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sd5nm"]
 radius = 10.0204
 height = 89.9741
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_10u0n"]
+size = Vector2(52.2604, 18.9167)
 
 [node name="trainstation" type="Node2D"]
 
@@ -112,7 +116,6 @@ position = Vector2(2, 3)
 stream = ExtResource("4_06c70")
 volume_db = -5.738
 autoplay = true
-stream_paused = true
 
 [node name="Area2D" type="Area2D" parent="."]
 script = ExtResource("5_gfhfj")
@@ -135,11 +138,20 @@ position = Vector2(-184, -14)
 scale = Vector2(0.12, 0.12)
 
 [node name="npc_rouge" parent="." instance=ExtResource("9_rxrf2")]
-position = Vector2(200, 0)
+position = Vector2(199, 4)
 scale = Vector2(0.14, 0.14)
 
+[node name="makanch train" parent="npc_rouge" instance=ExtResource("12_rxrf2")]
+position = Vector2(-1428.57, 0)
+scale = Vector2(7.14286, 7.14286)
+collision_layer = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="npc_rouge/makanch train"]
+position = Vector2(182, 9.54167)
+shape = SubResource("RectangleShape2D_10u0n")
+
 [node name="npc_two" parent="." instance=ExtResource("8_rke2w")]
-position = Vector2(161, 5.68434e-14)
+position = Vector2(164, 1)
 scale = Vector2(0.12, 0.12)
 
 [node name="npc_black_side" parent="." instance=ExtResource("11_10u0n")]

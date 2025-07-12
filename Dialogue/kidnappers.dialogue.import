@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://u23cn3uvc4g5"
+path="res://.godot/imported/kidnappers.dialogue-cb93c1991a9d3aba5c3e6b6ccd15678d.tres"
+
+[deps]
+
+source_file="res://Dialogue/kidnappers.dialogue"
+dest_files=["res://.godot/imported/kidnappers.dialogue-cb93c1991a9d3aba5c3e6b6ccd15678d.tres"]
+
+[params]
+
+defaults=true
